@@ -6,6 +6,7 @@ layout: simple
 > If you would like to understand the power of vector symbols, let us see the different expressions of Maxwell's equations in different notations:
 >
 >> - `Component form`:
+>>
 >>>  Equations of Magnetic Force:
 >>> 
 >>>  $$
@@ -26,7 +27,7 @@ $$
 \end{aligned}
 $$
 >>
->>>  Equations of Electromotive Force:
+>>> Equations of Electromotive Force:
 >>> 
 >>>$$
 \begin{aligned}
@@ -42,6 +43,7 @@ $$
 >><p align="right">-- Clerk Maxwell, A Dynamical Theory of the Electromagnetic Field, 1865</p>
 >
 >> - `Vector form`:
+>>
 >> $$
 \begin{aligned}
 \mu \mathbf{J} & =\nabla \times \mathbf{H} \\
@@ -53,6 +55,7 @@ $$
 >><p align="right">-- Oliver Heaviside , 1885/88</p>
 > 
 >> - `Tensor form`:
+>>
 >> $$
 \begin{aligned}
 \mu J_{i} & =\epsilon_{i j k} \frac{\partial H_{k}}{\partial x_{j}} \\

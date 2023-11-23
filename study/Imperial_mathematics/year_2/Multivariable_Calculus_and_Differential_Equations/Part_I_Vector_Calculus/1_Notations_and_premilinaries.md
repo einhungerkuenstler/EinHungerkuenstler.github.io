@@ -70,23 +70,22 @@ $$\gdef\vf{\mathbf{A}}$$
       > *Remark*
       >
       >> - $$
-      \epsilon_{ijk} a_{j} b_{k} = \sum_{j=1}^{3} \sum_{k=1}^{3} \epsilon_{ijk} a_{j} b_{k} = a_{2} b_{3} - a_{3} b_{2} + a_{3} b_{1} - a_{1} b_{3} + a_{1} b_{2} - a_{2} b_{1}
-         $$
-      >
-      >> - $$
          \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{i l} \delta_{j m}-\delta_{i m} \delta_{j l}
          $$ 
-      >> **which is sum over $k$.**
+      >>
+      >>  **which is sum over $$k$$.**
       >>
       >> *Proof*:
       >>
       >> - `Overview`:
       >>    If $$i = j$$ or $$l = m$$, then the left hand side are all $$0$$ and the right hand side is $$0$$. Therefore,we only need to consider the case that $$i \neq j$$ and $$l \neq m$$. Next, we notice that if we swap the $$i$$ & $$j$$ in the left hand side, the sign of both sides will change. Therefore, we only need to consider the case that $$i < j$$ and $$l < m$$. The cases that we need to consider are
+      >>
       >> $$
          (i, j) = (1, 2), (1, 3), (2, 3)
          $$
       >>
       >> - `Left hand side`:
+      >>
       >>  $$
          \begin{aligned}
          \varepsilon_{1 2 k} \varepsilon_{k l m} & = \varepsilon_{1 2 1} \varepsilon_{1 l m} + \varepsilon_{1 2 2} \varepsilon_{2 l m} +\varepsilon_{1 2 3} \varepsilon_{3 l m} \\
@@ -96,6 +95,7 @@ $$\gdef\vf{\mathbf{A}}$$
          $$
       >>   
       >> - `Right hand side`:
+      >>
       >> $$
          \delta_{1 l} \delta_{2 m}-\delta_{1 m} \delta_{2 l} = \begin{cases} 0  \text{ if } l \text{ or } m = 3 \\ 1 \text{ if } (l, m) = (1, 2) \\ \end{cases}
          $$
@@ -106,6 +106,7 @@ $$\gdef\vf{\mathbf{A}}$$
       >>  $$
       >> \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{j l} \delta_{k m}-\delta_{j m} \delta_{k l}
       $$ 
+      >>
       >> **which is sum over $$i$$**.
 
 ## 1.2 Premilinaries
