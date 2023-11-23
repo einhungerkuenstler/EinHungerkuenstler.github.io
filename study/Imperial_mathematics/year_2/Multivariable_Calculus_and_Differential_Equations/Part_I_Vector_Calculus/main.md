@@ -20,7 +20,7 @@ $$
 >>> Equations of Current:
 >>> 
 >>> $$
-> \begin{aligned}
+\begin{aligned}
 & \mathrm{P}=-\frac{d \mathrm{~F}}{d t}-\frac{d \Psi}{d x} \\
 & \mathrm{Q}=-\frac{d \mathrm{G}}{d t}-\frac{d \Psi}{d y} \\
 & \mathrm{R}=-\frac{d \mathrm{H}}{d t}-\frac{d \Psi}{d z}
@@ -29,17 +29,16 @@ $$
 >>
 >>> Equations of Electromotive Force:
 >>> 
->>>$$
+>>> $$
 \begin{aligned}
-& \mathrm{P}=\mu\left(\gamma \frac{d y}{d t}-\beta \frac{d z}{d t}\right)-\frac{d \mathrm{~F}}{d t}-\frac{d \Psi}{d x} \\
-& \mathrm{Q}=\mu\left(\alpha \frac{d z}{d t}-\gamma \frac{d x}{d t}\right)-\frac{d \mathrm{G}}{d t}-\frac{d \Psi}{d y} \\
-& \mathrm{R}=\mu\left(\beta \frac{d x}{d t}-\alpha \frac{d y}{d t}\right)-\frac{d \mathrm{H}}{d t}-\frac{d \Psi}{d z}
+\mathrm{P} & =\mu\left(\gamma \frac{d y}{d t}-\beta \frac{d z}{d t}\right)-\frac{d \mathrm{~F}}{d t}-\frac{d \Psi}{d x} \\
+\mathrm{Q} & =\mu\left(\alpha \frac{d z}{d t}-\gamma \frac{d x}{d t}\right)-\frac{d \mathrm{G}}{d t}-\frac{d \Psi}{d y} \\
+\mathrm{R} & =\mu\left(\beta \frac{d x}{d t}-\alpha \frac{d y}{d t}\right)-\frac{d \mathrm{H}}{d t}-\frac{d \Psi}{d z}
 \end{aligned}
 $$
->> $$
-\vdots
-$$
->
+>>
+>> $$\vdots$$
+>>
 >><p align="right">-- Clerk Maxwell, A Dynamical Theory of the Electromagnetic Field, 1865</p>
 >
 >> - `Vector form`:
