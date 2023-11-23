@@ -148,7 +148,8 @@ $$
    & = \ve_{ijk}a_jb_k \\
    \end{aligned}
    $$
->>    since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. The other two components are similar.
+>>
+>>    since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. The other two components are similar. $$\square$$
 
 
 #### Definition (Scalar product)
@@ -190,7 +191,7 @@ sum over $$i$$, $$j$$ and $$k$$.
 >> *Proof*:
 >> $$
    \va \cdot (\vb \times \vc) = \ve_{ijk}a_ib_jc_k = (\ve_{kij}a_ib_j)c_k  = [\va \times \vb]_k c_k = (\va \times \vb) \cdot \vc.
-   $$
+   $$ $$\square$$
 
 #### Definition (Triple vector product)
 
@@ -241,7 +242,7 @@ $$
    c_{1} & c_{2} & c_{3}
    \end{array}\right|
    \end{aligned}
-   $$
+   $$ $$\square$$
 
 
 
