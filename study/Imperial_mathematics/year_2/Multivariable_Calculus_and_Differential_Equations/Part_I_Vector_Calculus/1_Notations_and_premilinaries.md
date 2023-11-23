@@ -214,7 +214,7 @@ $$
 
 > *Remark*:
 >
->> - The triple vector product indeed lies in the plane spanned by $$\vb$$ and $$\vc$$ by $$(1)$$.
+>> - The triple vector product indeed lies in the plane spanned by $$\vb$$ and $$\vc$$ according to the equation (1).
 >
 >> - We could aalculate the triple vector product by the determinant:
 >>

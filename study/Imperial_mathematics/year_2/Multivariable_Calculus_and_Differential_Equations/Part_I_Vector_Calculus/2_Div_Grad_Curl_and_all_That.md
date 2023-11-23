@@ -1,5 +1,5 @@
 ---
-title: 2. Div, Grad, Curl and all That
+title: 2. Grad, Div, Curl and all That
 layout: simple
 ---
 
@@ -81,6 +81,13 @@ $$
 > Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
 
 ### Definition (Gradient)
+
+The **gradient** is the direction that $$\phi$$ changes most rapidly, which is the direction of the normal line. We denote it as $$\g \phi$$ or $$\operatorname{grad} \phi$$:
+
+$$
+\nabla \phi = \frac{\partial \phi}{\partial n}\widehat{\mathbf{n}}
+$$
+
 
 
 
