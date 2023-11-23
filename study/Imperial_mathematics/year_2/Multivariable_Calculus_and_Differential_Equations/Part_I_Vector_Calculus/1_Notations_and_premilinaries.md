@@ -112,7 +112,7 @@ $$\gdef\vf{\mathbf{A}}$$
 
 ### 1.1.1 All products of vectors
 
-> *For the following, we assume $$\va = (a_1, a_2, a_3)$$, $$\vb = (b_1, b_2, b_3)$$ and $$\vc = (c_1, c_2, c_3)$$ are vectors in $$\R^3$$.*
+#### *For the following, we assume $$\va = (a_1, a_2, a_3)$$, $$\vb = (b_1, b_2, b_3)$$ and $$\vc = (c_1, c_2, c_3)$$ are vectors in $$\R^3$$.*
 
 #### Definition (Vector product)
 

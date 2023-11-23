@@ -26,7 +26,7 @@ $$\gdef\cu{\operatorname{curl}}$$
 $$\gdef\g{\nabla}$$
 $$\gdef\vf{\mathbf{A}}$$
 
-> *For the following, we assume $$\phi$$ is a scalar function and $$\vf$$ is a vector field and $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.*
+#### *For the following, we assume $$\phi$$ is a scalar function and $$\vf$$ is a vector field and $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.*
 
 ## 2.1 Gradient
 

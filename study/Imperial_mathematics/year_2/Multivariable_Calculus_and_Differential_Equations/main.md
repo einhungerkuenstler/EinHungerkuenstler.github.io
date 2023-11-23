@@ -8,4 +8,4 @@ layout: simple
 
 #### *The notes are based on the notes and lectures by [Dr. Andrew G Walton](https://www.ma.ic.ac.uk/~agw/).*
 
-#### [Part I. Vector Calculus](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_1_Vector_Calculus)
+#### [Part I. Vector Calculus](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/main.md/)
