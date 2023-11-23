@@ -16,7 +16,8 @@ layout: simple
 \end{aligned}
 $$
 >
-> Equations of Current:
+>  Equations of Current:
+> 
 > $$
 > \begin{aligned}
 & \mathrm{P}=-\frac{d \mathrm{~F}}{d t}-\frac{d \Psi}{d x} \\
@@ -25,7 +26,8 @@ $$
 \end{aligned}
 $$
 >
-> Equations of Electromotive Force:
+>  Equations of Electromotive Force:
+> 
 > $$
 > \begin{aligned}
 & \mathrm{P}=\mu\left(\gamma \frac{d y}{d t}-\beta \frac{d z}{d t}\right)-\frac{d \mathrm{~F}}{d t}-\frac{d \Psi}{d x} \\
