@@ -12,7 +12,7 @@ $$\gdef\F{\mathcal{F}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
-> Next, we assume $$V$$ and $$W$$ is a finite-dimensional vector space over $$\F$$.
+> For the following, we assume $$V$$ and $$W$$ is a finite-dimensional vector space over $$\F$$.
 
 ### Basis
 
@@ -56,7 +56,7 @@ $$
 
 where $$S T$$ is the composition of $$S$$ and $$T$$.
 
-> **Remark**
+> *Remark*
 >
 >The propostion above gives us a lot nice properties of matrices. For example, if $$[T]_B = A$$ then $$[T^{k}]_B = A^{k}$$ for any positive integer $$k$$. More generally, if we are give such a polynomial $$q(x) = a_0 + a_1x + \dots + a_kx^k (a_i \in \F)$$, and define
 >
@@ -111,7 +111,7 @@ and define $$P$$ to be the $$n \times n$$ matrix $$\left(p_{i j}\right)$$. We ca
 
 As we mentioned before, if $$A$$ and $$B$$ are similar, then they have the same determinant. Hence, if $$T: V \rightarrow V$$ is a linear map, and $$E$$, $$F$$ are two bases of $$V$$, then the matrices $$[T]_E$$ and $$[T]_F$$ are similar and hence have the same determinant. So, we can define the determinant of $$T$$ to be the determinant of $$[T]_E$$ for any basis $$E$$ of $$V$$.
 
-> **Remark**
+> *Remark*
 >
 >It is easy to notice that the matrix are just the expression of a linear map with respect to a basis. So, we can define the determinant of a linear map $$T$$ to be the determinant of $$[T]_E$$ for any basis $$E$$ of $$V$$ and the determinant of a linear transformation is invariant under change of basis.
 
@@ -151,7 +151,7 @@ We call $$E_{\lambda}$$ the **$$\lambda$$-eigenspace** of $$T$$. Note that $$E_{
   
   Then $$T$$ has an eigenvalue $$\lambda \in \C$$.
 
-> **Remark**
+> *Remark*
 > 
 > It is not always true for any field $$\F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
 >
@@ -181,13 +181,15 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
   
   Then, $$v_{1}, \ldots, v_{k}$$ are linearly independent.
 
-**Proof**: (By induction on $$k$$)
+*Proof*: (By induction on $$k$$)
 
 - `Base case`: k = 1
 
     Suppose $$v_1$$ is an eigenvector of $$T$$ corresponding to an eigenvalue $$\lambda_1$$. Then $$v_1 \neq 0$$, it must be linearly independent of itself set.
 
-- `Inductive step`: Assume that the propostion is true for some $$k \in \N$$. Let $$v_1, \cdots v_{k+1}$$ be eigenvectors of $$T$$ corresponding to distinct eigenvalues $$\lambda_1, \cdots, \lambda_{k+1}$$. Then
+- `Inductive step`: 
+  
+  Assume that the propostion is true for some $$k \in \N$$. Let $$v_1, \cdots v_{k+1}$$ be eigenvectors of $$T$$ corresponding to distinct eigenvalues $$\lambda_1, \cdots, \lambda_{k+1}$$. Then
 
     $$
     T(v_1) = \lambda_1 v_1, \cdots, T(v_{k+1}) = \lambda_{k+1} v_{k+1}
@@ -244,6 +246,6 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
 
   Then $$T$$ is diagonalisable.
 
-**Proof**:
+*Proof*:
 
 Follows immediately from the proposition above.$$\square$$

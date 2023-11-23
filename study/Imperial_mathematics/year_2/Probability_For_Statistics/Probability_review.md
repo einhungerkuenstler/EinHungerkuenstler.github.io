@@ -86,7 +86,7 @@ When we work with uncountable sample spaces, we choose work with a smaller sigma
 
 Suppose $$\mathcal{F}_{i}, i \in I$$ is a non-empty collection of sigma algebras on a set $$\Omega$$. Then $$\cap_{i \in I} \mathcal{F}_{i}$$ is a sigma algebra.
 
-**Proof**:
+*Proof*:
 
 There are three properties to check.
 

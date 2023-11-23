@@ -24,55 +24,6 @@ $$\gdef\di{\operatorname{dim}}$$
 
 1. Upper triangular matrices are closed under multiplication by a scalar, under sum and under product.
 
-    If
-
-  $$
-  A = \begin{pmatrix}
-  \lambda_1 & * & * \\
-  0 & \lambda_2 & * \\
-  \vdots & \vdots & \vdots \\
-  0 & 0 & \lambda_n
-  \end{pmatrix}
-
-  \text{ and }
-
-  B = \begin{pmatrix}
-  \mu_1 & * & * \\
-  0 & \mu_2 & * \\
-  \vdots & \vdots & \vdots \\
-  0 & 0 & \mu_n
-  \end{pmatrix}
-  $$
-
-    then
-
-  $$
-  \beta A = \begin{pmatrix}
-  \beta \lambda_1 & * & * \\
-  0 & \beta \lambda_2 & * \\
-  \vdots & \vdots & \vdots \\
-  0 & 0 & \beta \lambda_n
-  \end{pmatrix}
-  $$
-
-  $$
-  A + B = \begin{pmatrix}
-  \lambda_1 + \mu_1 & * & * \\
-  0 & \lambda_2 + \mu_2 & * \\
-  \vdots & \vdots & \vdots \\
-  0 & 0 & \lambda_n + \mu_n
-  \end{pmatrix}
-  $$
-
-  $$
-  A B = \begin{pmatrix}
-  \lambda_1 \mu_1 & * & * \\
-  0 & \lambda_2 \mu_2 & * \\
-  \vdots & \vdots & \vdots \\
-  0 & 0 & \lambda_n \mu_n
-  \end{pmatrix}
-  $$
-
 2. The determinant, characteristic polynomial and eigenvalues of an upper triangular matrix are easy to compute.
 
   $$
@@ -105,7 +56,7 @@ $$\gdef\di{\operatorname{dim}}$$
   
 Then, **there is a basis $$B$$ of $$V$$ such that the matrix $$[T]_{B}$$ is upper triangular.**
 
-**Proof**: (By induction on $$n = \di V$$)
+*Proof*: (By induction on $$n = \di V$$)
 
 - `Base case`: $$n = 1$$, the result is obvious since every $$1 \times 1$$ matrix is upper triangular.
 
@@ -165,7 +116,7 @@ where $$B = \set{w_1, v_2, v_3, \cdots, v_n}$$ is a basis of $$V$$ and $$*$$ is 
   
 Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 
-**Proof**:
+*Proof*:
 
 - $$V = \F^n$$ is an $$n$$-dimensional vector space over $$\F$$.
 
