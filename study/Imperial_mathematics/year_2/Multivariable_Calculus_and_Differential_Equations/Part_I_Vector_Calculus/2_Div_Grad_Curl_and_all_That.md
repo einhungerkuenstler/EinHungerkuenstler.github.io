@@ -56,7 +56,7 @@ The collection of level surfaces of $$\phi$$ is called the **level surfaces set*
 
 - The unit vector $$\ns$$ and $$\nn$$ are the unit vectors along the normal line from $$PQ$$ and $$PN$$ respectively.
 
-Define $$\partial \phi / \partial s$$ to be the **directional derivative** of $$\phi$$ in the direction $$\widehat{\mathbf{s}}$$ at $$P$$ as:
+The **directional derivative** of $$\phi$$ at $$P$$ is a **scalar** that maps a point $$P$$ to a scalar $$\frac{\partial \phi}{\partial s}$$, which is defined as:
 
 $$
 \begin{aligned}
@@ -78,6 +78,8 @@ $$
 
 > **Remark**:
 > 
+> - The definition of directional derivative is only adapted to a scalar function $$\phi$$.
+> 
 > - The physical meaning of the directional derivative at $$P$$ is the rate of change of $$\phi$$ at $$P$$ in the direction $$\widehat{\mathbf{s}}$$.
 >
 > - Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
@@ -92,16 +94,16 @@ $$
 
 > **Remark**:
 >
+> - The definition of gradient is only adapted to a scalar function $$\phi$$.
+>
+> - The physical meaning of the gradient at $$P$$ is the direction of the maximum directional derivative of $$\phi$$ at $$P$$.
 > - The operator $$\nabla$$ is called the **gradient operator** and it is a vector operator, it is defined as:
+> 
 >  $$
 \nabla = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
     $$
 >
-> - The definition of gradient is only adapted to a scalar function $$\phi$$.
-> 
-> - The gradient is perpendicular to the level surface of $$\phi$$.
->
-> - The physical meaning of the gradient at $$P$$ is the direction of the maximum directional derivative of $$\phi$$ at $$P$$.
+> The gradient is perpendicular to the level surface of $$\phi$$.
 >
 > - Use gradient to find the direction derivative of $$\phi$$ in the direction $$\widehat{\mathbf{s}}$$:
 >
@@ -145,19 +147,18 @@ Hence,
 
 $$
 \g \phi = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
-$$ 
-
-<p align="right">$$\square$$</p>
+$$  $$\square$$
 
 ### Theorem (Gradient in cylindrical coordinates)
 
-- $$\phi = \phi(r, \theta, z)$$ is a scalar function.
+- $$\phi = \phi(r, \theta, z)$$ is a scalar function defined in cylindrical coordinates.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\mathbf{z}}$$ are the unit vectors in the $$r, \theta, z$$ directions respectively.
 
 $$
-\nabla \phi =  \pap{r}\widehat{\mathbf{r}} + \frac{\widehad{\boldsymnbol{\theta}}}{r}\pap{\theta} + \pap{z}\widehat{\mathbf{z}}
-$$
+\nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\boldsymbol{\theta}}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z}
+$$ 
+
 
 **Proof**:
 
@@ -202,14 +203,12 @@ $$
 Hence,
 
 $$
-\nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\theta}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z} .
-$$ 
-
-<p align="right">$$\square$$</p>
+\nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\boldsymbol{\theta}}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z}
+$$   $$\square$$
 
 ### Theorem (Gradient in spherical coordinates)
 
-- $$\phi = \phi(r, \theta, \alpha)$$ is a scalar function.
+- $$\phi = \phi(r, \theta, \alpha)$$ is a scalar function defined in spherical coordinates.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\boldsymbol{\alpha}}$$ are the unit vectors in the $$r, \theta, \alpha$$ directions respectively.
 
@@ -267,13 +266,11 @@ Hence,
 
 $$
 \nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\theta}}{r} \frac{\partial \phi}{\partial \theta}+\frac{\widehat{\alpha}}{r \sin \theta} \frac{\partial \phi}{\partial \alpha}
-$$
-
-<p align="right">$$\square$$</p>
+$$  $$\square$$
 
 ### Equation of a tangent plane to $$\phi = \phi(P)$$
 
-- $$(\g \phi)_P$$ is the gradient at $$P$$.
+- $$(\g \phi)_P$$ is the gradient at $$P$$ of $$\phi$$.
 
 - $$\mathbf{r}$$ is the position vector.
 
@@ -305,7 +302,7 @@ $$
 
 ### Theorem (Divergence in Cartesian coordinates)
 
-- $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$
+- $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$ is a vector field.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
@@ -321,17 +318,15 @@ $$
 & = \frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z} \\
 & = \sum_{i=1}^{3} \frac{ \partial A_i}{\partial x_i}
 \end{aligned}
-$$
-
-<p align="right">$$\square$$</p>
+$$ $$\square$$
 
 > **Remark**:
 >
->> - The definition of divergence is only adapted to a vector field $$\vf$$.
+> - The definition of divergence is only adapted to a vector field $$\vf$$.
 >
->> - The physical meaning of the divergence at $$P$$ is a measure of how much a vector field spreads out or converges at a given point $$P$$. When the flow is spreading out or converging, the divergence is positive, and when the flow is converging, the divergence is negative.
+> - The physical meaning of the divergence at $$P$$ is a measure of how much a vector field spreads out or converges at a given point $$P$$. When the flow is spreading out or converging, the divergence is positive, and when the flow is converging, the divergence is negative.
 > 
->> - The dot product in the definition of divergence $$\g \cdot \vf$$ is not commutative, i.e. $$\g \cdot \vf \neq \vf \cdot \g$$. Since the left hand side is a **scalar operator** and the right hand side is divergence of a vector field, which is a **scalar**.
+> - The dot product in the definition of divergence $$\g \cdot \vf$$ is not commutative, i.e. $$\g \cdot \vf \neq \vf \cdot \g$$. Since the left hand side is a **scalar operator** and the right hand side is divergence of a vector field, which is a **scalar**.
 
 ### Definition (Curl)
 
@@ -343,7 +338,7 @@ $$
 
 ### Theorem (Curl in Cartesian coordinates)
 
-- $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$
+- $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$ is a vector field.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
@@ -362,86 +357,78 @@ A_{1} & A_{2} & A_{3}
 & = \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right)\widehat{\mathbf{i}} + \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)\widehat{\mathbf{j}} + \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right)\widehat{\mathbf{k}} \\
 & = \sum_{i=1}^{3} \ve_{ijk} \frac{\partial A_k}{\partial x_j} \\
 \end{aligned}
-$$
-
-<p align="right">$$\square$$</p>
+$$ $$\square$$
 
 > **Remark**:
 >
->> - The definition of curl is only adapted to a vector field $$\vf$$.
+> - The definition of curl is only adapted to a vector field $$\vf$$.
 >
->> - The physical meaning of the curl at $$P$$ is a measure of how much a vector field circulates or rotates about a given point $$P$$. When the flow is clockwise, the curl is positive, and when the flow is counterclockwise, the curl is negative.
+> - The physical meaning of the curl at $$P$$ is a measure of how much a vector field circulates or rotates about a given point $$P$$. When the flow is clockwise, the curl is positive, and when the flow is counterclockwise, the curl is negative.
 >
->> - The cross product in the definition of curl $$\g \times \vf$$ is not commutative, i.e. $$\g \times \vf \neq \vf \times \g$$. Since the left hand side is a **vector operator** and the right hand side is curl of a vector field, which is a **vector**. 
+> - The cross product in the definition of curl $$\g \times \vf$$ is not commutative, i.e. $$\g \times \vf \neq \vf \times \g$$. Since the left hand side is a **vector operator** and the right hand side is curl of a vector field, which is a **vector**. 
 
 > **Remark**:
 >
-> These simple form for $$\d$$ and $$\cu$$ are only adapted to Cartesian coordinates since $$\mathbf{i}, \mathbf{j}, \mathbf{k}$$ are constant vectors. For other coordinates, we need to use the chain rule to derive the formula.
+> These simple form for $$\d$$ and $$\cu$$ are only adapted to Cartesian coordinates since $$\mathbf{i}, \mathbf{j}, \mathbf{k}$$ are constant vectors. **For other coordinates, we need to use the chain rule to derive the formula.**
 
 
 ## 2.3 Operations with the gradient operator
 
 ### Some important sum and product formulas
 
-$$\g, \d, \cu$$ are all **linear operators**, i.e. for any scalar $$\alpha$$ and vector fields $$\vf, \vg$$:
+- $$\g, \d, \cu$$ are all **linear operators**, i.e. for any scalar $$\alpha$$ and vector fields $$\vf, \vg$$:
 
-$$
-\begin{aligned}
-& \text { (i) } \nabla\left(\phi_{1}+\phi_{2}\right) =\nabla \phi_{1}+\nabla \phi_{2}, \\
-& \text { (ii) } \operatorname{div}(\mathbf{A}+\mathbf{B}) =\operatorname{div} \mathbf{A}+\operatorname{div} \mathbf{B}, \\
-&\text { (iii) } \operatorname{curl}(\mathbf{A}+\mathbf{B}) =\operatorname{curl} \mathbf{A}+\operatorname{curl} \mathbf{B} .
-\end{aligned}
-$$
+    $$
+    \begin{aligned}
+    & \text { (i) } \nabla\left(\phi_{1}+\phi_{2}\right) =\nabla \phi_{1}+\nabla \phi_{2}, \\
+    & \text { (ii) } \operatorname{div}(\mathbf{A}+\mathbf{B}) =\operatorname{div} \mathbf{A}+\operatorname{div} \mathbf{B}, \\
+    &\text { (iii) } \operatorname{curl}(\mathbf{A}+\mathbf{B}) =\operatorname{curl} \mathbf{A}+\operatorname{curl} \mathbf{B} .
+    \end{aligned}
+    $$
 
-The proof is trivial by the definition of the $$\nabla$$ operator.
+    The proof is trivial by the definition of the $$\nabla$$ operator.
 
-$$\g, \d, \cu$$ satisfy the **product rule**, i.e. for any scalar $$\phi, \psi$$ and vector fields $$\vf$$:
+- $$\g, \d, \cu$$ satisfy the **product rule**, i.e. for any scalar $$\phi, \psi$$ and vector fields $$\vf$$:
 
-$$
-\begin{aligned}
-& \mathrm{ (iv) } \nabla(\phi \psi) =\phi \nabla \psi+\psi \nabla \phi \\
-& \mathrm{ (v) } \operatorname{div}(\phi \mathbf{A}) =\phi \operatorname{div} \mathbf{A}+\nabla \phi \cdot \mathbf{A} .
-\end{aligned}
-$$
+    $$
+    \begin{aligned}
+    & \mathrm{ (iv) } \nabla(\phi \psi) =\phi \nabla \psi+\psi \nabla \phi \\
+    & \mathrm{ (v) } \operatorname{div}(\phi \mathbf{A}) =\phi \operatorname{div} \mathbf{A}+\nabla \phi \cdot \mathbf{A} .
+    \end{aligned}
+    $$
 
-**Proof of (v)**:
+    **Proof of (v)**:
 
-$$
+    $$
     \begin{aligned}
     \d(\phi \vf) & = \left(\nvi \frac{\partial}{\partial x} + \nvj \frac{\partial}{\partial y} + \nvk \frac{}{z}\right) \cdot \left(\phi A_1 \nvi +\phi A_2 \nvj + \phi A_3 \nvk\right) \\
     & = \frac{\partial \phi A_1}{\partial x} + \frac{\partial \phi A_2}{\partial y} + \frac{\partial \phi A_3}{\partial z} \\
     & = \phi \left(\frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z}\right) + A_1 \frac{\partial \phi}{\partial x} + A_2 \frac{\partial \phi}{\partial y} + A_3 \frac{\partial \phi}{\partial z} \\
     & = \phi \d \vf + \g \phi \cdot \vf \\
     \end{aligned}
-$$
+    $$
 
-If we use the Einstein summation convention, the form and the proof will be much simpler:
+### Use Einstein summation convention to simplify the notation
 
-$$
-\begin{aligned}
+If we use the Einstein summation convention, we can simplify the notation of the gradient, divergence and curl and the proof of (v).
 
-\g \phi & = \nve_i \frac{\partial \phi}{\partial x_i}\\
-  
-\d \vf & = \frac{\partial A_i}{\partial x_i}\\
-  
-[\g \phi]_i & = \frac{\partial \phi}{\partial x_i}\\
-  
-[\cu \vf]_i & = \ve_{ijk} \frac{\partial A_k}{\partial x_j}
+-  The gradient: [\g \phi]_i  = \frac{\partial \phi}{\partial x_i}
 
-\end{aligned}
-$$
+- The divergence: \d \vf  = \frac{\partial A_i}{\partial x_i}
 
-where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector.
+- The curl: [\cu \vf]_i  = \ve_{ijk} \frac{\partial A_k}{\partial x_j}
 
-Therefore, 
+    where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector. 
 
-$$
+    Therefore, the proof of (v) can be simplified as:
+
+    $$
     \begin{aligned}
     \d (\phi \vf) & = \frac{\partial \phi A_i}{\partial x_i} \\
     & = \phi \frac{\partial A_i}{\partial x_i} + A_i \frac{\partial \phi}{\partial x_i} \\
     & = \phi \d \vf + (\vf \cdot \g) \phi \\
     \end{aligned}
-$$
+    $$
 
 ### Other important formulas
 
@@ -475,6 +462,12 @@ $$
 \end{aligned}
 $$
 
+It is the sum of the second partial derivatives of $$\phi$$ with respect to each of the Cartesian coordinates, i.e.:
+
+$$
+\nabla^{2} \phi=\frac{\partial^{2} \phi}{\partial x^{2}}+\frac{\partial^{2} \phi}{\partial y^{2}}+\frac{\partial^{2} \phi}{\partial z^{2}}
+$$
+
 For a vector field $$\vf$$, we use the same definition above:
 
 $$
@@ -482,22 +475,24 @@ $$
 $$
 
 > **Remark**:
+> 
+> - The definition of the Laplacian could be adpated to scalar and vector fields. **For a scalar field, the Laplacian is a scalar operator, and for a vector field, the Laplacian is a vector operator.**
 >
 > - The physical meaning of the Laplacian for a scalar field is a measure of **curvature** or **stress** of the field at a given point. It tells us how much the field differs from its average value at a given point. If the Laplacian is positive, the field is **concave** at that point, and if the Laplacian is negative, the field is **convex** at that point. If the Laplacian is zero, the field is **flat** at that point. Because it is the divergence of the gradient, it is a measure of how much the rate of change of the field differ from the kind of steady flow that would be expected at that point.
 > 
-> The equation $$\nabla^2 \phi = 0$$ is called the **Laplace equation** and will be studied in detail in the module **Partial Differential Equations in Actions**.
+> - The equation $$\nabla^2 \phi = 0$$ is called the **Laplace equation** and will be studied in detail in the module **Partial Differential Equations in Actions**.
+
 
 ### Theorem (The curl of a gradient is zero)
 
-- $$\phi = \phi(x, y, z)$$ is a scalar function.
-
-Then the curl of the gradient of $$\phi$$ is zero:
+$$\phi = \phi(x, y, z)$$ is a scalar function, then the curl of the gradient of $$\phi$$ is zero:
 
 $$
 \cu(\g \phi) = 0
 $$
 
 **Proof**:
+
 $$
 \begin{aligned}
 [\operatorname{curl}(\nabla \phi)]_i & = \ve_{ijk} \frac{\partial}{\partial x_j} (\g \phi)_k \\
@@ -507,9 +502,7 @@ $$
 & = \frac{1}{2} \ve_{ijk} \left(\frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k}\right) \\
 & = 0 \\
 \end{aligned}
-$$
-
-<p align="right">$$\square$$</p>
+$$ $$\square$$
 
 > **Remark**:
 >
@@ -517,9 +510,7 @@ $$
 
 ### Theorem (The divergence of a curl is zero)
 
-- $$\vf = \vf(x, y, z)$$ is a vector field.
-
-Then the divergence of the curl of $$\vf$$ is zero:
+$\vf = \vf(x, y, z)$$ is a vector field, then the divergence of the curl of $$\vf$$ is zero:
 
 $$
 \d(\cu \vf) = 0
@@ -543,9 +534,7 @@ $$
 
 ### Theorem (The curl of a curl is gradient of the divergence minus the Laplacian of the vector field)
 
-- $$\vf = \vf(x, y, z)$$ is a vector field.
-
-Then the curl of the curl of $$\vf$$ is:
+$$\vf = \vf(x, y, z)$$ is a vector field, then the curl of the curl of $$\vf$$ is:
 
 $$
 \cu(\cu \vf) = \g(\d \vf) - \nabla^2 \vf
@@ -591,9 +580,9 @@ Then $$\vf$$ is called an **irrotational vector field**.
 >
 >> - Some examples of irrotational vector fields are:
 >>
->> - Any gradient vector field is irrotational since the curl of a gradient is zero.
+>>    - **Any gradient vector field is irrotational since the curl of a gradient is zero**.
 >> 
->> - The identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is irrotational since the curl of the identity vector field is zero.
+>>    - The identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is irrotational since the curl of the identity vector field is zero.
 
 ### Definition (Solenoidal vector field)
 
@@ -609,7 +598,7 @@ Then $$\vf$$ is called a **solenoidal vector field**.
 >
 > - The physical meaning of a solenoidal vector field is that it is a vector field that has no net flow out or into a given point.
 >
-> - An examples of solenoidal vector fields is the curl of any vector field is solenoidal since the divergence of the curl is zero.
+> - **An examples of solenoidal vector fields is the curl of any vector field is solenoidal since the divergence of the curl is zero.**
 >
 > - The divengence of the identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is $$3$$, which is the dimension of the vector field. Hence, the identity vector field is not solenoidal.
 
