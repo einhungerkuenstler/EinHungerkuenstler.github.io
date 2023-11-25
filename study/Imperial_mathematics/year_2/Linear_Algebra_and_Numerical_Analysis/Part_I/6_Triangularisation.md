@@ -56,7 +56,7 @@ $$\gdef\di{\operatorname{dim}}$$
   
 Then, **there is a basis $$B$$ of $$V$$ such that the matrix $$[T]_{B}$$ is upper triangular.**
 
-*Proof*: (By induction on $$n = \di V$$)
+**Proof**: (By induction on $$n = \di V$$)
 
 - `Base case`: $$n = 1$$, the result is obvious since every $$1 \times 1$$ matrix is upper triangular.
 
@@ -116,7 +116,7 @@ where $$B = \set{w_1, v_2, v_3, \cdots, v_n}$$ is a basis of $$V$$ and $$*$$ is 
   
 Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 
-*Proof*:
+**Proof**:
 
 - $$V = \F^n$$ is an $$n$$-dimensional vector space over $$\F$$.
 

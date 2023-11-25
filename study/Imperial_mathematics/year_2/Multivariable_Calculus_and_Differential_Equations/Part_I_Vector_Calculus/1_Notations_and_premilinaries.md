@@ -67,7 +67,7 @@ $$\gdef\vf{\mathbf{A}}$$
       \end{cases}
       $$
    
-      > *Remark*
+      > **Remark**
       >
       >> - $$
          \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{i l} \delta_{j m}-\delta_{i m} \delta_{j l}
@@ -75,7 +75,7 @@ $$\gdef\vf{\mathbf{A}}$$
       >>
       >>  **which is sum over $$k$$.**
       >>
-      >> *Proof*:
+      >> **Proof**:
       >>
       >> - `Overview`:
       >>    If $$i = j$$ or $$l = m$$, then the left hand side are all $$0$$ and the right hand side is $$0$$. Therefore,we only need to consider the case that $$i \neq j$$ and $$l \neq m$$. Next, we notice that if we swap the $$i$$ & $$j$$ in the left hand side, the sign of both sides will change. Therefore, we only need to consider the case that $$i < j$$ and $$l < m$$. The cases that we need to consider are
@@ -127,7 +127,7 @@ b_{1} & b_{2} & b_{3}
 \end{array}\right|
 $$
 
-> *Remark*:
+> **Remark**:
 > 
 >>- If $$\va \times \vb = 0$$, then the two vectors are parallel.
 >
@@ -140,7 +140,7 @@ $$
 >> - $$
    [\va \times \vb]_{i} = \ve_{ijk}a_jb_k
    $$
->>   *Proof*:
+>>   **Proof**:
 >>
 >> $$
    \begin{aligned}
@@ -160,7 +160,7 @@ $$
 \mathbf{a} \cdot \mathbf{b}=a_{1} b_{1}+a_{2} b_{2}+a_{3} b_{3} = a_i b_i
 $$
 
-> *Remark*:
+> **Remark**:
 > 
 > Recall that if $$\mathbf{a} \cdot \mathbf{b}=0$$ then the vectors $$\mathbf{a}$$ and $$\mathbf{b}$$ are orthogonal.
 >
@@ -179,7 +179,7 @@ $$
 
 sum over $$i$$, $$j$$ and $$k$$.
 
-> *Remark*:
+> **Remark**:
 >
 >> - If the triple scalar product is zero, then the three vectors are coplanar.
 >
@@ -188,7 +188,7 @@ sum over $$i$$, $$j$$ and $$k$$.
 >> $$
    \mathbf{a} \cdot(\mathbf{b} \times \mathbf{c})=(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} .
    $$
->> *Proof*:
+>> **Proof**:
 >> $$
    \va \cdot (\vb \times \vc) = \ve_{ijk}a_ib_jc_k = (\ve_{kij}a_ib_j)c_k  = [\va \times \vb]_k c_k = (\va \times \vb) \cdot \vc.
    $$ $$\square$$
@@ -213,7 +213,7 @@ $$
 \mathbf{a} \times(\mathbf{b} \times \mathbf{c})=(\mathbf{a} \cdot \mathbf{c}) \mathbf{b}-(\mathbf{a} \cdot \mathbf{b}) \mathbf{c}
 $$
 
-> *Remark*:
+> **Remark**:
 >
 >> - The triple vector product indeed lies in the plane spanned by $$\vb$$ and $$\vc$$ according to the equation (1).
 >
@@ -227,7 +227,7 @@ $$
    \end{array}\right|
    $$
 >>
->> *Proof*:
+>> **Proof**:
 >>
 >> $$
    \begin{aligned}

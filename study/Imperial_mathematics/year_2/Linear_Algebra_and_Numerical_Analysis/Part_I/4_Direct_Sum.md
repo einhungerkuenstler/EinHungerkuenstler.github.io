@@ -49,7 +49,7 @@ $$\gdef\abs#1{\left| #1 \right|}$$
 
     **unique vectors** $$v_i \in V_i$$. If $$(1)$$ holds, we say that $$V$$ is the **direct sum** of the subspaces $$V_1, \dots, V_k$$.
 
-> *Remark*
+> **Remark**
 >
 >The uniqueness statement means that if
 >
@@ -67,7 +67,7 @@ For $$2$$ dimensional vector space $$V$$, the following statements are equivalen
 
 2. $$V_{1} \cap V_{2}=\{0\}$$ and $$\operatorname{dim} V_{1}+\operatorname{dim} V_{2}=\operatorname{dim} V$$.
 
-*Proof*:
+**Proof**:
 
 - `1 implies 2`: 
   
@@ -135,7 +135,7 @@ The following statements are equivalent:
    
    -  If $$B_{i}$$ is a basis for $$V_{i}$$ for $$1 \leq i \leq k$$, then the union $$B=$$ $$B_{1} \cup \cdots \cup B_{k}$$ is a basis of $$V$$.
 
-*Proof*:
+**Proof**:
 
 - `1 implies 2`:
   
@@ -276,7 +276,7 @@ The following statements are equivalent:
     \end{pmatrix}
     $$
 
-*Proof*:
+**Proof**:
 
 Let $$B_1 = {v_1, \dots, v_r}$$, then $$T(v_1) = T_{V_1}(v_1)$$ is a vector in $$V_1$$. Hence, $$T(v_1)$$ can be expressed as a linear combination of $$B_1$$. Similarly, $$T(v_i)$$ can be expressed as a linear combination of $$B_i$$ for $$1 \leq i \leq r$$. Therefore, we see the top left hand block of $$[T]_B$$ is the $$r \times r$$ matrix $$(a_{ij})$$, which is $$[T_{V_1}]_{B_1}$$. Carrying like this, we see that the $$i$$th block of $$[T]_B$$ is $$[T_{V_i}]_{B_i}$$ for $$1 \leq i \leq k$$. $$\square$$ 
 

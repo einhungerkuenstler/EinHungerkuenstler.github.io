@@ -38,9 +38,10 @@ $$
 $$
 >>
 >> $$\vdots$$
->> There are 20 equations in total in component form when Maxwell first wrote down the equations.
 >>
 >><p align="right">-- Clerk Maxwell, A Dynamical Theory of the Electromagnetic Field, 1865</p>
+>> There are 20 equations in total in component form when Maxwell first wrote down the equations.
+>>
 >
 >> - `Vector form`:
 >>

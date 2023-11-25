@@ -32,7 +32,7 @@ If we $$e_G$$ to denote the unit element of $$G$$ and $$e_H$$ to denote the unit
 
 For any $$g \in G$$ the image of the inverse $$g^{-1}$$ is $$f(g^{-1})=f(g)^{-1}$$.
 
-*Proof*:
+**Proof**:
 
 $$f$$ is a homomorphism, we have:
 
@@ -68,7 +68,7 @@ $$
 
 1. Let $$Mat(n,\R)$$ be the group of $$n\times n$$ matrices with real entries with the operation of matrix addtion. The trace $$tr: Mat(n,\R) \rightarrow \R$$ is a homomorphism.
 
-    *Proof*:
+    **Proof**:
 
     Let $$A, B \in Mat(n,\R)$$, then we have:
 
@@ -78,7 +78,7 @@ $$
 
 2. (1) Let $$\mathrm{GL}(n, \mathbb{R})$$ be the group of invertible $$n \times n$$-matrices with real entries with respect to multiplication of matrices. The determinant det: $$\operatorname{GL}(n, \mathbb{R}) \rightarrow \mathbb{R}^{\times}$$is a homomorphism to the multiplicative group $$\mathbb{R}^{\times}=\mathbb{R} \backslash\{0\}$$.
 
-    *Proof*:
+    **Proof**:
 
     Let $$A, B \in GL(n, \R)$$, then we have:
 
@@ -88,7 +88,7 @@ $$
 
 3. Let $$S_n$$ be the symmetric group of permutations of $$\{1,2,...,n\}$$. Then the sigh of a permuation $$sgn: S_n \rightarrow \{\pm 1\}$$ is a homomorphism to a cyclic group of order 2.
 
-    *Proof*:
+    **Proof**:
 
     We could regard $$\{\pm 1\}$$ as a cyclic group of order 2 with respect to multiplication, i.e. $$\{e^0 ,e^{\pi}\}$$, where $$e^0 = 1$$ and $$e^{\pi} = -1$$.
 
@@ -114,7 +114,7 @@ $$
 
 If $$f: G \to H$$ and $$g: H \to K$$ are homomorphisms, then the compostion $$g \circ f: G \to K$$ is also a homomorphism.
 
-*Proof*:
+**Proof**:
 
 Let $$a, b \in G$$, since $$f$$ is a homomorphism, we have:
 
@@ -158,7 +158,7 @@ The identify map $$id_G: G \rightarrow G$$ is clearly an isomorphism.
 
 If $$f: G \overset{\sim}{\rightarrow} H$$ is an isomorphism, since it is a bijection, then there exists a inverse map $$f^{-1}: H \rightarrow G$$, defined by $$f^{-1}(y) = x$$ if and only if $$f(x) = y$$, which is also an isomorphism and $$f^{-1} \circ f = id_G$$ and $$f \circ f^{-1} = id_H$$.
 
-*Proof*:
+**Proof**:
 
 1. Assume $$h_1, h_2 \in H$$ be arbitrary. Since $$f$$ is a bijection, there exists $$g_1, g_2 \in G$$ such that $$f(g_1) = h_1$$ and $$f(g_2) = h_2$$. Since $$f$$ is a homomorphism, we have:
 
@@ -188,7 +188,7 @@ If $$f: G \overset{\sim}{\rightarrow} H$$ is an isomorphism, since it is a bijec
 
 1. Isomorphism is an equivalence relation on the set of all groups.
 
-   *Proof*:
+   **Proof**:
 
    1. (Reflexive) Let $$G$$ be a group, then the identity map $$id_G: G \rightarrow G$$ is an isomorphism, therefore, $$G \overset{\sim}{=} G$$.
 
@@ -230,7 +230,7 @@ Let $$G$$ be a group. An isomorphism $$f: G \stackrel{\sim}{\longrightarrow} G$$
 
 2. The self-map $$G \to G$$ that sends $$g$$ to $$g^{-1}$$ is an automorphism if and only if $$G$$ is Abelian.
 
-    *Proof*:
+    **Proof**:
 
     $$\Rightarrow$$: Assume $$f: G \to G$$ with $$f(g) = g^{-1}$$ is an an automorphism and let $$a ,b \in G$$ be arbitrary then
 
@@ -272,7 +272,7 @@ $$
 
 Thus, for any group $$G$$, we associated another group $$Aut(G)$$.
 
-*Proof*:
+**Proof**:
 
 1. (Closure) Let $$f, g \in Aut(G)$$, then $$f \circ g$$ is also an automorphism.(From the following proposition)
 
@@ -298,7 +298,7 @@ Let $$G$$ be a group and take $$g \in G$$. The function $$G \to G$$ defined by $
 
 Let $$G$$ be a group and take $$g \in G$$. The function $$G \to G$$ defined by $$x \mapsto g x g^{-1}$$ is an automorphism.
 
-*Proof*:
+**Proof**:
 
 1. (Homomorphism) Let $$x, y \in G$$ be arbitrary and $$f$$ denote the conjugation by $$g$$, then we have:
 
@@ -352,7 +352,7 @@ $$
 
 Let $$f: G \rightarrow H$$ be a homomorphism. Then $$f$$ is an injective if and only if $$\operatorname{Ker}(f)=\{e_{G}\}$$.
 
-*Proof*:
+**Proof**:
 
 $$\Rightarrow$$: Since $$f$$ is homomorphism, then $$f(e_G) = e_H$$, so $$e_G \in \ke(f)$$. Since $$f$$ is injective, then $$|\ke(f)| \leq 1$$. Therefore, $$\ke(f) = \{e_G\}$$.
 
@@ -367,7 +367,7 @@ $$
 
 Let $$f: G \rightarrow H$$ be a homomorphism of a group. Then $$\operatorname{Im}(f)$$ is a subgroup of $$H$$ and $$\operatorname{Ker}(f)$$ is a subgroup of $$G$$. Moreover, $$\operatorname{Ker}(f)$$ is a normal subgroup of $$G$$.
 
-*Proof*:
+**Proof**:
 
 1. (Image is subgroup) To prove this, we check the defintion of subgroups.  
 
@@ -427,7 +427,7 @@ A group $$G$$ is called **simple** if it has no normal subgroups other than $$\{
 
 1. If $$p$$ is a prime number, then the cyclic group $$C_p$$ is a simple group.
 
-    *Proof*:
+    **Proof**:
 
     Assume $$H$$ is a normal subgroup of $$C_p$$, then $$H$$ is a subgroup of $$C_p$$ and $$H \neq \{e\}$$ and $$H \neq C_p$$. Since $$C_p$$ is a cyclic group, then $$H = \langle a^k \rangle$$ for some $$k \in \{1, 2, ..., p-1\}$$. Since $$H$$ is a normal subgroup of $$C_p$$, then for any $$g \in C_p$$, we have $$g H g^{-1} = H$$. Therefore, we have:
 
@@ -439,14 +439,14 @@ A group $$G$$ is called **simple** if it has no normal subgroups other than $$\{
 
     Actually, there is a strong result that every cyclic group with prime order has no subgroup other than $$\{e\}$$ and itself.
 
-    *Proof*:
+    **Proof**:
 
     Assume $$H$$ is a subgroup of $$C_p$$ and $$H \neq \{e\}$$ and $$H \neq C_p$$. Since $$C_p$$ is a cyclic group, then $$H = \langle a^k \rangle$$ for some $$k \in \{1, 2, ..., p\}$$. Since $$H \neq \{e\}$$, then $$k \neq 1$$. Since $$H \neq C_p$$, then $$k \neq p$$. Therefore, $$k$$ is a proper divisor of $$p$$. Since $$p$$ is a prime number, then $$p$$ has no proper divisors. Therefore, $$H$$ does not exist.
 
 
 2. If $$G$$ is Abelian, then any subgroup of $$G$$ is simple.
 
-   *Proof*:
+   **Proof**:
 
    Assume $$H$$ is a subgroup of $$G$$ and let $$h \in H$$ and $$g \in G$$ be arbitrary. Since $$G$$ is Abelian, then we have:
 
@@ -466,7 +466,7 @@ $$
 
 If $$H \subset G$$ is a subgroup of $$G$$, and $$g H = H g$$ for every $$g \in G$$, then $$H$$ is a normal subgroup of $$G$$.
 
-*Proof*:
+**Proof**:
 
 Let $$h \in H$$ and $$g \in G$$ be arbitrary, since the left coset and right coset are equal, then we have:
 
@@ -500,7 +500,7 @@ $$
 (g_1N)(g_2 N) = g_1g_2N
 $$
 
-*Proof*:
+**Proof**:
 
 Let $$x, y \in N$$ be arbitrary, then $$(g_1 x)(g_2 y) = g_1(g_2 g_2^{-1}xg_2)y$$. Since $$N$$ is a normal subgroup of $$G$$, then $$g_2^{-1}xg_2 \in N$$. Therefore, we could find a $$z \in N$$ such that $$g_2^{-1}xg_2 = z$$. Therefore, we have:
 
@@ -539,7 +539,7 @@ $$
 
 Let $$N$$ be a normal subgroup of $$G$$. The function $$f: G \rightarrow G / N$$ given by $$g \mapsto g N$$ is a surjective homomorphism with kernel $$\operatorname{Ker}(f)=N$$.
 
-*Proof*:
+**Proof**:
 
 1. (Homomorphism) Let $$g_1, g_2 \in G$$ be arbitrary, then we have:
 
@@ -573,7 +573,7 @@ $$
 G/ \ke(f) \iso \im(f)
 $$
 
-*Proof*:
+**Proof**:
 
 Since $$\ke(f)$$ is a normal subgroup, then $$g\ke(f)$$ is a group.
 
@@ -638,7 +638,7 @@ Assume $$f: G \rightarrow H$$ is a homomorphism, then we have:
 
     If $$f: G \to H$$ is a surjective homomorphism, then if $$A$$ is a normal subgroup of $$G$$, then $$f(A)$$ is a normal subgroup of $$H$$.
 
-    *Proof*: 
+    **Proof**: 
 
     Since $$f$$ is surjective, then $$f(A) = H$$. We could have this:\
 
@@ -658,7 +658,7 @@ $$
 
 Moreover, $$S$$ is normal in $$G$$ if and only if $$S/N$$ is normal in $$G/N$$.
 
-*Proof*:
+**Proof**:
 
 1. Since $$N$$ is a normal subgroup in $$G$$, in particular, $$N$$ is a subgroup of $$S$$. As $$N = \ke(f)$$, then $$S/N = f(S)$$ is a subgroup of $$G/N$$ by the first isomorphism theorem.  
 
@@ -688,7 +688,7 @@ Moreover, $$S$$ is normal in $$G$$ if and only if $$S/N$$ is normal in $$G/N$$.
 
 The set of the conjugations by the elements of $$G$$ forms a subgroup of $$Aut(G)$$, called the **group of inner automorphisms** of $$G$$ and denoted by $$Inn(G)$$, it is also called conjugation group of $$G$$.
 
-*Proof*: 
+**Proof**: 
 
 We show that the inner automorphisms form a subgroup of $$Aut(G)$$.
 
@@ -707,7 +707,7 @@ We show that the inner automorphisms form a subgroup of $$Aut(G)$$.
 
 Let $$G$$ be a group and $$Aut(G)$$ be the associated automorphism group. The map $$\phi: G \to Inn(G)$$ sending the element $$g$$ of $$G$$ to the conjugation by $$g$$ is a homomorphism. Moreover, $$\ke(\phi) = \{g \in G| gx = xg, \forall x \in G\}$$.
 
-*Proof*:
+**Proof**:
 
 1. (Homomorphism) We have to show that for any $$a, b \in G$$ the conjugation by $$a b$$ is the composition of the conjugation by $$a$$ and the conjugation by $$b$$.
    
@@ -761,7 +761,7 @@ $$
 
 Let $$I$$ be a set and $$G$$ be a group. Suppose that for each $$i \in I$$ we are given a subgroup $$G_{i} \subset G$$. Then the intersection $$\bigcap_{i \in I} G_{i}$$ is a subgroup of $$G$$.
 
-*Proof*:
+**Proof**:
 
 1. (Identity) Since $$e_G \in G_i$$ for all $$i \in I$$, then $$e_G \in \bigcap_{i \in I} G_{i}$$.
 
@@ -781,7 +781,7 @@ Let $$G$$ be a group. The subgroup of $$G$$ generated by all commutators of $$G$
 
 $$[G, G] = \{e_G\}$$ if and only if $$G$$ is Abelian.
 
-*Proof*:
+**Proof**:
 
 1. ($$[G, G] = \{e_G\} \Rightarrow G \text{ is Abelian}$$) For every $$a, b \in G$$, we have
 
@@ -799,7 +799,7 @@ $$[G, G] = \{e_G\}$$ if and only if $$G$$ is Abelian.
 
 Let $$G$$ be a group. The commutator subgroup $$[G, G]$$ is a normal subgroup of $$G$$ and $$G / [G, G]$$ is Abelian.
 
-*Proof*:
+**Proof**:
 
 - (The commutator subgroup is normal) Check $$[G, G]$$ is stable under conjugations. Let $$a, b \in G$$ and $$g \in G$$ be arbitrary, then we have:
 
@@ -839,7 +839,7 @@ Let $$G$$ be a group. The commutator subgroup $$[G, G]$$ is a normal subgroup of
 
 Let $$N$$ be a normal subgroup of $$G$$. Then $$G / N$$ is Abelian if and only if $$[G, G] \subset N$$.
 
-*Proof*:
+**Proof**:
 
 By the previous lemma 1.30,
 
@@ -903,7 +903,7 @@ Then these maps have the following properties:
 
 1. $$i_A$$ and $$i_B$$ are injective homomorphisms.
 
-    *Proof*:
+    **Proof**:
 
     $$
     i_A(a_1 a_2) = (a_1 a_2, e_B) = (a_1, e_B) (a_2, e_B) = i_A(a_1) i_A(a_2)
@@ -923,7 +923,7 @@ Then these maps have the following properties:
 
 2. $$i_A(A)$$ and $$i_B(B)$$ are normal subgroups of $$A \times B$$.
 
-    *Proof*:
+    **Proof**:
 
     Let $$(a, e_B) \in i_A(A)$$ and $$(c, d)$$ in $$A\times B$$ be arbitrary, then we have:
 
@@ -933,7 +933,7 @@ Then these maps have the following properties:
 
 3. $$i_A(A)$$ and $$i_B(B)$$ commute with each other. i.e. $$x \in i_A(A), y \in i_B(B) \Longrightarrow xy = yx$$.
 
-    *Proof*:
+    **Proof**:
     
     Let $$(a, e_b) \in i_A(A)$$ and $$(e_A, b) \in i_B(B)$$ be arbitrary,
 
@@ -951,7 +951,7 @@ $$
 
 is an isomorphism of groups.
 
-*Proof*:
+**Proof**:
 
 1. `Hormorphism`: 
 
@@ -1015,7 +1015,7 @@ $$
 
 The set of elements with finite order in $$G$$ is a subgroup of $$G$$.
 
-*Proof*:
+**Proof**:
 
 1. `Finite order`: Since $$G$$ is Abelian, then we have:
 
@@ -1041,7 +1041,7 @@ It is well-defined by the lemma $$1.38$$. If $$G = G_{tors}$$, then $$G$$ is cal
 
 - The quotient group $$\Q / \Z$$ is a an infinite torsion Abelian group where $$\Q$$ and $$\Z$$ are not.
 
-    *Proof*:
+    **Proof**:
 
     Any rational number could add itself in finite times to get an integer. i.e.
 
@@ -1053,7 +1053,7 @@ It is well-defined by the lemma $$1.38$$. If $$G = G_{tors}$$, then $$G$$ is cal
 
 - $$G$$ is an Abelian group, then the quotient group $$G / G_{tors}$$ has no element with finite order.
 
-    *Proof*:
+    **Proof**:
 
     Let $$g G_{tors} \in G / G_{tors}$$ be arbitrary, then we have:
 
@@ -1083,7 +1083,7 @@ $$
 
 where $$C_n$$ is the cyclic group of order $$n$$.
 
-*Proof*:
+**Proof**:
 
 We prove this by induction on $$m$$.
 

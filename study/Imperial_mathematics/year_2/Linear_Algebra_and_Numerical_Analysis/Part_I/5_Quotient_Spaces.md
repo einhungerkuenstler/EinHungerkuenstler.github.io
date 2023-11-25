@@ -60,7 +60,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 >> Suppose $$W + v = W + v'$$, then $$v - v' \in W$$. So, $$\lambda(v - v') \in W$$ and $$\lambda v -\lambda v' \in W$$. Hence, $$W + \lambda v = W + \lambda v'$$.
 
 
-> *Remark*
+> **Remark**
 >
 > - The elements of $$V / W$$ are the right cosets of $$W$$ in $$V$$. Since the additive of vectors is commutative, we can also define the left cosets of $$W$$ in $$V$$ and the quotient space $$V / W$$ consists of left cosets is the same as the set of right cosets of $$W$$ in $$V$$. So we just call it cosets.
 >
@@ -82,7 +82,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
   
   Then, $$V / W$$ is a vector space over $$\F$$.
 
-*Proof*:
+**Proof**:
 
 - `Addition axioms`: $$(V / W, +)$$ is an Abelian group with the identity $$W + 0 = W$$.
 
@@ -110,7 +110,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
     \operatorname{dim} V / W=\operatorname{dim} V-\operatorname{dim} W
     $$
 
-*Proof*:
+**Proof**:
 
  Let $$B_w = \set{w_1, \dots, w_r}$$ be a basis of $$W$$ and extend this to a basis $$B = \set{w_1, \dots, w_r, v_{1}, \dots, v_s}$$ of $$V$$. Therefore, $$\di V = r + s$$ and $$\di W = r$$.
 
@@ -225,7 +225,7 @@ $$
 
   where $$Z$$ is a $$r \times s$$ matrix.
 
-*Proof*:
+**Proof**:
 
 Since $$T(W) \subseteq W$$, we can write
 
@@ -281,7 +281,7 @@ where $$Z$$ is a $$r \times s$$ matrix. $\square$
   c(x)=c_{1}(x) c_{2}(x)
   $$
 
-*Proof*:
+**Proof**:
 
 By the proposition above, we have
 

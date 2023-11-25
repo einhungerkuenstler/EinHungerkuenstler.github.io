@@ -92,7 +92,7 @@ $$
 
 $$(1.1)$$ is sum over $$k$$. 
 
-*Proof*: 
+**Proof**: 
 
 Firstly, we write the left hand side of $$(1.1)$$ with its full summation over $$k$$:
 
@@ -204,7 +204,7 @@ $$
 \mathbf{a} \cdot(\mathbf{b} \times \mathbf{c})=(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} .
 $$
 
-*Proof*:
+**Proof**:
 
 $$
 \va \cdot (\vb \times \vc) = \ve_{ijk}a_ib_jc_k = (\ve_{kij}a_ib_j)c_k  = [\va \times \vb]_k c_k = (\va \times \vb) \cdot \vc.
@@ -446,7 +446,7 @@ $$
 \g \phi \cdot \vf = \vf \cdot \g \phi = (\vf \cdot \g) \phi
 $$
 
-*Proof*:
+**Proof**:
 
 - (v)
 
@@ -474,9 +474,6 @@ $$
 
 \end{aligned}
 $$
-
-
-
 
 where $$[\:\;]_i$$ denotes the $$i$$ th component of the vector.
 
@@ -537,7 +534,7 @@ $$
 \operatorname{curl}(\nabla \phi) = 0
 $$
 
-*Proof*:
+**Proof**:
 
 $$
 \begin{aligned}
@@ -556,7 +553,7 @@ $$
 \operatorname{div}(\operatorname{curl} \mathbf{A}) = 0
 $$
 
-*Proof*:
+**Proof**:
 
 $$
 \begin{aligned}
@@ -574,7 +571,7 @@ $$
 \operatorname{curl}(\operatorname{curl} \mathbf{A})=\nabla(\operatorname{div} \mathbf{A})-\nabla^{2} \mathbf{A}
 $$
 
-*Proof*:
+**Proof**:
 
 $$
 \begin{aligned}
