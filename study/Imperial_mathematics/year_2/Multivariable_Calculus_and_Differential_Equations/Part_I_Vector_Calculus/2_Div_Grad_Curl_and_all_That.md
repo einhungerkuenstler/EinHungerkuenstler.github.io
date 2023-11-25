@@ -77,8 +77,10 @@ $$
 $$
 
 > **Remark**:
+> 
+> - The physical meaning of the directional derivative at $$P$$ is the rate of change of $$\phi$$ at $$P$$ in the direction $$\widehat{\mathbf{s}}$$.
 >
-> Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
+> - Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
 
 ### Definition (Gradient)
 
@@ -109,7 +111,7 @@ $$
 
 ### Theorem (Gradient in Cartesian coordinates)
 
-- $$\phi = \phi(x, y, z)$$
+- $$\phi = \phi(x, y, z)$$ is a scalar function.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
@@ -149,7 +151,7 @@ $$
 
 ### Theorem (Gradient in cylindrical coordinates)
 
-- $$\phi = \phi(r, \theta, z)$$
+- $$\phi = \phi(r, \theta, z)$$ is a scalar function.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\mathbf{z}}$$ are the unit vectors in the $$r, \theta, z$$ directions respectively.
 
@@ -207,7 +209,7 @@ $$
 
 ### Theorem (Gradient in spherical coordinates)
 
-- $$\phi = \phi(r, \theta, \alpha)$$
+- $$\phi = \phi(r, \theta, \alpha)$$ is a scalar function.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\boldsymbol{\alpha}}$$ are the unit vectors in the $$r, \theta, \alpha$$ directions respectively.
 
@@ -291,7 +293,6 @@ $$
 
 where $$\left(\pap{x}\right)_P$$, $$\left(\pap{y}\right)_P$$ and $$\left(\pap{z}\right)_P$$ are the partial derivatives of $$\phi$$ at $$P$$ and are constants.
 
-
 ## 2.2 Divergence and Curl
 
 ### Definition (Divergence)
@@ -328,7 +329,7 @@ $$
 >
 >> - The definition of divergence is only adapted to a vector field $$\vf$$.
 >
->> - The physical meaning of the divergence at $$P$$ is the net flow of $$\vf$$ out of a small closed surface around $$P$$ per unit volume as the volume shrinks to zero.
+>> - The physical meaning of the divergence at $$P$$ is a measure of how much a vector field spreads out or converges at a given point $$P$$. When the flow is spreading out or converging, the divergence is positive, and when the flow is converging, the divergence is negative.
 > 
 >> - The dot product in the definition of divergence $$\g \cdot \vf$$ is not commutative, i.e. $$\g \cdot \vf \neq \vf \cdot \g$$. Since the left hand side is a **scalar operator** and the right hand side is divergence of a vector field, which is a **scalar**.
 
@@ -369,7 +370,7 @@ $$
 >
 >> - The definition of curl is only adapted to a vector field $$\vf$$.
 >
->> - The physical meaning of the curl at $$P$$ is the net rotation of $$\vf$$ around $$P$$ per unit volume as the volume shrinks to zero.
+>> - The physical meaning of the curl at $$P$$ is a measure of how much a vector field circulates or rotates about a given point $$P$$. When the flow is clockwise, the curl is positive, and when the flow is counterclockwise, the curl is negative.
 >
 >> - The cross product in the definition of curl $$\g \times \vf$$ is not commutative, i.e. $$\g \times \vf \neq \vf \times \g$$. Since the left hand side is a **vector operator** and the right hand side is curl of a vector field, which is a **vector**. 
 
@@ -457,13 +458,190 @@ $$
 
 ### Definition (The divergence of a gradient: the Laplacian)
 
-- $$\phi = \phi(x, y, z)$$
+- $$\phi = \phi(x, y, z)$$ is a scalar function.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
-- 
+The operator $$\nabla^2$$ is called the **Laplacian** and it is a **scalar operator** that maps a point $$P$$ to a scalar $$\nabla^2 \phi(P)$$. It is defined as:
+
+$$
+\begin{aligned}
+\nabla^{2} \phi & = \d(\g \phi) \\
+& = \left(\frac{\partial}{\partial x} \nvi + \frac{\partial}{\partial y} \nvj + \frac{\partial}{\partial z} \nvk\right) \cdot \left(\frac{\partial \phi}{\partial x} \nvi + \frac{\partial \phi}{\partial y} \nvj + \frac{\partial \phi}{\partial z} \nvk\right) \\
+& = \frac{\partial^{2} \phi}{\partial x^{2}}+\frac{\partial^{2} \phi}{\partial y^{2}}+\frac{\partial^{2} \phi}{\partial z^{2}} \\
+& = \g^2 \phi \\
+& = \frac{\partial^2 \phi}{\partial x_i \partial x_i}\\
+& = \frac{\partial^2 \phi}{\partial x_i^2} 
+\end{aligned}
+$$
+
+For a vector field $$\vf$$, we use the same definition above:
+
+$$
+\g^2 \vf = \frac{\partial^2 \vf}{\partial x^2} + \frac{\partial^2 \vf}{\partial y^2} + \frac{\partial^2 \vf}{\partial z^2} = \frac{\partial^2 \vf}{\partial x_i^2}
+$$
+
+> **Remark**:
+>
+> - The physical meaning of the Laplacian for a scalar field is a measure of **curvature** or **stress** of the field at a given point. It tells us how much the field differs from its average value at a given point. If the Laplacian is positive, the field is **concave** at that point, and if the Laplacian is negative, the field is **convex** at that point. If the Laplacian is zero, the field is **flat** at that point. Because it is the divergence of the gradient, it is a measure of how much the rate of change of the field differ from the kind of steady flow that would be expected at that point.
+> 
+> The equation $$\nabla^2 \phi = 0$$ is called the **Laplace equation** and will be studied in detail in the module **Partial Differential Equations in Actions**.
+
+### Theorem (The curl of a gradient is zero)
+
+- $$\phi = \phi(x, y, z)$$ is a scalar function.
+
+Then the curl of the gradient of $$\phi$$ is zero:
+
+$$
+\cu(\g \phi) = 0
+$$
+
+**Proof**:
+$$
+\begin{aligned}
+[\operatorname{curl}(\nabla \phi)]_i & = \ve_{ijk} \frac{\partial}{\partial x_j} (\g \phi)_k \\
+& = \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} \\
+& = \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} + \frac{1}{2} \ve_{ikj} \frac{\partial}{\partial x_k} \frac{\partial \phi}{\partial x_j} \\
+& = \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_k} \frac{\partial \phi}{\partial x_j} \\
+& = \frac{1}{2} \ve_{ijk} \left(\frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k}\right) \\
+& = 0 \\
+\end{aligned}
+$$
+
+<p align="right">$$\square$$</p>
+
+> **Remark**:
+>
+> The physical explanation of this theorem is that the curl of a gradient is zero because the curl measures a vector field circulates or rotates about a given point, and the gradient measures the direction of the maximum directional derivative of a scalar field at a given point. Since the gradient measures the direction of the maximum directional derivative of a scalar field at a given point, it has no net rotation around a point, and thus its curl is zero.
+
+### Theorem (The divergence of a curl is zero)
+
+- $$\vf = \vf(x, y, z)$$ is a vector field.
+
+Then the divergence of the curl of $$\vf$$ is zero:
+
+$$
+\d(\cu \vf) = 0
+$$
+
+$$
+\begin{aligned}
+\d = (\cu \vf) & = \frac{\partial }{\partial x_i}(\cu \vf)_i\\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} \\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} + \ve_{jik} \frac{\partial}{\partial x_j} \frac{\partial A_k}{\partial x_i} \\
+& = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} - \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} \\
+& = 0 \\
+\end{aligned}
+$$
+
+<p align="right">$$\square$$</p>
+
+> **Remark**:
+>
+> The physical explanation of this theorem is that the divergence of a curl is zero because the divergence measures the a vector field spreads out or converges at a given point and the curl measures a vector field circulates or rotates about a given point. Since for a vector field to have a net rotation around a point, it must have no net flow out or into a point, and thus its divergence is zero.
+
+### Theorem (The curl of a curl is gradient of the divergence minus the Laplacian of the vector field)
+
+- $$\vf = \vf(x, y, z)$$ is a vector field.
+
+Then the curl of the curl of $$\vf$$ is:
+
+$$
+\cu(\cu \vf) = \g(\d \vf) - \nabla^2 \vf
+$$
 
 
+**Proof**:
+
+$$
+\begin{aligned}
+[\operatorname{curl}(\operatorname{curl} \mathbf{A})]_i & = \ve_{ijk} \frac{\partial}{\partial x_j} (\cu \vf)_k \\
+& = \ve_{ijk} \frac{\partial}{\partial x_j}\left(\ve_{klm} \frac{\partial A_m}{\partial x_l}\right) \\
+& = (\delta_{il} \delta_{jm} - \delta_{im}\delta_{jl}) (\frac{\partial}{\partial x_j} \frac{\partial A_j}{\partial x_l}) \\
+& = \frac{\partial^2 A_j}{\partial x_j \partial x_i} - \frac{\partial^2 A_i}{\partial x_j \partial x_j} \\
+& = \frac{\partial}{\partial x_i}\left(\frac{\partial \vf_j}{\partial x_j}\right) - \frac{\partial^2 A_i}{\partial x_j^2} \\
+& = [\g(\d \vf)]_i - [\g^2 \vf]_i \\
+\end{aligned}
+$$
+
+<p align="right">$$\square$$</p>
+
+> **Remark**:
+>
+> - The curl of a curl of a vector field is a **vector field** that maps a point $$P$$ to a vector $$\cu(\cu \vf)(P)$$ since the gradient of the divergence is a vector field that maps a point $$P$$ to a vector $$\g(\d \vf)(P)$$ and the Laplacian of the vector field is a vector field that maps a point $$P$$ to a vector $$\nabla^2 \vf(P)$$.
+>
+> - The physical meaning of the curl of a curl of a vector field is a measure of how much the rotations of the rotation of a vector space at a given point.
+
+## 2.4 Irrotational and Solenoidal Vector Fields
+
+### Definition (Irrotational vector field)
+
+- $$\vf = \vf(x, y, z)$$ is a vector field.
+
+- $$\c \vf$$ is the curl of $$\vf$$.
+
+- $$\c \vf = 0$$.
+
+Then $$\vf$$ is called an **irrotational vector field**.
+
+> **Remark**:
+>
+>> - The physical meaning of an irrotational vector field is that it is a vector field that has no net rotation around a given point.
+>
+>> - Some examples of irrotational vector fields are:
+>>
+>> - Any gradient vector field is irrotational since the curl of a gradient is zero.
+>> 
+>> - The identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is irrotational since the curl of the identity vector field is zero.
+
+### Definition (Solenoidal vector field)
+
+- $$\vf = \vf(x, y, z)$$ is a vector field.
+
+- $$\d \vf$$ is the divergence of $$\vf$$.
+
+- $$\d \vf = 0$$.
+
+Then $$\vf$$ is called a **solenoidal vector field**.
+
+> **Remark**:
+>
+> - The physical meaning of a solenoidal vector field is that it is a vector field that has no net flow out or into a given point.
+>
+> - An examples of solenoidal vector fields is the curl of any vector field is solenoidal since the divergence of the curl is zero.
+>
+> - The divengence of the identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is $$3$$, which is the dimension of the vector field. Hence, the identity vector field is not solenoidal.
+
+### An example
+
+Calculate
+
+$$
+\g^2 \left(\frac{1}{r}\right)
+$$
+
+**Solution**:
+
+$$
+\begin{aligned}
+\g \left(\frac{1}{r}\right) & = \d (x^2 + y^2 + z^2)^{-1/2} \\
+& = \left(\frac{\partial}{\partial x}\nvi + \frac{\partial}{\partial y}\nvj + \frac{\partial}{\partial z}\nvk\right) \cdot \left(\frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{1 / 2}}\right) \\
+& = - (x \nvi + y \nvj + z \nvk) \frac{1}{\left(x^{2}+y^{2}+z^{2}\right)^{3 / 2}} \\
+& = - \frac{\mathbf{r}}{r^3} \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\g^2 \left(\frac{1}{r}\right) & = - \left(\frac{\partial}{\partial x}\left(\frac{x}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial y}\left(\frac{y}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right) + \frac{\partial}{\partial z}\left(\frac{z}{(x^2+y^2+z^2)^{\frac{3}{2}}}\right)\right)  \\
+& = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \left(\frac{3x^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3y^2}{(x^2+y^2+z^2)^{\frac{5}{2}}} + \frac{3z^2}{(x^2+y^2+z^2)^{\frac{5}{2}}}\right) \\
+& = -\frac{3}{(x^2 + y^2 z^2)^{\frac{3}{2}}} + \frac{3}{(x^2+y^2+z^2)^{\frac{3}{2}}} \\
+& = 0 \\
+\end{aligned}
+$$
+
+Therefore, $$\g^2 (1/r) = 0$$, $$\frac{1}{r}$$ satisfies the **Laplace equation**: $$\g^2 \phi = 0$$.
 
 
 
