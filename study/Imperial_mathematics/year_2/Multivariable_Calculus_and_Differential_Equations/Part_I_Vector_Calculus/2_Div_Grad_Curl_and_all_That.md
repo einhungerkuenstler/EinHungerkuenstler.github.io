@@ -354,6 +354,8 @@ $$
 > - The definition of divergence is only adapted to a vector field $$\vf$$ since it is a vector operator that only could be applied to a vector.
 >
 > - The physical meaning of the divergence at $$P$$ is a measure of how much a vector field spreads out or converges at a given point $$P$$. When the flow is spreading out or converging, the divergence is positive, and when the flow is converging, the divergence is negative.
+>
+> - The divergence could only be defined in 3D space, since the gradient operator $$\nabla$$ is only defined in 3D space.
 > 
 > - The dot product in the definition of divergence $$\g \cdot \vf$$ is not commutative, i.e. $$\g \cdot \vf \neq \vf \cdot \g$$. Since the left hand side is a **scalar operator** and the right hand side is divergence of a vector field, which is a **scalar**.
 
@@ -393,6 +395,8 @@ $$
 > - The definition of curl is only adapted to a vector field $$\vf$$, since it is a vector operator that only could be applied to a vector.
 >
 > - The physical meaning of the curl at $$P$$ is a measure of how much a vector field circulates or rotates about a given point $$P$$. When the flow is clockwise, the curl is positive, and when the flow is counterclockwise, the curl is negative.
+>
+> - The curl could only be defined in 3D space, since the gradient operator $$\nabla$$ is only defined in 3D space.
 >
 > - The cross product in the definition of curl $$\g \times \vf$$ is not commutative, i.e. $$\g \times \vf \neq \vf \times \g$$. Since the left hand side is a **vector operator** and the right hand side is curl of a vector field, which is a **vector**. 
 
