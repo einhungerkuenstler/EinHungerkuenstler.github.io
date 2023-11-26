@@ -26,7 +26,7 @@ $$\gdef\cu{\operatorname{curl}}$$
 $$\gdef\g{\nabla}$$
 $$\gdef\vf{\mathbf{A}}$$
 
-#### *For the following, we assume $$\phi$$ is a scalar function and $$\vf$$ is a vector field.*
+#### *For the following, we assume $$\phi$$ is a scalar field and $$\vf$$ is a vector field.*
 
 ## 2.1 Gradient
 
@@ -78,9 +78,7 @@ $$
 
 > **Remark**:
 > 
-> - The definition of directional derivative is only adapted to a scalar function $$\phi$$.
-> 
-> - The physical meaning of the directional derivative at $$P$$ is the rate of change of $$\phi$$ at $$P$$ in the direction $$\widehat{\mathbf{s}}$$.
+> - The physical meaning of the directional derivative of a scalar field at $$P$$ is the rate of change of $$\phi$$ at $$P$$ in the direction $$\widehat{\mathbf{s}}$$.
 >
 > - Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
 
@@ -94,16 +92,14 @@ $$
 
 > **Remark**:
 >
-> - The definition of gradient is only adapted to a scalar function $$\phi$$.
->
 > - The physical meaning of the gradient at $$P$$ is the direction of the maximum directional derivative of $$\phi$$ at $$P$$.
 > - The operator $$\nabla$$ is called the **gradient operator** and it is a vector operator, it is defined as:
 > 
->  $$
-\nabla = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
+>   $$
+    \nabla = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
     $$
 >
-> The gradient is perpendicular to the level surface of $$\phi$$.
+>   The gradient is perpendicular to the level surface of $$\phi$$.
 >
 > - Use gradient to find the direction derivative of $$\phi$$ in the direction $$\widehat{\mathbf{s}}$$:
 >
@@ -113,7 +109,7 @@ $$
 
 ### Theorem (Gradient in Cartesian coordinates)
 
-- $$\phi = \phi(x, y, z)$$ is a scalar function.
+- $$\phi = \phi(x, y, z)$$ is a scalar field.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
@@ -139,7 +135,7 @@ $$
 \begin{aligned}
 \nvi \cdot \g \phi & = \frac{\partial \phi}{\partial x} \\
 \nvj \cdot \g \phi & = \frac{\partial \phi}{\partial y} \\
-\nvk \cdot \g \phi & = \frac{\partial \phi}{\partial z} \\
+\nvk \cdot \g \phi & = \frac{\partial \phi}{\partial z}
 \end{aligned}
 $$
 
@@ -151,7 +147,7 @@ $$  $$\square$$
 
 ### Theorem (Gradient in cylindrical coordinates)
 
-- $$\phi = \phi(r, \theta, z)$$ is a scalar function defined in cylindrical coordinates.
+- $$\phi = \phi(r, \theta, z)$$ is a scalar field defined in cylindrical coordinates.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\mathbf{z}}$$ are the unit vectors in the $$r, \theta, z$$ directions respectively.
 
@@ -208,7 +204,7 @@ $$   $$\square$$
 
 ### Theorem (Gradient in spherical coordinates)
 
-- $$\phi = \phi(r, \theta, \alpha)$$ is a scalar function defined in spherical coordinates.
+- $$\phi = \phi(r, \theta, \alpha)$$ is a scalar field defined in spherical coordinates.
 
 - $$\widehat{\mathbf{r}}, \widehat{\boldsymbol{\theta}}, \widehat{\boldsymbol{\alpha}}$$ are the unit vectors in the $$r, \theta, \alpha$$ directions respectively.
 
@@ -268,6 +264,39 @@ $$
 \nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\theta}}{r} \frac{\partial \phi}{\partial \theta}+\frac{\widehat{\alpha}}{r \sin \theta} \frac{\partial \phi}{\partial \alpha}
 $$  $$\square$$
 
+### Extend the definition of gradient and directional derivative to vector fields
+
+If we extend the definition of gradient to the vector field $$\vf$$, the gradient of a vector field will be a **matrix**, which is called the **Jacobian matrix**. We just take the gradient operator $$\nabla$$ as a $$n\times 1$$ matrix and the vector field $$\vf$$ as a $$n\times 1$$ matrix, then the gradient of a vector field is a $$n\times n$$ matrix.
+
+$$
+\begin{aligned}
+\mathbf{J} = \nabla \vf & = \left(\pap{x_1}\widehat{\mathbf{e}}_1 + \pap{x_2}\widehat{\mathbf{e}}_2 + \cdots + \pap{x_n}\widehat{\mathbf{e}}_n\right) \vf \\
+& = \left(\begin{array}{cccc}
+\frac{\partial}{\partial x_{1}} & \frac{\partial}{\partial x_{2}} & \cdots & \frac{\partial}{\partial x_{n}}
+\end{array}\right)\left(\begin{array}{c}
+A_{1} \\
+A_{2} \\
+\vdots \\
+A_{n}
+\end{array}\right) \\
+& = \left(\begin{array}{cccc}
+\frac{\partial A_{1}}{\partial x_{1}} & \frac{\partial A_{1}}{\partial x_{2}} & \cdots & \frac{\partial A_{1}}{\partial x_{n}} \\
+\frac{\partial A_{2}}{\partial x_{1}} & \frac{\partial A_{2}}{\partial x_{2}} & \cdots & \frac{\partial A_{2}}{\partial x_{n}} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial A_{n}}{\partial x_{1}} & \frac{\partial A_{n}}{\partial x_{2}} & \cdots & \frac{\partial A_{n}}{\partial x_{n}}
+\end{array}\right)
+\end{aligned}
+$$
+
+Then by the way of calculating the directional derivative of a scalar field, we can extend the definition of directional derivative to the vector field $$\vf$$, which is a **vector**. We just substitute dot product with matrix multiplication:
+
+$$
+\frac{\partial \vf}{\partial s} = \mathbf{J}  \widehat{\mathbf{s}}
+$$
+
+where $$\mathbf{J}$$ is the Jacobian matrix of $$\vf$$ and $$\widehat{\mathbf{s}}$$ is the unit vector in the direction $$\widehat{\mathbf{s}}$$.
+
+
 ### Equation of a tangent plane to $$\phi = \phi(P)$$
 
 - $$(\g \phi)_P$$ is the gradient at $$P$$ of $$\phi$$.
@@ -294,7 +323,7 @@ where $$\left(\pap{x}\right)_P$$, $$\left(\pap{y}\right)_P$$ and $$\left(\pap{z}
 
 ### Definition (Divergence)
 
-The **divergence** of a vector field $$\vf$$ is a **scalar function** that maps a point $$P$$ to a scalar $$\d \vf(P)$$. The divergence is defined as:
+The **divergence** of a vector field $$\vf$$ is a **scalar field** that maps a point $$P$$ to a scalar $$\d \vf(P)$$. The divergence is defined as:
 
 $$
 \d \vf = \nabla \cdot \vf
@@ -322,7 +351,7 @@ $$ $$\square$$
 
 > **Remark**:
 >
-> - The definition of divergence is only adapted to a vector field $$\vf$$.
+> - The definition of divergence is only adapted to a vector field $$\vf$$ since it is a vector operator that only could be applied to a vector.
 >
 > - The physical meaning of the divergence at $$P$$ is a measure of how much a vector field spreads out or converges at a given point $$P$$. When the flow is spreading out or converging, the divergence is positive, and when the flow is converging, the divergence is negative.
 > 
@@ -361,7 +390,7 @@ $$ $$\square$$
 
 > **Remark**:
 >
-> - The definition of curl is only adapted to a vector field $$\vf$$.
+> - The definition of curl is only adapted to a vector field $$\vf$$, since it is a vector operator that only could be applied to a vector.
 >
 > - The physical meaning of the curl at $$P$$ is a measure of how much a vector field circulates or rotates about a given point $$P$$. When the flow is clockwise, the curl is positive, and when the flow is counterclockwise, the curl is negative.
 >
@@ -445,7 +474,7 @@ $$
 
 ### Definition (The divergence of a gradient: the Laplacian)
 
-- $$\phi = \phi(x, y, z)$$ is a scalar function.
+- $$\phi = \phi(x, y, z)$$ is a scalar field.
 
 - $$\nvi, \nvj, \nvk$$ are the unit vectors in the $$x, y, z$$ directions respectively.
 
@@ -485,7 +514,7 @@ $$
 
 ### Theorem (The curl of a gradient is zero)
 
-$$\phi = \phi(x, y, z)$$ is a scalar function, then the curl of the gradient of $$\phi$$ is zero:
+$$\phi = \phi(x, y, z)$$ is a scalar field, then the curl of the gradient of $$\phi$$ is zero:
 
 $$
 \cu(\g \phi) = 0

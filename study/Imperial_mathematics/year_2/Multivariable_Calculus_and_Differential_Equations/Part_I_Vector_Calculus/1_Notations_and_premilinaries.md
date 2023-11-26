@@ -30,7 +30,7 @@ $$\gdef\vf{\mathbf{A}}$$
 
 - $$\va, \vb, \vc$$ are **vectors** in $$\R^3$$.
 
-- $$\phi$$ is a **scalar function**: $$\phi: \R^n \to \R$$.
+- $$\phi$$ is a **scalar fieldn**: $$\phi: \R^n \to \R$$.
 
 - $$\vf$$ is a **vector field**: $$\vf: \R^n \to \R^n$$.
 
@@ -69,46 +69,46 @@ $$\gdef\vf{\mathbf{A}}$$
    
       > **Remark**
       >
-      >> - $$
-         \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{i l} \delta_{j m}-\delta_{i m} \delta_{j l}
-         $$ 
+      >> - 
+            $$
+            \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{i l} \delta_{j m}-\delta_{i m} \delta_{j l}
+            $$ 
       >>
-      >>          **which is sum over $$k$$.**
+      >>    **which is sum over $$k$$.**
       >>
       >> **Proof**:
       >>
-      >> - `Overview`:
-      >>    If $$i = j$$ or $$l = m$$, then the left hand side are all $$0$$ and the right hand side is $$0$$. Therefore,we only need to consider the case that $$i \neq j$$ and $$l \neq m$$. Next, we notice that if we swap the $$i$$ & $$j$$ in the left hand side, the sign of both sides will change. Therefore, we only need to consider the case that $$i < j$$ and $$l < m$$. The cases that we need to consider are
+      >> - `Overview`: If $$i = j$$ or $$l = m$$, then the left hand side are all $$0$$ and the right hand side is $$0$$. Therefore,we only need to consider the case that $$i \neq j$$ and $$l \neq m$$. Next, we notice that if we swap the $$i$$ & $$j$$ in the left hand side, the sign of both sides will change. Therefore, we only need to consider the case that $$i < j$$ and $$l < m$$. The cases that we need to consider are
       >>
-      >> $$
-         (i, j) = (1, 2), (1, 3), (2, 3)
-         $$
+      >>    $$
+            (i, j) = (1, 2), (1, 3), (2, 3)
+            $$
       >>
       >> - `Left hand side`:
       >>
-      >>  $$
-         \begin{aligned}
-         \varepsilon_{1 2 k} \varepsilon_{k l m} & = \varepsilon_{1 2 1} \varepsilon_{1 l m} + \varepsilon_{1 2 2} \varepsilon_{2 l m} +\varepsilon_{1 2 3} \varepsilon_{3 l m} \\
-         & = \varepsilon_{1 2 3} \varepsilon_{3 l m} =  \varepsilon_{3 l m} \\
-         & = \begin{cases} 0  \text{ if } l \text{ or } m = 3 \\ 1 \text{ if } (l, m) = (1, 2)  \end{cases}
-         \end{aligned}
-         $$
+      >>    $$
+            \begin{aligned}
+            \varepsilon_{1 2 k} \varepsilon_{k l m} & = \varepsilon_{1 2 1} \varepsilon_{1 l m} + \varepsilon_{1 2 2} \varepsilon_{2 l m} +\varepsilon_{1 2 3} \varepsilon_{3 l m} \\
+            & = \varepsilon_{1 2 3} \varepsilon_{3 l m} =  \varepsilon_{3 l m} \\
+            & = \begin{cases} 0  \text{ if } l \text{ or } m = 3 \\ 1 \text{ if } (l, m) = (1, 2)  \end{cases}
+            \end{aligned}
+            $$
       >>   
       >> - `Right hand side`:
       >>
-      >> $$
-         \delta_{1 l} \delta_{2 m}-\delta_{1 m} \delta_{2 l} = \begin{cases} 0  \text{ if } l \text{ or } m = 3 \\ 1 \text{ if } (l, m) = (1, 2) \\ \end{cases}
-         $$
+      >>    $$
+            \delta_{1 l} \delta_{2 m}-\delta_{1 m} \delta_{2 l} = \begin{cases} 0  \text{ if } l \text{ or } m = 3 \\ 1 \text{ if } (l, m) = (1, 2) \\ \end{cases}
+            $$
       >>
       >> The left cases are similar. $$\square$$
       >>
       >> There is an alternative form:
       >>
-      >>  $$
-      >> \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{j l} \delta_{k m}-\delta_{j m} \delta_{k l}
-      $$ 
+      >>    $$
+            \varepsilon_{i j k} \varepsilon_{k l m} = \delta_{j l} \delta_{k m}-\delta_{j m} \delta_{k l}
+            $$ 
       >>
-      >> **which is sum over $$i$$**.
+      >>    **which is sum over $$i$$**.
 
 ## 1.2 Premilinaries
 
@@ -134,20 +134,21 @@ $$
 >
 >> - By the properties of the determinant, $$\va \times \vb = - \vb \times \va.$$
 >
->> - $$
+>> -
+   $$
    [\va \times \vb]_{i} = \ve_{ijk}a_jb_k
    $$
 >>
->>     **Proof**:
+>> **Proof**:
 >>
->>       $$
-   \begin{aligned}
-   a_{2} b_{3}-a_{3} b_{2} & = \ve_{123}a_2b_3 + \ve_{132}a_3b_2 \\
-   & = \ve_{ijk}a_jb_k \\
-   \end{aligned}
-         $$
+>>    $$
+      \begin{aligned}
+      a_{2} b_{3}-a_{3} b_{2} & = \ve_{123}a_2b_3 + \ve_{132}a_3b_2 \\
+      & = \ve_{ijk}a_jb_k \\
+      \end{aligned}
+      $$
 >>
->>      since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. The other two components are similar. $$\square$$
+>> since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. The other two components are similar. $$\square$$
 
 
 #### Definition (Scalar product)
@@ -188,6 +189,7 @@ sum over $$i$$, $$j$$ and $$k$$.
    $$
 >>
 >> **Proof**:
+>>
 >> $$
    \va \cdot (\vb \times \vc) = \ve_{ijk}a_ib_jc_k = (\ve_{kij}a_ib_j)c_k  = [\va \times \vb]_k c_k = (\va \times \vb) \cdot \vc.
    $$ $$\square$$
@@ -226,9 +228,9 @@ $$
    \end{array}\right|
       $$
 >>
->> **Proof**:
+>>    **Proof**:
 >>
->>    $$
+>>  $$
    \begin{aligned}
    \mathbf{a} \times(\mathbf{b} \times \mathbf{c}) & = \ve_{ijk}a_j[\vb \times \vc]_k \\
    & = \ve_{ijk}a_j\ve_{klm}\vb_l\vc_m \\
@@ -239,11 +241,9 @@ $$
    a_{1} & a_{2} & a_{3} \\
    b_{1} & b_{2} & b_{3} \\
    c_{1} & c_{2} & c_{3}
-   \end{array}\right|
+   \end{array}\right| $$\square$$
    \end{aligned}
-      $$ 
-
-<p align="right">$$\square$$</p>
+   $$ 
 
 
 

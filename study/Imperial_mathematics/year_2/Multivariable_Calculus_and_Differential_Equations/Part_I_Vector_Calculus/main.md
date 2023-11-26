@@ -3,7 +3,7 @@ title: Part I. Vector Calculus
 layout: simple
 ---
 
-> If you would like to understand the power of vector symbols, let us see the different expressions of Maxwell's equations in different notations:
+> If you would like to understand the power and elegance of the vector symbol, let us see the different forms of Maxwell's equations:
 >
 >> - `Component form`:
 >>
