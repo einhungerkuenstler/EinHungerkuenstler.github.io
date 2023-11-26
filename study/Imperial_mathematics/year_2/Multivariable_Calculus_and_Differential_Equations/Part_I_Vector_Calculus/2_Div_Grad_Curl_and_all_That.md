@@ -142,8 +142,8 @@ $$
 Hence,
 
 $$
-\g \phi = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
-$$  $$\square$$
+\g \phi = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}} \quad \square
+$$
 
 ### Theorem (Gradient in cylindrical coordinates)
 
@@ -199,8 +199,8 @@ $$
 Hence,
 
 $$
-\nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\boldsymbol{\theta}}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z}
-$$   $$\square$$
+\nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\boldsymbol{\theta}}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z} \quad \square
+$$
 
 ### Theorem (Gradient in spherical coordinates)
 
@@ -346,8 +346,8 @@ $$
 \operatorname{div} \mathbf{A} & = \left(\frac{\partial}{\partial x}\widehat{\mathbf{i}} + \frac{\partial}{\partial y}\widehat{\mathbf{j}} + \frac{\partial}{\partial z}\widehat{\mathbf{k}}\right) \cdot (A_1\widehat{\mathbf{i}} + A_2\widehat{\mathbf{j}} + A_3\widehat{\mathbf{k}}) \\
 & = \frac{\partial A_1}{\partial x} + \frac{\partial A_2}{\partial y} + \frac{\partial A_3}{\partial z} \\
 & = \sum_{i=1}^{3} \frac{ \partial A_i}{\partial x_i}
-\end{aligned}
-$$ $$\square$$
+\end{aligned} \quad \square
+$$
 
 > **Remark**:
 >
@@ -385,8 +385,8 @@ A_{1} & A_{2} & A_{3}
 \end{array}\right|\\
 & = \left(\frac{\partial A_3}{\partial y} - \frac{\partial A_2}{\partial z}\right)\widehat{\mathbf{i}} + \left(\frac{\partial A_1}{\partial z} - \frac{\partial A_3}{\partial x}\right)\widehat{\mathbf{j}} + \left(\frac{\partial A_2}{\partial x} - \frac{\partial A_1}{\partial y}\right)\widehat{\mathbf{k}} \\
 & = \sum_{i=1}^{3} \ve_{ijk} \frac{\partial A_k}{\partial x_j} \\
-\end{aligned}
-$$ $$\square$$
+\end{aligned} \quad \square
+$$
 
 > **Remark**:
 >
@@ -530,8 +530,8 @@ $$
 & = \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{1}{2} \ve_{ijk} \frac{\partial}{\partial x_k} \frac{\partial \phi}{\partial x_j} \\
 & = \frac{1}{2} \ve_{ijk} \left(\frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k} - \frac{\partial}{\partial x_j} \frac{\partial \phi}{\partial x_k}\right) \\
 & = 0 \\
-\end{aligned}
-$$ $$\square$$
+\end{aligned} \quad \square
+$$
 
 > **Remark**:
 >
@@ -552,10 +552,8 @@ $$
 & = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} + \ve_{jik} \frac{\partial}{\partial x_j} \frac{\partial A_k}{\partial x_i} \\
 & = \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} - \ve_{ijk} \frac{\partial}{\partial x_i} \frac{\partial A_k}{\partial x_j} \\
 & = 0 \\
-\end{aligned}
+\end{aligned} \quad \square
 $$
-
-<p align="right">$$\square$$</p>
 
 > **Remark**:
 >
@@ -580,10 +578,9 @@ $$
 & = \frac{\partial^2 A_j}{\partial x_j \partial x_i} - \frac{\partial^2 A_i}{\partial x_j \partial x_j} \\
 & = \frac{\partial}{\partial x_i}\left(\frac{\partial \vf_j}{\partial x_j}\right) - \frac{\partial^2 A_i}{\partial x_j^2} \\
 & = [\g(\d \vf)]_i - [\g^2 \vf]_i \\
-\end{aligned}
+\end{aligned} \quad \square
 $$
 
-<p align="right">$$\square$$</p>
 
 > **Remark**:
 >
