@@ -95,7 +95,7 @@ $$
 
 and define $$P$$ to be the $$n \times n$$ matrix $$\left(p_{i j}\right)$$. We call $$P$$ **the change of basis matrix** from $$E$$ to $$F$$.
 
-#### Proposition
+#### Proposition (The change of basis matrix is invertibl and the matrix of a linear map is similar to the matrix of the same linear map with respect to another basis)
 
 1. The change of basis matrix $$P$$ is invertible.
    
@@ -173,7 +173,7 @@ $$
 
 A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basis $$B$$ of $$V$$ consisting of eigenvectors of $$T$$.
 
-#### Proposition
+#### Proposition (The eigenvecotrs corresponding to distinct eigenvalues are linearly independent)
 
 - $$T: V \rightarrow V$$ be a linear map. 
   
@@ -236,7 +236,7 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
     Since all $$\lambda_{k+1} - \lambda{i} \neq 0$$ for all $$i = 1, \dots, k$$, we have $$a_1 = \dots = a_k = 0$$. So, $$a_{k+1}v_{k+1} = 0$$. Since $$v_{k+1} \neq 0$$, we have $$a_{k+1} = 0$$. Hence, $$v_1, \dots, v_{k+1}$$ are linearly independent. $$\square$$
 
 
-#### Corollary
+#### Corollary (The number of distinct roots of the characteristic polynomial equals the dimension of the the vector space means the linear map is diagonalisable)
 
 - $$V$$ be $$n$$-dimensional over $$\F$$,
   

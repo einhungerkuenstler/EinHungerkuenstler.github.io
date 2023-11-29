@@ -53,9 +53,9 @@ $$\gdef\norm#1{\left\lVert#1\right\rVert}$$
 - $$A$$ and $$B$$ be $$n \times n$$ matrices over $$\F$$
   we say that $$A$$ and $$B$$ are **similar** if there exists an invertible $$n \times n$$ matrix $$P$$ such that
 
-$$
-B = P^{-1}AP
-$$
+  $$
+  B = P^{-1}AP
+  $$
 
 then we write $$A \sim B$$.
 
@@ -90,6 +90,7 @@ An $$n \times n$$ matrix $$A$$ over $$\F$$ is **diagonalizable** if $$A \sim D$$
 
 
 > **Remark**
+> 
 > We could use the property of similarity of diagonal matrices to calculuate any     power $$A^k$$.
 > $$
 > A^k = (PDP^{-1})^k = PD^kP^{-1}
@@ -115,11 +116,12 @@ $$
 
 
 > **Remark**
->>1. This does not always hold for any field $$\F$$.
+> 
+>1. This does not always hold for any field $$\F$$.
 >
->>2. This upper triangular matrix is not unique since we can always do some row operations to make it more 'nice'. For example, we can make the diagonal entries to be $$1$$ by dividing the $$i$$-th row by $$\lambda_i$$.
+>2. This upper triangular matrix is not unique since we can always do some row operations to make it more 'nice'. For example, we can make the diagonal entries to be $$1$$ by dividing the $$i$$-th row by $$\lambda_i$$.
 >
->>3. It is diserable to have a unique matrix of a nice form that is similar to $$A$$ and we have the next following form.
+>3. It is diserable to have a unique matrix of a nice form that is similar to $$A$$ and we have the next following form.
 
 #### Definition (Jordan block)
 
@@ -157,9 +159,9 @@ The collection of *Jordan blocks* in $$J$$ is uniquely determined by $$A$$ and w
 
 > **Remark**
 >
->> - The uniqueness of $$J$$ is a vital part of this theorm since it gives a powerful test for the similarity of two complex matrices. i.e. $$A \sim B$$ if and only if $$A$$ and $$B$$ have the same Jordan canonical form.
+> - The uniqueness of $$J$$ is a vital part of this theorm since it gives a powerful test for the similarity of two complex matrices. i.e. $$A \sim B$$ if and only if $$A$$ and $$B$$ have the same Jordan canonical form.
 >
->> - Notice that the Jordan Canonical Form does not always exist for any field $$\F$$, such as $$\R, \Q, \F_p$$. For more general fields, we have the following theorem.
+> - Notice that the Jordan Canonical Form does not always exist for any field $$\F$$, such as $$\R, \Q, \F_p$$. For more general fields, we have the following theorem.
 
 #### Rational Canonical Form theorm
 

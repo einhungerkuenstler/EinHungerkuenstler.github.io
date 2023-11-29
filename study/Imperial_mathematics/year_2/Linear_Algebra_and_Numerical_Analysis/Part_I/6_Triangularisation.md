@@ -34,7 +34,7 @@ $$\gdef\di{\operatorname{dim}}$$
   \end{cases}
   $$
 
-> Remark: To test a triangular matrix is diagonalisable or not:
+> **Remark**: To test a triangular matrix is diagonalisable or not:
 >
 > - If $$\lambda_1 = \lambda_2 = \cdots = \lambda_n$$, then $$A$$ is diagonalisable if and only if $$A$$ is already diagonal.
 >
@@ -126,7 +126,7 @@ Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 
 - Since $$[T]_B = [A]_B$$, $$A$$ is similar to an upper triangular matrix over $$F$$.
 
-> Remark:
+> **Remark**:
 >
 > - If $$\F = \C$$, by the Fundamental Theorem of Algebra, the characteristic polynomial of $$A$$ could always be factorized as a product of linear factors. Therefore, **every matrix is triangularisable in $$\C$$.**
 >

@@ -188,7 +188,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 >
 > Suppose $$W + v = W + v'$$, then $$v - v' \in W$$. So, $$T(v - v') \in W$$. Hence, $$T(v) - T(v') \in W$$. So, $$W + T(v) = W + T(v')$$ and $$\bar{T}(W + v) = \bar{T}(W + v')$$.
 
-> Remark: *How to find the basis of quotient space $$V / W$$?*
+> **Remark**: *How to find the basis of quotient space $$V / W$$?*
 > 
 >Consider a basis $$B_w$$ of $$W$$:
 >
@@ -263,16 +263,16 @@ where $$Z$$ is a $$r \times s$$ matrix. $\square$
 
 #### Corollary (The characteristic polynomial of $$T$$ could be written as a product of the characteristic polynomials of $$T_w$$ and $$\bar{T}$$)
 
-- $$T: V \rightarrow V$$ is a linear map
+- $$T: V \rightarrow V$$ is a linear map.
   
-- $$W$$ is a $$T$$-invariant subspace of $$V$$
+- $$W$$ is a $$T$$-invariant subspace of $$V$$.
   
 -  
-  1. $$c(x)$$ is the characteristic polynomial of $$T$$
+    1. $$c(x)$$ is the characteristic polynomial of $$T$$.
   
-  2. $$c_{1}(x)$$ is the characteristic polynomial of the restriction of $$T$$ to $$W$$, $$T_{W}: W \rightarrow W$$
+    2. $$c_{1}(x)$$ is the characteristic polynomial of the restriction of $$T$$ to $$W$$, $$T_{W}: W \rightarrow W$$.
 
-  3. $$c_{2}(x)$$ is the characteristic polynomial of the quotient map $$\bar{T}: V / W \rightarrow V / W$$
+    3. $$c_{2}(x)$$ is the characteristic polynomial of the quotient map $$\bar{T}: V / W \rightarrow V / W$$.
 
   
   Then,
