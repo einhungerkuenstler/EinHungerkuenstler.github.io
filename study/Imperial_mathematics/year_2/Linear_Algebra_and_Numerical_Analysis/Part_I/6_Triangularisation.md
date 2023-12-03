@@ -1,5 +1,5 @@
 ---
-title: Triangularisation
+title: 6. Triangularisation
 layout: simple
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Quotient Spaces
+title: 5. Quotient Spaces
 layout: simple
 ---
 

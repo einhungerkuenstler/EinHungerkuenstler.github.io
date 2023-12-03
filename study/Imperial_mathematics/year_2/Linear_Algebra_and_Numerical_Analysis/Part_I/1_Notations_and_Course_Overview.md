@@ -1,5 +1,5 @@
 ---
-title: Notations and Course Overview
+title: 1. Notations and Course Overview
 layout: simple
 ---
 

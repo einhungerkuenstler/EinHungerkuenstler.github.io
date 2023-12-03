@@ -1,5 +1,5 @@
 ---
-title: Algebraic and geometric multiplicaties of eigenvalues
+title: 3. Algebraic and geometric multiplicaties of eigenvalues
 layout: simple
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Direct Sum
+title: 4. Direct Sum
 layout: simple
 ---
 
