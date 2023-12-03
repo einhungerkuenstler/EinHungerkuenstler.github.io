@@ -28,7 +28,7 @@ title: Surviving the mathematics major at Imperial College London
 
 - [Analysis II](/study/Imperial_mathematics/year_2/Analysis_II/main)
   
-- [Linear Algebra and Numerical Analysis](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/main)
+- [Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/main)
   
 - [Multivariable Calculus and Differential Equations](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/main)
   

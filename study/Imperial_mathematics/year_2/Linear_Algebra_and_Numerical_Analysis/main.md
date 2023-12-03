@@ -1,11 +1,8 @@
 ---
-title: Linear Algebra and Numerical Analysis
+title: Linear Algebra
 layout: simple
 ---
 
->>*We (Irving Kaplansky and Paul Halmos) share a philosophy about linear algebra: we think basis-free, we write basis-free , but when the chips are down we close the office door and compute with matrices like fury.*
->>
->><p align="right">-- Irving Kaplansky, In Paul Halmos: Celebrating 50 Years of Mathematics (1991), 88</p>
 >
 >> *A big part of linear algebra is concerned with:*
 >>
@@ -22,16 +19,5 @@ layout: simple
 
 #### *The notes assume the reader had the knowledge of the first year Linear Algebra course at Imperial College London.*
 
-### Part I: Matrices
+### [Part I: Matrices](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/main)
 
-- [Notations and Course Overview](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/1_Notations_and_Course_Overview)
-
-- [Some revision from 1st Year Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/2_RevisionofYear1)
-
-- [Algebraic and geometric multiplicaties of eigenvalues](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/3_Algebraic_and_geometric_multiplicaties_of_eigenvalues)
-
-- [Direct Sum](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/4_Direct_Sum)
-
-- [Quotient Spaces](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/5_Quotient_Spaces)
-
-- [Triangularisation](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/6_Triangularisation)
