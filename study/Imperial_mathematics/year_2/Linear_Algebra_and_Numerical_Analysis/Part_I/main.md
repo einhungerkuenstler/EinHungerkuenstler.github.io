@@ -20,7 +20,7 @@ layout: simple
 
 6. [Triangularisation](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/6_Triangularisation)
 
-7. [Cayley-Hamilton Theorem](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/7_The_CayleyHamilon_Theorem)
+7. [The Cayley-Hamilton Theorem](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/7_The_CayleyHamilon_Theorem)
 
 8. [Polynomial](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/8_Polynomials)
 

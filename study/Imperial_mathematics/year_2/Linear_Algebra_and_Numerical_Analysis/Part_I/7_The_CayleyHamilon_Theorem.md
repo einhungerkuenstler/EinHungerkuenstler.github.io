@@ -160,8 +160,6 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
 
       - `Proof of B is linearly independent`:
 
-        $$
-        \tag{}
         Assume $$j$$ is the largest integer such that the set
 
         $$
@@ -196,7 +194,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
 
           Hence, $$j = n$$ and $$B$$ is a basis of $$V$$.
 
-      - 'Construct the matrix of linear map':
+      - `Construct the matrix of linear map`:
 
         The basis $$B$$ is in the form of (Cameo). Since $$T^n(v) = \span(B)$$, we could write
 

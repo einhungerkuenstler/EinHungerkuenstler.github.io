@@ -9,7 +9,8 @@ layout: simple
 >> - *Proving the existence of a basis where a linear map can be expressed in its simplest form, and*
 >>
 >> - *Deriving algorithms to find such a basis.*
->><p align="right">-- Dr Marco Guaraco, the fifth lecture at Autumn Term substitute for Prof. Martin Liebeck, 2023</p>
+>>
+>><p align="right">-- Dr. Marco Guaraco, the fifth lecture at Autumn Term substitute for Prof. Martin Liebeck, 2023</p>
 >
 >>*$$\exist$$ blackboard page* ....
 >>
