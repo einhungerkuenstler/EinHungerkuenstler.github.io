@@ -19,15 +19,13 @@ $$\gdef\vc{\mathbf{c}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\di{\operatorname{dim}}$$
-$$\newcommand{\imply}{\textcolor{gray}{\Rightarrow}}$$
+$$\newcommand{\implies}{\textcolor{gray}{\Rightarrow}}$$
 $$\newcommand{\iimply}{\textcolor{gray}{\Leftarrow}}$$
 $$\newcommand{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
 
-
 > For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in \F[x]$$.
 
-
-#### Definition $$\blue{\textsf{(Minimal polynomial)}}$$
+#### $$\blue{\textsf{Definition (Minimal polynomial)}}$$
 
 - $$T: V \to V$$ is a linear map.
   
@@ -48,7 +46,7 @@ $$\newcommand{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
 > For matrix, the definition of the minimal polynomial is the same as the definition of the minimal polynomial of a linear map just by replacing $$T$$ with $$A$$.
 
 
-#### Proposition 9.1 $$\blue{\textsf{(Uniqueness and divisibility of minimal polynomial)}}$$
+#### $$\blue{\textsf{Proposition 9.1 (Uniqueness and divisibility of minimal polynomial)}}$$
 
 - $$T: V \to V$$ is a linear map.
 
@@ -64,13 +62,13 @@ $$\newcommand{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
       p(T) = 0 \iif m_T(x) \mid p(x)
       $$
 
-$$\pro$$
+$$\textcolor{orange}{\mathcal{Proof:}}$$
 
 1. `Existence`: 
 
     By [the Cayley-Hamilton Theorem](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem), there exists a polynomial (the characteristic polynomial) $$c(x)$$ such that $$c(T) = 0$$. If we divide $$c(x)$$ by its leading coefficient, we get a monic polynomial $$m(x)$$ such that $$m(T) = 0$$. If we could not find another monic polynomial $$p(x)$$ such that $$p(T) = 0$$ and $$\deg(p(x)) < \deg(m(x))$$, then $$m(x)$$ is the minimal polynomial of $$T$$.
 
-2. `Uniquness`: (Prove by **contradiction**).
+2. `Uniquness`: (Prove by $$\red{\textbf{contradiction}})$$
 
     Assume there exists $$m{(x)}$$ and $$m_1(x)$$ satisfying the conditions of the minimal polynomial of $$T$$. Then, 
 
@@ -84,7 +82,7 @@ $$\pro$$
 
 3. `Divisibility`: 
      
-    - $$\imply$$: Assume $$p(x) \in \F[x]$$ and $$p(T) = 0$$, by the [Eucilidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), there exists $$q(x), r(x) \in \F[x]$$ such that 
+    - $$\implies$$: Assume $$p(x) \in \F[x]$$ and $$p(T) = 0$$, by the [Eucilidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), there exists $$q(x), r(x) \in \F[x]$$ such that 
 
       $$
       p(x) = q(x) m_T(x) + r(x)
@@ -99,13 +97,13 @@ $$\pro$$
       by the definition of the [minimal polynomial](#definition-the-minimal-polynomial). Since $$m_T(T) = 0$$, we have $$r(T) = 0$$. Then, we have
 
       $$
-      r(x) = 0 \imply p(x) = q(x) m_T(x) \imply m_T(x) \mid p(x)
+      r(x) = 0 \implies p(x) = q(x) m_T(x) \implies m_T(x) \mid p(x)
       $$
 
       - $$\iimply$$: Assume $$m_T(x) \mid p(x)$$, then for $$p(x) \in \F[x]$$, we have
 
       $$
-      m_T(x) \mid p(x) \imply p(x) = m_T(x) q(x) \text{ for some } q(x) \in \F[x]
+      m_T(x) \mid p(x) \implies p(x) = m_T(x) q(x) \text{ for some } q(x) \in \F[x]
       $$
         
       Then, by the conditions of the [minimal polynomial](#definition-the-minimal-polynomial), we have
@@ -115,21 +113,21 @@ $$\pro$$
       $$
 
 
-#### Proposition 9.2 $$\blue{\textsf{(The minimal polynomial divides the characteristic polynomial and share the same roots)}}$$
+####  $$\blue{\textsf{Proposition 9.2 (The minimal polynomial divides the characteristic polynomial and share the same roots)}}$$
 
 - $$T: V \to V$$ is a linear map.
 
 - $$c_T(x)$$ is the characteristic polynomial of $$T$$.
 
-- $$m_T(x)$$ is the minimal polynomial of $$T$$.
+- $$m_T(x)$$ is the [minimal polynomial](#definition-the-minimal-polynomial) of $$T$$.
 
   Then,
 
-  1. `Divides characteristic polynomial`: $$m_T(x) \mid c_T(x)$$.
+  1. `Minimal polynomial divides characteristic polynomial`: $$m_T(x) \mid c_T(x)$$.
   
-  2. `Shares the same roots`: If $$\lambda \in \F$$ and $$c_T(\lambda) = 0$$, then $$m_T(\lambda) = 0$$.
+  2. `Minimal polynomial and characteristic polynomials share the same roots`: If $$\lambda \in \F$$ and $$c_T(\lambda) = 0$$, then $$m_T(\lambda) = 0$$.
 
-$$\pro$$
+$$\textcolor{orange}{\mathcal{Proof:}}$$
 
 1. `Divides characteristic polynomial`: 
 
@@ -146,39 +144,145 @@ $$\pro$$
     Then, by the definition of the [minimal polynomial](#definition-the-minimal-polynomial), we have
 
     $$
-    m_T(T)(v) = 0 \imply m_T(T)(v) = m_T(\lambda)(v) = 0
+    m_T(T)(v) = 0 \implies m_T(T)(v) = m_T(\lambda)(v) = 0
     $$
 
     Hence, $$m_T(\lambda) = 0$$. $$\square$$
 
-#### Theorem 9.3 $$\blue{\textsf{(The minimal polynomial divides the characteristic polynomial)}}$$
+> $$\gray{\mathcal{Remark:}}$$
+>
+>> - For a diagonalizable matrix $$A$$ with the characteristic polynomial 
+>>     $$
+c(x) = \prod_{i=1}^n (x - \lambda_i)^{a_i}
+$$
+>>
+>>   where $$\lambda_i$$ are distinct diagonal entries of $$A$$ and $$a_i$$ are the multiplicity of $$\lambda_i$$. Then, the minimal polynomial of $$A$$ is
+>> 
+>> $$
+m(x) = \prod_{i=1}^n (x - \lambda_i)
+$$
+>>
+>>   a product of distinct linear factors of $$c(x)$$.
+>> 
+>> $$\textcolor{orange}{\mathcal{Proof:}}$$ (Question on  Problem Sheet 4)
+>
+>> - The minimal polynomial of a **companion matrix** is the characteristic polynomial of the companion matrix. (Question on  Problem Sheet 4)
+
+
+#### $$\blue{\textsf{Proposition 9.3 (Relations between with T-invariant subspaces and quotient maps)}}$$
 
 - $$T: V \to V$$ is a linear map.
 
-- $$p(x) \in \F[x]$$ is an irreducible factor of $$\chi_T(x)$$.
-
-  Then, $$p(x) \mid m_T(x)$$.
-
-$$\pro$$
-
-
-#### Proposition 9.4 $$\blue{\textsf{(The relations of polynomials of linear maps with its corresponding invariant map and quotient map)}}$$
-
-- $$T: V \to V$$ is a linear map.
-
-- $$T_w: V \to V$$ is the invariant map of $$T$$ with respect to $$w \in V$$.
+- $$T_W: W \to W$$, with the restriction of $$T$$ to $$W$$.
 
 - $$\overline{T}: V / \F[w] \to V / \F[w]$$ is the quotient map of $$T$$ with respect to $$w \in V$$.
 
 
   Then,
 
-  1. `Product`: $$c_T(x) = c_{T_w}(x) c_{\overline{T}}(x)$$.
+  1. `The charactersitic polynomial of T is the product of the charactersitic polynomials of restriction and quotient maps`: 
+  
+    $$
+    c_T(x) = c_{T_W}(x) c_{\overline{T}}(x)
+    $$
+  
+  2. `The minimal polynomial of restriction map divides the minimal polynomial of T, and the same for quotient map`: 
+  
+    $$
+    m_{T_W}(x) \mid m_T(x) \textit{ and } m_{\overline{T}}(x) \mid m_T(x)
+    $$
 
-  2. `Common divisior`: $$m_{T_w}(x) \mid m_T(x)$$ and $$m_{\overline{T}}(x) \mid m_T(x)$$.
 
+$$\textcolor{orange}{\mathcal{Proof:}}$$
 
-$$\pro$$
+1. `The charactersitic polynomial of T is the product of the charactersitic polynomials of restriction and quotient maps`: 
 
+    In the [Proposition 8.3](../8_Diagonalization/8_Diagonalization.md#proposition-8.3-the-characteristic-polynomial-of-a-block-diagonal-matrix-is-the-product-of-the-characteristic-polynomials-of-the-blocks).
+
+2. `The minimal polynomial of restriction map divides the minimal polynomial of T, and the same for quotient map`: 
+
+    Assume $$w \in W$$ be arbitrary, by the definition of the [minimal polynomial](#definition--minimal-polynomial), we have
+
+    $$
+    m_{T_W}(T_W) = 0 \text{ and } m_T(T)(w) = 0
+    $$
+
+    then, for $$v \in V$$,
+
+    $$
+    m_T(\overline{T})(W + v) = W + m_T(T)(v) = W + 0 = W
+    $$
+
+    Hence, $$m_T(T_W) = 0$$ and $$m_T(\overline{T}) = 0$$. Then, by [3 in Proposition 9.1](#proposition-9.1-the-minimal-polynomial-divides-the-characteristic-polynomial), we have 
+
+    $$
+    m_{T_W}(x) \mid m_T(x) \textit{ and } m_{\overline{T}}(x) \mid m_T(x) \quad \square
+    $$
+
+#### $$\blue{\textsf{Theorem 9.4}}$$    $$\blue{\mathsf{(An \; irreducible \; factor \; of \; c_T(x) \; divides \; m_T(x))}}$$
+
+- $$T: V \to V$$ is a linear map.
+
+- $$p(x) \in \F[x]$$ is an [irreducible factor](https://en.wikipedia.org/wiki/Irreducible_polynomial) of $$c_T(x)$$.
+
+  Then, $$p(x) \mid m_T(x)$$.
+
+$$\textcolor{orange}{\mathcal{Proof:}}$$ (Prove by $$\red{\textbf{induction}}$$ on $$\dim V$$ and the approach is similar to the proof of [the Cayley-Hamilton Theorem](.../7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem/7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem.md#theorem-7.1))
+
+Assume there is a linear map $$T: V \to V$$ and $$p(x) \in \F[x]$$ is an irreducible factor of $$c_T(x)$$.
+
+- `Base case`: $$\dim V = 1$$.
+
+    Then, $$T$$ is a scalar map. Hence, $$c_T(x) = x - \lambda$$ and $$m_T(x) = x - \lambda$$. Then, $$p(x) = x - \lambda$$ and $$p(x) \mid m_T(x)$$.
+
+- `Inductive step`: Assume $$\dim V > 1$$ and the theorem holds for all linear maps with dimension less than $$\dim V$$.
+
+   - `Case 1`: There exists a $$T$$-invariant subspace $$W$$ that is not equal to $$V$$ or $$0$$.
+
+      Then, by the [Proposition 9.3](#proposition-9.3-relations-between-with-t-invariant-subspaces-and-quotient-maps), we have
+
+      $$
+      c_T(x) = c_{T_W}(x) c_{\overline{T}}(x)
+      $$
+
+      By [Proposition 8.5](.../8_Diagonalization/8_Diagonalization.md#proposition-8.5-the-characteristic-polynomial-of-a-block-diagonal-matrix-is-the-product-of-the-characteristic-polynomials-of-the-blocks), 
+
+      $$
+      p(x) \mid c_{T_W}(x) \text{ or } p(x) \mid c_{\overline{T}}(x)
+      $$
+
+      Since $$\dim W < \dim V$$ and $$\dim V / W < \dim V$$, by the inductive hypothesis, we have
+
+      $$
+      p(x) \mid m_{T_W}(x) \text{ or } p(x) \mid m_{\overline{T}}(x)
+      $$
+
+      Then, by [Proposition 9.3](#proposition-9.3-relations-between-with-t-invariant-subspaces-and-quotient-maps), we have
+
+      $$
+      p(x) \mid m_T(x)
+      $$
+
+    - `Case 2`: $$V$$ has no $$T$$-invariant subspaces apart from $$0$$ and $$V$$. 
+
+      Assume there exits a non-zero vector $$v \in V$$ and we define a set $$B$$ as follows:
+
+      $$
+      B = \set{v, T(v), T^2(v), \dots, T^{n-1}(v)}
+      $$
+
+      where $$n = \dim V$$. Then, by [proof of the Cayley-Hamilton Theorem](.../7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem/7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem.md#theorem-7.1), $$B$$ is a basis of $$V$$. and
+
+      $$
+      [T]_B = C(c_T(x))
+      $$
+
+      where $$C(c_T(x))$$ is the [companion matrix](.../8_Diagonalization/8_Diagonalization.md#definition-companion-matrix) of $$c_T(x)$$. From the previous remark, we know that the minimal polynomial of a companion matrix is the characteristic polynomial of the companion matrix. Hence, 
+
+      $$
+      m_T(x) = c_T(x)
+      $$
+
+      Then, by assumption, $$p(x) \mid c_T(x)$$, it follows that $$p(x) \mid m_T(x)$$. $$\square$$
 
 
