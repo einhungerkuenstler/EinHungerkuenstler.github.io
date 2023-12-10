@@ -48,7 +48,7 @@ $$
 g(\lambda) \leq a(\lambda)
 $$
 
-**Proof**:
+`Proof`:
 
 Assume $$r = g(\lambda) = \dime E_{\lambda}$$ and $$\{v_1, \cdots, v_r\}$$ be a basis of $$E_{\lambda}$$. We extend this to a basis of $$V$$:
 
@@ -104,7 +104,7 @@ $$
 
 3. $$g\left(\lambda_{i}\right)=a\left(\lambda_{i}\right)$$ for all $$i$$. (The geometric multiplicity of each eigenvalue is equal to its algebraic multiplicity)
 
-**Proof**:
+`Proof`:
 
 - `1 iif 2`
 

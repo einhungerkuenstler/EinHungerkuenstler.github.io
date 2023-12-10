@@ -26,11 +26,11 @@ $$\gdef\cu{\operatorname{curl}}$$
 $$\gdef\g{\nabla}$$
 $$\gdef\vf{\mathbf{A}}$$
 
-#### *For the following, we assume $$\phi$$ is a scalar field and $$\vf$$ is a vector field.*
+> For the following, we assume $$\phi$$ is a scalar field and $$\vf$$ is a vector field.
 
-## 2.1 Gradient
+### $$\textcolor{orange}{\textsf{2.1 Gradient}}$$
 
-### Definition (Level surfaces set)
+#### $$\textcolor{orange}{\textsf{Definition ((Level surfaces set))}}$$
 
 - $$\phi = c$$ defines a **level surface** of $$\phi$$, where $$c$$ is a constant.
 
@@ -38,7 +38,7 @@ $$\gdef\vf{\mathbf{A}}$$
 
 The collection of level surfaces of $$\phi$$ is called the **level surfaces set** of $$\phi$$ or the **equipotential surfaces** of $$\phi$$.
 
-### Definition (Directional derivative)
+#### $$\textcolor{orange}{\textsf{Definition (Directional derivative)}}$$
 
 - A specific point $$P$$ such that $$\phi = \phi(P)$$/
 
@@ -82,7 +82,7 @@ $$
 >
 > - Since $$\cos \theta \leq 1$$, the maximum direction derivative is at $$P$$ occurs when $$\theta = 0$$, i.e. $$\widehat{\mathbf{n}} = \widehat{\mathbf{s}}$$, meaning that the maximum directional derivative is in the direction of the normal line.
 
-### Definition (Gradient)
+#### $$\textcolor{orange}{\textsf{Definition (Gradient)}}$$
 
 The **gradient** is the direction that $$\phi$$ changes most rapidly, which is the direction of the normal line and It is a **vector field**. which maps a point $$P$$ to a vector $$\nabla \phi(P)$$. The gradient is defined as:
 
@@ -107,7 +107,7 @@ $$
 \frac{\partial \phi}{\partial s} = \nabla \phi \cdot \widehat{\mathbf{s}}
  $$
 
-### Theorem (Gradient in Cartesian coordinates)
+#### $$\textcolor{orange}{\textsf{Theorem (Gradient in Cartesian coordinates)}}$$
 
 - $$\phi = \phi(x, y, z)$$ is a scalar field.
 
@@ -117,7 +117,7 @@ $$
 \nabla \phi =  \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}}
 $$
 
-**Proof**:
+`Proof`:
 
 If $$\g \phi = A_1 \nvi + A_2 \nvj + A_3 \nvk$$, then
 
@@ -145,7 +145,7 @@ $$
 \g \phi = \pap{x}\widehat{\mathbf{i}} + \pap{y}\widehat{\mathbf{j}} + \pap{z}\widehat{\mathbf{k}} \quad \square
 $$
 
-### Theorem (Gradient in cylindrical coordinates)
+#### $$\textcolor{orange}{\textsf{Theorem (Gradient in cylindrical coordinates)}}$$
 
 - $$\phi = \phi(r, \theta, z)$$ is a scalar field defined in cylindrical coordinates.
 
@@ -156,7 +156,7 @@ $$
 $$ 
 
 
-**Proof**:
+`Proof`:
 
 Before we prove this, we need to know the following:
 
@@ -202,7 +202,7 @@ $$
 \nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\boldsymbol{\theta}}}{r} \frac{\partial \phi}{\partial \theta}+\widehat{\mathbf{k}} \frac{\partial \phi}{\partial z} \quad \square
 $$
 
-### Theorem (Gradient in spherical coordinates)
+#### $$\textcolor{orange}{\textsf{Theorem (Gradient in spherical coordinates)}}$$
 
 - $$\phi = \phi(r, \theta, \alpha)$$ is a scalar field defined in spherical coordinates.
 
@@ -212,7 +212,7 @@ $$
 \nabla \phi =  \pap{r}\widehat{\mathbf{r}} + \frac{1}{r}\pap{\theta} + \frac{1}{r \sin \theta}\pap{\alpha}
 $$
 
-**Proof**:
+`Proof`:
 
 Before we prove this, we need to know the following:
 
@@ -264,7 +264,7 @@ $$
 \nabla \phi=\widehat{\mathbf{r}} \frac{\partial \phi}{\partial r}+\frac{\widehat{\theta}}{r} \frac{\partial \phi}{\partial \theta}+\frac{\widehat{\alpha}}{r \sin \theta} \frac{\partial \phi}{\partial \alpha}
 $$  $$\square$$
 
-### Extend the definition of gradient and directional derivative to vector fields
+#### $$\textcolor{orange}{\textsf{Extend the definition of gradient and directional derivative to vector fields}}$$
 
 If we extend the definition of gradient to the vector field $$\vf$$, the gradient of a vector field will be a **matrix**, which is called the **Jacobian matrix**. We just take the gradient operator $$\nabla$$ as a $$n\times 1$$ matrix and the vector field $$\vf$$ as a $$n\times 1$$ matrix, then the gradient of a vector field is a $$n\times n$$ matrix.
 
@@ -297,7 +297,7 @@ $$
 where $$\mathbf{J}$$ is the Jacobian matrix of $$\vf$$ and $$\widehat{\mathbf{s}}$$ is the unit vector in the direction $$\widehat{\mathbf{s}}$$.
 
 
-### Equation of a tangent plane to $$\phi = \phi(P)$$
+#### $$\textcolor{orange}{\mathsf{Equation\;of\;a\;tangent\;plane\;to \;\phi = \phi(P)}}$$
 
 - $$(\g \phi)_P$$ is the gradient at $$P$$ of $$\phi$$.
 
@@ -319,9 +319,9 @@ $$
 
 where $$\left(\pap{x}\right)_P$$, $$\left(\pap{y}\right)_P$$ and $$\left(\pap{z}\right)_P$$ are the partial derivatives of $$\phi$$ at $$P$$ and are constants.
 
-## 2.2 Divergence and Curl
+### $$\textcolor{orange}{\textsf{2.2 Divergence and Curl}}$$
 
-### Definition (Divergence)
+#### $$\textcolor{orange}{\textsf{Definition (Divergence)}}$$
 
 The **divergence** of a vector field $$\vf$$ is a **scalar field** that maps a point $$P$$ to a scalar $$\d \vf(P)$$. The divergence is defined as:
 
@@ -329,7 +329,7 @@ $$
 \d \vf = \nabla \cdot \vf
 $$
 
-### Theorem (Divergence in Cartesian coordinates)
+#### $$\textcolor{orange}{\textsf{Theorem (Divergence in Cartesian coordinates)}}$$
 
 - $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$ is a vector field.
 
@@ -339,7 +339,7 @@ $$
 \d \vf = \pap{x}A_1 + \pap{y}A_2 + \pap{z}A_3
 $$
 
-**Proof**:
+`Proof`:
 
 $$
 \begin{aligned}
@@ -359,7 +359,7 @@ $$
 > 
 > - The dot product in the definition of divergence $$\g \cdot \vf$$ is not commutative, i.e. $$\g \cdot \vf \neq \vf \cdot \g$$. Since the left hand side is a **scalar operator** and the right hand side is divergence of a vector field, which is a **scalar**.
 
-### Definition (Curl)
+#### $$\textcolor{orange}{\textsf{Definition (Curl)}}$$
 
 The **curl** of a vector field $$\vf$$ is a **vector field** that maps a point $$P$$ to a vector $$\cu \vf(P)$$. The curl is defined as:
 
@@ -367,7 +367,7 @@ $$
 \cu \vf = \nabla \times \vf
 $$
 
-### Theorem (Curl in Cartesian coordinates)
+#### $$\textcolor{orange}{\textsf{Theorem (Curl in Cartesian coordinates)}}$$
 
 - $$\vf = A_1 \nvi + A_2 \nvj + A_3 \nvk$$ is a vector field.
 
@@ -377,7 +377,7 @@ $$
 \cu \vf = \left(\pap{y}A_3 - \pap{z}A_2\right)\nvi + \left(\pap{z}A_1 - \pap{x}A_3\right)\nvj + \left(\pap{x}A_2 - \pap{y}A_1\right)\nvk
 $$
 
-**Proof**:
+`Proof`:
 $$
 \begin{aligned}
 \operatorname{curl} \mathbf{A} & = \left|\begin{array}{ccc}
@@ -405,9 +405,9 @@ $$
 > These simple form for $$\d$$ and $$\cu$$ are only adapted to Cartesian coordinates since $$\mathbf{i}, \mathbf{j}, \mathbf{k}$$ are constant vectors. **For other coordinates, we need to use the chain rule to derive the formula.**
 
 
-## 2.3 Operations with the gradient operator
+### $$\textcolor{orange}{\textsf{2.3 Operations with the gradient operator}}$$
 
-### Some important sum and product formulas
+#### $$\textcolor{orange}{\textsf{Theorem (Some important sum and product formulas)}}$$
 
 - $$\g, \d, \cu$$ are all **linear operators**, i.e. for any scalar $$\alpha$$ and vector fields $$\vf, \vg$$:
 
@@ -441,7 +441,7 @@ $$
     \end{aligned}
     $$
 
-### Use Einstein summation convention to simplify the notation
+#### $$\textcolor{orange}{\textsf{Use Einstein summation convention to simplify the notation}}$$
 
 If we use the Einstein summation convention, we can simplify the notation of the gradient, divergence and curl and the proof of (v).
 
@@ -463,7 +463,7 @@ If we use the Einstein summation convention, we can simplify the notation of the
     \end{aligned}
     $$
 
-### Other important formulas
+#### $$\textcolor{orange}{\textsf{Some important identities}}$$
 
 $$
 \begin{aligned}
@@ -474,9 +474,9 @@ $$
 \end{aligned}
 $$
 
-#### *For the following, we assume that our vector and scalar fields are sufficiently smooth that we can interchange the order of differentiation.*
+> For the following, we assume that our vector and scalar fields are sufficiently smooth that we can interchange the order of differentiation.
 
-### Definition (The divergence of a gradient: the Laplacian)
+#### $$\textcolor{orange}{\textsf{Definition (The divergence of a gradient: the Laplacian)}}$$
 
 - $$\phi = \phi(x, y, z)$$ is a scalar field.
 
@@ -516,7 +516,7 @@ $$
 > - The equation $$\nabla^2 \phi = 0$$ is called the **Laplace equation** and will be studied in detail in the module **Partial Differential Equations in Actions**.
 
 
-### Theorem (The curl of a gradient is zero)
+#### $$\textcolor{orange}{\textsf{Theorem (The curl of a gradient is zero)}}$$
 
 $$\phi = \phi(x, y, z)$$ is a scalar field, then the curl of the gradient of $$\phi$$ is zero:
 
@@ -524,7 +524,7 @@ $$
 \cu(\g \phi) = 0
 $$
 
-**Proof**:
+`Proof`:
 
 $$
 \begin{aligned}
@@ -541,9 +541,9 @@ $$
 >
 > The physical explanation of this theorem is that the curl of a gradient is zero because the curl measures a vector field circulates or rotates about a given point, and the gradient measures the direction of the maximum directional derivative of a scalar field at a given point. Since the gradient measures the direction of the maximum directional derivative of a scalar field at a given point, it has no net rotation around a point, and thus its curl is zero.
 
-### Theorem (The divergence of a curl is zero)
+#### $$\textcolor{orange}{\textsf{Theorem (The divergence of the curl is zero)}}$$
 
-$\vf = \vf(x, y, z)$$ is a vector field, then the divergence of the curl of $$\vf$$ is zero:
+$$\vf = \vf(x, y, z)$$ is a vector field, then the divergence of the curl of $$\vf$$ is zero:
 
 $$
 \d(\cu \vf) = 0
@@ -563,7 +563,7 @@ $$
 >
 > The physical explanation of this theorem is that the divergence of a curl is zero because the divergence measures the a vector field spreads out or converges at a given point and the curl measures a vector field circulates or rotates about a given point. Since for a vector field to have a net rotation around a point, it must have no net flow out or into a point, and thus its divergence is zero.
 
-### Theorem (The curl of a curl is gradient of the divergence minus the Laplacian of the vector field)
+#### $$\textcolor{orange}{\textsf{(The curl of a curl is gradient of the divergence minus the Laplacian of the vector field)}}$$
 
 $$\vf = \vf(x, y, z)$$ is a vector field, then the curl of the curl of $$\vf$$ is:
 
@@ -572,7 +572,7 @@ $$
 $$
 
 
-**Proof**:
+`Proof`:
 
 $$
 \begin{aligned}
@@ -592,9 +592,9 @@ $$
 >
 > - The physical meaning of the curl of a curl of a vector field is a measure of how much the rotations of the rotation of a vector space at a given point.
 
-## 2.4 Irrotational and Solenoidal Vector Fields
+### $$\textcolor{orange}{\textsf{2.4 Irrotational and Solenoidal Vector Fields}}$$
 
-### Definition (Irrotational vector field)
+#### $$\textcolor{orange}{\textsf{Definition (Irrotational vector field)}}$$
 
 - $$\vf = \vf(x, y, z)$$ is a vector field.
 
@@ -614,7 +614,7 @@ Then $$\vf$$ is called an **irrotational vector field**.
 >> 
 >>    - The identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is irrotational since the curl of the identity vector field is zero.
 
-### Definition (Solenoidal vector field)
+#### $$\textcolor{orange}{\textsf{Definition (Solenoidal vector field)}}$$
 
 - $$\vf = \vf(x, y, z)$$ is a vector field.
 
@@ -632,7 +632,7 @@ Then $$\vf$$ is called a **solenoidal vector field**.
 >
 > - The divengence of the identity vector field $$\mathbf{r} = x \widehat{\mathbf{i}} + y \widehat{\mathbf{j}} + z \widehat{\mathbf{k}}$$ is $$3$$, which is the dimension of the vector field. Hence, the identity vector field is not solenoidal.
 
-### An example
+#### $$\textcolor{orange}{\textsf{Examples}}$$
 
 Calculate
 

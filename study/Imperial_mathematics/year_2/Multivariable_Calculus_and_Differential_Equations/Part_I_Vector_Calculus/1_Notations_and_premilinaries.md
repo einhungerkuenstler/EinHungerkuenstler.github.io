@@ -76,7 +76,7 @@ $$\gdef\vf{\mathbf{A}}$$
       >>
       >>    **which is sum over $$k$$.**
       >>
-      >> **Proof**:
+      >> `Proof`:
       >>
       >> - `Overview`: If $$i = j$$ or $$l = m$$, then the left hand side are all $$0$$ and the right hand side is $$0$$. Therefore,we only need to consider the case that $$i \neq j$$ and $$l \neq m$$. Next, we notice that if we swap the $$i$$ & $$j$$ in the left hand side, the sign of both sides will change. Therefore, we only need to consider the case that $$i < j$$ and $$l < m$$. The cases that we need to consider are
       >>
@@ -114,9 +114,9 @@ $$\gdef\vf{\mathbf{A}}$$
 
 ### 1.1.1 All products of vectors
 
-#### *For the following, we assume $$\va = (a_1, a_2, a_3)$$, $$\vb = (b_1, b_2, b_3)$$ and $$\vc = (c_1, c_2, c_3)$$ are vectors in $$\R^3$$.*
+> *For the following, we assume $$\va = (a_1, a_2, a_3)$$, $$\vb = (b_1, b_2, b_3)$$ and $$\vc = (c_1, c_2, c_3)$$ are vectors in $$\R^3$$.*
 
-#### Definition (Vector product)
+#### $$\textcolor{orange}{\textsf{Definition (Vector product)}}$$ 
 
 The **vector product** of $$\va$$ and $$\vb$$ is a third vecotr perpendicular to both $$\va$$ and $$\vb$$, and is denoted by $$\va \times \vb$$ and could be calculated by
 
@@ -139,7 +139,7 @@ $$
    [\va \times \vb]_{i} = \ve_{ijk}a_jb_k
    $$
 >>
->> **Proof**:
+>> `Proof`:
 >>
 >>    $$
       \begin{aligned}
@@ -151,7 +151,7 @@ $$
 >> since $$\varepsilon_{123}=1, \varepsilon_{132}=-1$$, and $$\varepsilon_{1 i j}=0$$ for all other $$i$$ and $$j$$. The other two components are similar. $$\square$$
 
 
-#### Definition (Scalar product)
+#### $$\textcolor{orange}{\textsf{Definition (Scalar product)}}$$
 
 The **scalar product** of $$\va$$ and $$\vb$$ is a scalar and is denoted by $$\va \cdot \vb$$ and could be calculated by
 
@@ -164,7 +164,7 @@ $$
 > If $$\mathbf{a} \cdot \mathbf{b}=0$$ then the vectors $$\mathbf{a}$$ and $$\mathbf{b}$$ are orthogonal.
 >
 
-#### Definition (Triple scalar product)
+#### $$\textcolor{orange}{\textsf{Definition (Triple scalar product)}}$$
 
 The **triple scalar product** of $$\va$$, $$\vb$$ and $$\vc$$ is a scalar and is denoted by $$\va \cdot (\vb \times \vc)$$ and could be calculated by
 
@@ -188,13 +188,13 @@ sum over $$i$$, $$j$$ and $$k$$.
    \mathbf{a} \cdot(\mathbf{b} \times \mathbf{c})=(\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} .
    $$
 >>
->> **Proof**:
+>> `Proof`:
 >>
 >> $$
    \va \cdot (\vb \times \vc) = \ve_{ijk}a_ib_jc_k = (\ve_{kij}a_ib_j)c_k  = [\va \times \vb]_k c_k = (\va \times \vb) \cdot \vc.
    $$ $$\square$$
 
-#### Definition (Triple vector product)
+#### $$\textcolor{orange}{\textsf{Definition (Triple vector product)}}$$
 
 The **triple cross product** of $$\va$$, $$\vb$$ and $$\vc$$ is a vector and is denoted by $$\va \times (\vb \times \vc)$$ and could be calculated by
 
@@ -220,17 +220,17 @@ $$
 >
 >> - We could aalculate the triple vector product by the determinant:
 >>
->>    $$
+>> $$
    \mathbf{a} \times(\mathbf{b} \times \mathbf{c})=\left|\begin{array}{ccc}
    a_{1} & a_{2} & a_{3} \\
    b_{1} & b_{2} & b_{3} \\
    c_{1} & c_{2} & c_{3}
    \end{array}\right|
-      $$
+   $$
 >>
->>    **Proof**:
->>
->>  $$
+>> `Proof`:
+>>  
+>> $$
    \begin{aligned}
    \mathbf{a} \times(\mathbf{b} \times \mathbf{c}) & = \ve_{ijk}a_j[\vb \times \vc]_k \\
    & = \ve_{ijk}a_j\ve_{klm}\vb_l\vc_m \\
@@ -241,7 +241,7 @@ $$
    a_{1} & a_{2} & a_{3} \\
    b_{1} & b_{2} & b_{3} \\
    c_{1} & c_{2} & c_{3}
-   \end{array}\right| $$\square$$
+   \end{array}\right|  \square
    \end{aligned}
    $$ 
 

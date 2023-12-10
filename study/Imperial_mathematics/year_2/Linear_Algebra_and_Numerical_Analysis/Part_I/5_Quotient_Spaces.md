@@ -82,7 +82,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
   
   Then, $$V / W$$ is a vector space over $$\F$$.
 
-**Proof**:
+`Proof`:
 
 - `Addition axioms`: $$(V / W, +)$$ is an Abelian group with the identity $$W + 0 = W$$.
 
@@ -94,7 +94,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 - `Scalar Multiplication`: $$1(W + v) = 1W + 1v = W + v$$.
 
-- `Scalar Multiplication`: $$0(W + v) = 0W + 0v = W$$. $\square$
+- `Scalar Multiplication`: $$0(W + v) = 0W + 0v = W$$. $$\square$$
 
 > *From now, we will call the quotient set $$V / W$$ as a quotient space of $$V$$ by $$W$$.*
 
@@ -110,7 +110,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
     \operatorname{dim} V / W=\operatorname{dim} V-\operatorname{dim} W
     $$
 
-**Proof**:
+`Proof`:
 
  Let $$B_w = \set{w_1, \dots, w_r}$$ be a basis of $$W$$ and extend this to a basis $$B = \set{w_1, \dots, w_r, v_{1}, \dots, v_s}$$ of $$V$$. Therefore, $$\di V = r + s$$ and $$\di W = r$$.
 
@@ -168,7 +168,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 - `Conclusion`:
       
-  $$\bar{B}$$ is a basis of $$V / W$$ and $$\di V / W  = \di V - \di W$$. $\square$
+  $$\bar{B}$$ is a basis of $$V / W$$ and $$\di V / W  = \di V - \di W$$. $$\square$$
 
 ### Quotient spaces and linear maps
 
@@ -225,7 +225,7 @@ $$
 
   where $$Z$$ is a $$r \times s$$ matrix.
 
-**Proof**:
+`Proof`:
 
 Since $$T(W) \subseteq W$$, we can write
 
@@ -259,7 +259,7 @@ X & Z \\
 \end{pmatrix}
 $$
 
-where $$Z$$ is a $$r \times s$$ matrix. $\square$
+where $$Z$$ is a $$r \times s$$ matrix. $$\square$$
 
 #### Corollary (The characteristic polynomial of $$T$$ could be written as a product of the characteristic polynomials of $$T_w$$ and $$\bar{T}$$)
 
@@ -281,7 +281,7 @@ where $$Z$$ is a $$r \times s$$ matrix. $\square$
   c(x)=c_{1}(x) c_{2}(x)
   $$
 
-**Proof**:
+`Proof`:
 
 By the proposition above, we have
 
@@ -308,4 +308,4 @@ x I_{r}-X & -Z \\
 \end{aligned}
 $$
 
-where $$c_1(x)$$ is the characteristic polynomial of $$T_W$$ and $$c_2(x)$$ is the characteristic polynomial of $$\bar{T}$$. $\square$
+where $$c_1(x)$$ is the characteristic polynomial of $$T_W$$ and $$c_2(x)$$ is the characteristic polynomial of $$\bar{T}$$. $$\square$$

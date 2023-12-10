@@ -67,7 +67,7 @@ $$
 >>
 >><p align="right"> -- Albert Einstein, The Field Equations of Gravitation (Where the great genius used the Einstein summation convention), 1915</p>
 
-#### *For the following , we only consider less or equal to three dimensions.*
+> *For the following , we only consider less or equal to three dimensions.*
 
 1. [Notations and Premilinaries](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/1_Notations_and_premilinaries)
 

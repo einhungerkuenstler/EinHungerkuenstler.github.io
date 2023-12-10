@@ -184,7 +184,7 @@ $$
 
 where the $$i$$th column of $$[T]$$ is $$T(\vec{e}_i)$$.
 
-**Proof**:
+`Proof`:
 
 Start with a linear transformation $$T: \mathbb{R}^n \to \mathbb{R}^m$$, let $$\vec{v} \in \mathbb{R}^n$$ be any vector. We could write $$\vec{v}$$ as a linear combination of the standard basis vectors:
 
@@ -213,7 +213,7 @@ $$
 [T \circ S] = [T][S]
 $$
 
-**Proof**:
+`Proof`:
 Apply the definition of linear transformation to $$T \circ  S$$. Therefore, it is linear.
 
 The equation is a statement about matrix multiplication. We will use the following fact derived from the definition of matrix multiplication:
@@ -247,7 +247,7 @@ $$
 [T^{-1}] = ([T])^{-1}
 $$
 
-**Proof**:
+`Proof`:
 
 - $$\Rightarrow$$:
   We suppose that $$T$$ is invertible. Then $$T$$ is one to one and onto. We will show that $$T^{-1}$$ is also linear. Let $$\vec{v}, \vec{w} \in \rr^n$$, then 
@@ -321,7 +321,7 @@ $$
 \vx \cdot \vy = |\vx||\vy| \cos \alpha
 $$
 
-**Proof**:
+`Proof`:
 
 Write $$|\vx - \vy|^2$$ in two ways(In a trangle and using distributive law):
 
@@ -341,7 +341,7 @@ $$
 
 The equality holds if and only if $$\vv$$ and $$\vw$$ are linearly dependent.
 
-**Proof**:
+`Proof`:
 
 We consider the function 
 
@@ -397,7 +397,7 @@ $$
 |\vv + \vw| \leq |\vv| + |\vw|
 $$
 
-**Proof**:
+`Proof`:
 
 It is straightforward by the definition of length and Schwarz's inequality.
 
@@ -431,7 +431,7 @@ $$
 |A B| \leq|A||B|
 $$
 
-**Proof**:
+`Proof`:
 
 For the first inequality, we consider the rows of $$A$$ as tranpose vector $$\vec{a}_i$$, then using Schwarz's inequality.
 
@@ -442,7 +442,7 @@ Actually, the first inequality is a special case of the second inequality.
 
 Every linear transformation is continuous.
 
-**Proof**:
+`Proof`:
 
 Let $$T: \rr^n \to \rr^m$$ be a linear transformation. We need to show that for any $$\epsilon > 0$$, there exists a $$\delta > 0$$ such that for any $$\vx, \vy \in \rr^n$$, if $$|\vx - \vy| < \delta$$, then $$|T(\vx) - T(\vy)| < \epsilon$$. We choose $$\delta = \frac{\epsilon}{|A|}$$, by proposition 1.4.11, we have
 
@@ -472,7 +472,7 @@ $$
 
 2. If $$\rr^2$$ is drawn in the standard way, with $$\vec{\mathbb{e}}_1$$ clockwise from $$\vec{\mathbb{e}}_2$$, then the determinant $$\det[\vec{\mathbb{a}}, \vec{\mathbb{b}}]$$ is positive if and only if $$\vec{\mathbb{a}}$$ lies clockwise from $$\vec{\mathbb{b}}$$. It is negative if and only if $$\vec{\mathbb{a}}$$ lies counterclockwise from $$\vec{\mathbb{b}}$$.nb
 
-**Proof**:
+`Proof`:
 
 Use the definition of dot product and geometric interpretation of dot product.
 
@@ -535,7 +535,7 @@ $$
 
 3. The three vectors $\overrightarrow{\mathbf{a}}, \overrightarrow{\mathbf{b}}$ and $\overrightarrow{\mathbf{a}} \times \overrightarrow{\mathbf{b}}$ satisfy the right-hand rule.
 
-**Proof**:
+`Proof`:
 
 1. We could check that dot product of $$\va$$ and $$\va \times \vb$$ is zero by definition of cross product. Similarly, we could check that dot product of $$\vb$$ and $$\va \times \vb$$ is zero by definition of cross product.
 
@@ -557,7 +557,7 @@ $$
 
 ![](https://cdn.mathpix.com/cropped/2023_09_09_f244f1ea25bae6b34846g-082.jpg?height=285&width=363&top_left_y=987&top_left_x=73)
 
-**Proof**:
+`Proof`:
 
 1. By the graph, we could use the simple calculation to get the result.
 
@@ -655,7 +655,7 @@ Convergennce in $$\rr^n$$ is just $$n$$ separate convergences in $$\rr$$.
 
 A sequence $$(\mathbb{a}_m) = \mathbb{a}_1, \mathbb{a}_2, \ldots$$ with $$\mathbb{a}_i \in \rr^n$$ converges to $$\mathbb{a}$$ if and only if each coordinate converges; i.e., if for all $$j$$ with $$1 \leq j \leq n$$ the coordinate $$(a_m)_j$$ converges to $$(a)_j$$, the $$j$$th coordinate of limit $$\mathbb{a}$$.
 
-**Proof**:
+`Proof`:
 $$"\Longrightarrow"$$:
 
 Assmue there exists $$\epsilon > 0$$ being arbitrary, we could always find a $$M$$ such that $$\forall m > M\;|\mathbb{a}_m - \mathbb{a}| < \epsilon$$. Since,
@@ -688,7 +688,7 @@ Both means that the sequence $$\mathbb{a}_1, \mathbb{a}_2, \ldots$$ converges to
 
 If the sequence of points $$\mathbb{a}_1, \mathbb{a}_2, \ldots$$ in $$\rr^n$$ converges to $$\mathbb{a}$$ and to $$\mathbb{b}$$, then $$\mathbb{a} = \mathbb{b}$$.
 
-**Proof**:
+`Proof`:
 
 We prove this by contradiction. We assume that $$\mathbb{a} \neq \mathbb{b}$$. Let $$\epsilon = \frac{|\mathbb{a} - \mathbb{b}|}{2}$$, then $$\epsilon > 0$$. By the definition of the limit, there exists $$M_1$$ such that $$|\mathbb{a}_m - \mathbb{a}| < \epsilon$$ for all $$m > M_1$$, and there exists $$M_2$$ such that $$|\mathbb{a}_m - \mathbb{b}| < \epsilon$$ for all $$m > M_2$$. Let $$M = \max\{M_1, M_2\}$$, then if $$m > M$$, we have
 
@@ -732,7 +732,7 @@ Let $$\vx_1, \vx_2, \ldots$$ be a convergent sequence in a closed set $$C\subset
 
 Conversely, if every convergent sequence in a set $$C \subset \rr^n$$ converges to a point in $$C$$, then $$C$$ is closed.
 
-**Proof**:
+`Proof`:
 "$$\Longrightarrow$$": We prove this by contradiction, if $$x_0 \notin C$$, then $$x_0 \in \rr^n - C$$, which is open. Therefore, there exists $$r > 0$$ such that $$B_r(\vx_0)\subset (\rr^n -C)$$. Then for all $$n\in \nn$$, we have $$|\vx_n - \vx_0| \leq r$$. By the definition of convergence, we must have $$|\vx_m - \vx_0| < \epsilon$$ for all $$m > M$$. We choose $$\epsilon = \frac{r}{2}$$. 
 
 #### Subsequences
@@ -765,7 +765,7 @@ $$
 
 If a function has a limit, it is unique.
 
-**Proof**:
+`Proof`:
 
 We prove this by contradiction and apply triangle inequality.
 
@@ -797,7 +797,7 @@ a_1 \\ \vdots \\ a_m
 \end{pmatrix}
 $$
 
-**Proof**:
+`Proof`:
 
 "$$\Longrightarrow$$":
 Fix $$\epsilon > 0$$ be arbitrary. Since $$\lim_{\bx \to \bx_0} \mathbb{f}(\bx) = \mathbb{a}$$, there exists $$\delta > 0$$ such that $$\forall \bx \in U, |\bx - \bx_0| < \delta \Longrightarrow |\mathbb{f}(\bx) - \mathbb{a}| < \epsilon$$. Since, $$|f_i(\bx) - a_i| \leq |\mathbb{f}(\bx) - \mathbb{a}|$$, we have $$|f_i(\bx) - a_i| < \epsilon$$ for all $$i = 1, \ldots, m$$.
@@ -865,7 +865,7 @@ $$
 \lim_{\bx \to \bx_0} \mathbb{g} \circ \mathbb{f}(\bx) = \bz_0
 $$
 
-**Proof**:
+`Proof`:
 
 Since for all $$\epsilon > 0$$, there exists $$\delta_1 > 0$$ such that if $$|\by - \by_0| < \delta_1$$ then $$|\mathbb{g}(\by) - \bz_0| < \epsilon$$. Therefore, there exists a $$\delta > 0$$ such that if $$|\bx - \bx_0| < \delta$$, then $$|\mathbb{f}(\bx) - \by_0| < \delta_1$$. Therefore, $$|\mathbb{g}(\mathbb{f}(\bx)) - \bz_0| < \epsilon$$.
 
@@ -893,7 +893,7 @@ $$
 \lim_{i \to \infty} \mathbb{f}(\bx_i) = \mathbb{f}(\bx_0)
 $$
 
-**Proof**:
+`Proof`:
 
 "$$\Longrightarrow$$": We need to show that
 
@@ -952,7 +952,7 @@ Let $$X$$ be a subset of $$\rr^n$$. Then a mapping $$\mathbb{f}: X \to \rr^m$$ i
 
 Every linear transformation $$T: \rr^n \to \rr^m$$ is uniformly continuous.
 
-**Proof**
+`Proof`
 
 
 

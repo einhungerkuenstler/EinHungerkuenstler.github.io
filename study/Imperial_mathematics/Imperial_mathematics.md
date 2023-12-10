@@ -26,11 +26,11 @@ title: Surviving the mathematics major at Imperial College London
 
 ### Year 2
 
-- [Analysis II](/study/Imperial_mathematics/year_2/Analysis_II/main)
+- [Real Analysis and Topology](/study/Imperial_mathematics/year_2/Analysis_II/main)
   
 - [Linear Algebra](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/main)
   
-- [Multivariable Calculus and Differential Equations](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/main)
+- [Multivariable Calculus](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/main)
   
 - [Groups and Rings](/study/Imperial_mathematics/year_2/Groups_and_Rings/main)
   

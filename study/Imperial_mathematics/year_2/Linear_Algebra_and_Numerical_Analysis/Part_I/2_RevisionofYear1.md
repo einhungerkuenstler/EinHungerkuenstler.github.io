@@ -181,7 +181,7 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
   
   Then, $$v_{1}, \ldots, v_{k}$$ are linearly independent.
 
-**Proof**: (By induction on $$k$$)
+`Proof`: (By induction on $$k$$)
 
 - `Base case`: k = 1
 
@@ -246,6 +246,6 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
 
   Then $$T$$ is diagonalisable.
 
-**Proof**:
+`Proof`:
 
 Follows immediately from the proposition above.$$\square$$

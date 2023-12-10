@@ -77,7 +77,7 @@ $$
 f^{-1}(A \cup B) = f^{-1}(A) \cup f^{-1}(B).
 $$
 
-**Proof**:
+`Proof`:
 Suppose we have a
 
 $$
@@ -129,7 +129,7 @@ The proof is straightforward.
 ##### Proposition 0.4.16 (Composition of onto functions).
 
 Let the functions $$f: B \to C$$ and $$g: A \to B$$ be onto. Then the composition $$(f \circ g)$$ is onto.
-**Proof**:
+`Proof`:
 Since
 
 $$
@@ -147,7 +147,7 @@ Therefore, for an arbitrary $$z \in C$$, there exists a $$x \in A$$ such that $$
 ##### Proposition 0.4.17 (Composition of one to one functions)
 
 Let $$f:B \to C$$ and $$g: A \to B$$ be one to one. Then the composition $$(f\circ g)$$ is one to one.
-**Proof**:
+`Proof`:
     We prove this by contradiction. Assume $$(f\circ g)$$ is not one to one. Therefore, for $$z \in C$$, there exist $$x_1 \in A$$, $$x_1 \in B$$ such that $$f(g(x_1)) = f(g(x_2)) = z$$ and $$x_1 \neq x_2$$. Since  $$g$$ is one to one, $$g(x_1) \neq g(x_2)$$ by the definition of one to one and $$z = f(g(x_1)) \neq f(g(x_2)) = z$$ since $$f$$ is one to one which is a contradiction since the equivalence relation is reflexive.
 
 ### 0.5 Real numbers
@@ -172,7 +172,7 @@ Every nonempty subset $$X \subset \mathbb{R}$$ that has an upper bound has a lea
 
 A nondecreasing sequence $$a_n$$ converges if and only if it is bounded above.
 
-**Proof**:
+`Proof`:
  "$$\Rightarrow$$": If a sequence $$a_n$$ converges then it is clearly bounded.
  "$$\Leftarrow$$": Since $$\{ a_n\} \in \mathbb{R}$$ and it is bounded above. Then, there exists a supremum $$\sup \{a_n\}$$, denoted by $$A$$. We claim that $$\lim_{n \to \infty} = A$$. Fix $$\epsilon > 0$$. Since $$A$$ is the supremum, then $$A - \epsilon$$ is not an upper bound. Therefore, there exists a $$N \in \mathbb{N}$$ such that $$A - \epsilon < a_N$$. Since $$a_n$$ is nondecreasing, then for all $$n \geq N$$, we have $$A - \epsilon < a_N \leq a_n \leq A$$. Therefore, $$|a_n - A| < \epsilon$$ for all $$n \geq N$$. Thus, $$\lim_{n \to \infty} = A$$.
 
@@ -184,7 +184,7 @@ $$
 \sum_{n=1}^{\infty} |a_n| \text { converges, then so does the series}	\sum_{n=1}^{\infty} a_n.
 $$
 
-**Proof**:
+`Proof`:
   Let us consider the series
 
 $$
@@ -199,7 +199,7 @@ which is a series of nonnegative terms. Therefore, the series $$b_n = \sum_{n=1}
 
 If $$f: [a,b] \to \mathbb{R}$$ is a continuous function such that $$f(a) \leq 0$$ and $$f(b) \geq 0$$, then there exists a number $$c \in [a,b]$$ such that $$f(c) = 0$$.
 
-**Proof**:
+`Proof`:
 
 Let $$X$$ be a set of $$x \in [a,b]$$ such that $$f(x)\leq 0$$. Since $$X \subset \mathbb{R}$$ and it is bounded. Therefore, there exists a supremum $$\sup X$$, denoted by $$c$$. We claim that $$f(c) = 0$$. We prove this by contradiction. Assume $$f(c) \neq 0$$. Since $$f$$ is continuous, then for every $$\epsilon > 0$$, there exists a $$\delta > 0$$ such that $$|x-c| < \delta$$ implies $$|f(x) - f(c)| < \epsilon$$. Since $$f(c) \neq 0$$, then $$|f(c)| > 0$$. Therefore, there exists a $$\delta > 0$$ such that $$|x-c| < \delta$$ implies $$|f(x) - f(c)| < |f(c)|$$. Since $$f(c) \leq 0$$, then $$f(x) < 0$$ for all $$x \in (c-\delta, c+\delta)$$. Therefore, $$c$$ is not the supremum of $$X$$ which is a contradiction. Therefore, $$f(c) = 0$$.
 
@@ -210,7 +210,7 @@ Let $$X$$ be a set of $$x \in [a,b]$$ such that $$f(x)\leq 0$$. Since $$X \subse
 Show that if $$p(x)$$ is a polynomial of odd degree with real coefficients, then there exists a real number $$c$$ such that $$p(c) = 0$$.
 
 
-**Proof**:
+`Proof`:
   - Since $$p(x)$$ is a polynomial, $$p(x)$$ is continous in $$\mathbb{R}$$. 
   - Without loss of generality, we assume that the leading coefficient of $$p(x)$$ is 1. Then, we could write $$p(x)$$ as
 
@@ -255,7 +255,7 @@ $$
 
 
 
-**Proof**:
+`Proof`:
 
 - a. We prove this by contradiction. Assume $$f$$ is continous at $$0$$. Then, for every $$\epsilon > 0$$, there exists a $$\delta > 0$$ such that $$|x| < \delta$$ implies $$|f(x) - f(0)| < \epsilon$$. Let $$\epsilon = \frac{1}{2}$$. Then, there exists a $$\delta_0 > 0$$ such that if $$|x| < \delta_0$$, then $$|f(x)| < \frac{1}{2}$$. Let $$x = \frac{2}{\pi(2n+1)}$$ for some $$n \in \mathbb{N}$$. Then, $$|x| < \delta_0$$ if $$n$$ is large enough and $$|f(x) = |\sin (\frac{\pi (2n+1)}{2})| = 1$$. Therefore, $$|f(x)| = 1 < \frac{1}{2}$$ which is a contradiction. Therefore, $$f$$ is not continous at $$0$$. Notice that $$f(x)$$ is continous at $$x \neq 0$$ since it is a composition of continous functions.
   
@@ -277,7 +277,7 @@ Suppose $$a \leq b$$. Show that if $$f:[a,b] \to [a,b]$$ is contionous, there ex
 
 
 
-**Proof**:
+`Proof`:
 
 If $$f(a) = a$$ and $$f(b) = b$$, then by the intermediate value theorem, we are down. If $$f(a) \neq a$$ and $$f(b) \neq b$$, then we consider the function $$g(x) = f(x) - x$$. Since $$f$$ is continous, then $$g$$ is continous. Since $$g(a) = f(a) - a \geq 0$$ and $$g(b) = f(b) - b \leq 0$$. Then, by the intermediate value theorem, there exists a $$c \in [a,b]$$ such that $$g(c) = 0$$. Therefore, $$f(c) = c$$.
 
@@ -298,7 +298,7 @@ for $$ n = 1,2,3,\ldots$$.
 - b. Show that $$\sum a_n = \ln 2$$.
 
 
-**Proof**:
+`Proof`:
 
 - a. Alternating Test or if we want to do it from the first principle, we could prove it is Cauthy. 
 - b. We consider the following function series:
