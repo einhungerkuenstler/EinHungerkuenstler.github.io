@@ -72,6 +72,10 @@ $$
 1. [Notations and Premilinaries](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/1_Notations_and_premilinaries)
 
 2. [Grad, Div, Curl and all That](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/2_Div_Grad_Curl_and_all_That)
+
+3. [Integration](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/3_Integration)
+
+4. [Integration Theorems](/study/Imperial_mathematics/year_2/Multivariable_Calculus_and_Differential_Equations/Part_I_Vector_Calculus/4_Integration_Theorems)
    
 
 
