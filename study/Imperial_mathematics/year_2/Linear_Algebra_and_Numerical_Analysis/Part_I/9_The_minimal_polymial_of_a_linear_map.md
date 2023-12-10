@@ -19,7 +19,6 @@ $$\gdef\vc{\mathbf{c}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\di{\operatorname{dim}}$$
-$$\newcommand{\implies}{\textcolor{gray}{\Rightarrow}}$$
 $$\newcommand{\iimply}{\textcolor{gray}{\Leftarrow}}$$
 $$\newcommand{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
 

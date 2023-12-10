@@ -29,9 +29,9 @@ $$\gdef\vff{\mathbf{F}}$$
 
 > For the following, we assume that all the functions are continuous and $$F$$ is a vector field and every domain $$D$$ is an open subset of $$\R^n$$.
 
-### $$\textcolor{blue}{\textsf{3.1 Path Integrals}}$$
+### $$\blue{\textsf{3.1 Path Integrals}}$$
 
-#### $$\textcolor{blue}{\textsf{Definition 3.1.1 (Path Integrals)}}$$
+#### $$\blue{\textsf{Definition 3.1.1 (Path Integrals)}}$$
 
 - A curve $$\gamma$$ joining $$A$$ to $$B$$. **(Not necessarily in the plane or smooth)**.
 
@@ -51,7 +51,7 @@ $$\gdef\vff{\mathbf{F}}$$
 >
 > The function $$f$$ could be a **scalar field** or a **vector field**.
 
-#### $$\textcolor{blue}{\textsf{Definition 3.1.2 (Path Integral of a vector field)}}$$
+#### $$\blue{\textsf{Definition 3.1.2 (Path Integral of a vector field)}}$$
 
 - A curve $$\gamma$$ joining $$P$$ to $$Q$$. (Not necessarily in the plane or smooth)
 
@@ -80,7 +80,7 @@ $$\gdef\vff{\mathbf{F}}$$
 $$
 
 
-#### $$\textcolor{blue}{\textsf{Definition 3.1.3 (Conservative Vector Field)}}$$
+#### $$\blue{\textsf{Definition 3.1.3 (Conservative Vector Field)}}$$
 
 - $$\vff: D \to \R^n$$ is a vector field defined on a domain $$D$$.
  
@@ -90,11 +90,11 @@ $$
     \vff = \nabla \phi
     $$
 
-#### $$\textcolor{blue}{\textsf{Definition 3.1.4 (Potential Function)}}$$
+#### $$\blue{\textsf{Definition 3.1.4 (Potential Function)}}$$
 
 The scalar field $$\phi: D \to \R$$ is called a **potential function** for $$\vff$$ if $$\vff = \nabla \phi$$.
 
-#### $$\textcolor{blue}{\textsf{Definition 3.1.5 (Circulation Integral)}}$$
+#### $$\blue{\textsf{Definition 3.1.5 (Circulation Integral)}}$$
 
 - $$\vff: D \to \R^n$$ is a vector field defined on a domain $$D$$.
 
@@ -106,7 +106,7 @@ The scalar field $$\phi: D \to \R$$ is called a **potential function** for $$\vf
     \oint_{\gamma} \mathbf{F} \cdot d \mathbf{r}
     $$
 
-#### $$\textcolor{blue}{\mathsf{Theorem 3.1.6 (Conservative\;Vector\;Field \iff Path\;Independence)}}$$
+#### $$\blue{\mathsf{Theorem 3.1.6 (Conservative\;Vector\;Field \iff Path\;Independence)}}$$
 
 - $$\vff: D \to \R^n$$ is **continous** and **conservative** on $$D$$.
 
@@ -212,7 +212,7 @@ $$
 > 
 > From the previous chapter, the curl of a gradient is always zero. Thus, if $$\vff$$ is conservative, then $$\cu \vff = 0$$. However, the converse is not true. After we learn **connectedness** and **simply connectedness**, we will see that if $$\cu \vff = 0$$ and $$D$$ is **simply connected** and $$\cu \vff = 0$$, then $$\vff$$ is conservative.
 
-#### $$\textcolor{blue}{\textsf{3.1.7 Practical evaluation of path integrals}}$$
+#### $$\blue{\textsf{3.1.7 Practical evaluation of path integrals}}$$
 
 Suppose we would like to evaluate the path integral of a vector field $$\vff$$ along a curve $$\gamma$$:
 
@@ -244,9 +244,9 @@ I &= \int_{\gamma} \vff \cdot d \mathbf{r} \\
 $$
 
 
-### $$\textcolor{blue}{\textsf{3.2 Surface Integrals}}$$
+### $$\blue{\textsf{3.2 Surface Integrals}}$$
 
-#### $$\textcolor{blue}{\textsf{Definition 3.2.1 (Surface Integrals)}}$$
+#### $$\blue{\textsf{Definition 3.2.1 (Surface Integrals)}}$$
 
 - A surface $$S$$ in $$\R^n$$.
 
@@ -266,15 +266,15 @@ $$
 >
 > The function $$f$$ could be a **scalar field** or a **vector field**. But for the following of surface integrals, we will only consider **scalar fields**.
 
-#### $$\textcolor{blue}{\textsf{3.2.2 Type of surfaces}}$$
+#### $$\blue{\textsf{3.2.2 Type of surfaces}}$$
 
-- $$\textcolor{blue}{\textsf{Closed surface:}}$$ A surface $$S$$ is called a **closed surface** if it **divides $$\R^3$$ into two non-connected regions, an interior region and an exterior region**.
+- $$\blue{\textsf{Closed surface:}}$$ A surface $$S$$ is called a **closed surface** if it **divides $$\R^3$$ into two non-connected regions, an interior region and an exterior region**.
 
-- $$\textcolor{blue}{\textsf{Convex surface:}}$$ A surface $$S$$ is called a **convex surface** if it is **crossed by a straight line in at most two points**.
+- $$\blue{\textsf{Convex surface:}}$$ A surface $$S$$ is called a **convex surface** if it is **crossed by a straight line in at most two points**.
 
-- $$\textcolor{blue}{\textsf{Open surface:}}$$ A surface $$S$$ is called a **open surface** if it has **rim which can be represented by a closed curve (A closed surface can be thought of as the sum of two open surfaces)**.
+- $$\blue{\textsf{Open surface:}}$$ A surface $$S$$ is called a **open surface** if it has **rim which can be represented by a closed curve (A closed surface can be thought of as the sum of two open surfaces)**.
 
-#### $$\textcolor{blue}{\textsf{3.2.3 Evaluation of surface integrals for plane surfaces in x-y plane}}$$
+#### $$\blue{\textsf{3.2.3 Evaluation of surface integrals for plane surfaces in x-y plane}}$$
 
 - `An areal element:` $$d S$$
 
@@ -316,9 +316,9 @@ $$
             \int_{S} f(x, y) d S = \int_{y_1}^{y_2} \left\{\int_{G_2(y)}^{G_1(y)} f(x, y)d x \right\} d y
             $$
 
-### $$\textcolor{blue}{\textsf{3.3 Volume Integrals}}$$
+### $$\blue{\textsf{3.3 Volume Integrals}}$$
 
-#### $$\textcolor{blue}{\textsf{Definition 3.3.1 (Volume Integrals)}}$$
+#### $$\blue{\textsf{Definition 3.3.1 (Volume Integrals)}}$$
 
 - A region $$\tau$$ in $$\R^n$$.
 
@@ -339,7 +339,7 @@ $$
 > The function $$f$$ could be a **scalar field** or a **vector field**. 
 
 
-### $$\textcolor{blue}{\textsf{3.3.2 Volume element in Cartesian coordinates}}$$
+### $$\blue{\textsf{3.3.2 Volume element in Cartesian coordinates}}$$
 
 In Cartesian coordinates, the volume element is given by
 
