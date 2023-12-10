@@ -290,8 +290,8 @@ $$
 
             $$
             y = \begin{cases}
-            F_1(x)\quad \text{Upper boundary}\\
-            F_2(x)\quad \text{Lower boundary}
+            F_1(x)\quad \textsf{Upper boundary}\\
+            F_2(x)\quad \textsf{Lower boundary}
             \end{cases}
             $$
 
@@ -305,8 +305,8 @@ $$
 
             $$
             x = \begin{cases}
-            G_1(y)\quad \text{Right boundary}\\
-            G_2(y)\quad \text{Left boundary}
+            G_1(y)\quad \textsf{Right boundary}\\
+            G_2(y)\quad \textsf{Left boundary}
             \end{cases}
             $$
 
