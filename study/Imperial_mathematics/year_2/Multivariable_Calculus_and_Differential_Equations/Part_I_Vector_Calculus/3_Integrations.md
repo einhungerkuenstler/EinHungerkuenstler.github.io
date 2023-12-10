@@ -208,6 +208,9 @@ $$
 \vff = \nabla G
 $$
 
+Hence, $\vff$ is conservative. $$\square$$
+
+
 > **Remark:**
 > 
 > From the previous chapter, the curl of a gradient is always zero. Thus, if $$\vff$$ is conservative, then $$\cu \vff = 0$$. However, the converse is not true. After we learn **connectedness** and **simply connectedness**, we will see that if $$\cu \vff = 0$$ and $$D$$ is **simply connected** and $$\cu \vff = 0$$, then $$\vff$$ is conservative.
@@ -242,6 +245,8 @@ I &= \int_{\gamma} \vff \cdot d \mathbf{r} \\
 &= \int_{t_0}^{t_1} \left(F_1(t) \frac{d x}{d t} + F_2(t) \frac{d y}{d t} + F_3(t) \frac{d z}{d t} \right) d t
 \end{aligned}
 $$
+
+
 
 
 ### $$\blue{\textsf{3.2 Surface Integrals}}$$
