@@ -339,7 +339,7 @@ $$
 > The function $$f$$ could be a **scalar field** or a **vector field**. 
 
 
-### $$\blue{\textsf{3.3.2 Volume element in Cartesian coordinates}}$$
+#### $$\blue{\textsf{3.3.2 Volume element in Cartesian coordinates}}$$
 
 In Cartesian coordinates, the volume element is given by
 
