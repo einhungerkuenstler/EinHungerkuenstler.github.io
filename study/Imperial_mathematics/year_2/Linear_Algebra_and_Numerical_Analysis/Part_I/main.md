@@ -28,6 +28,6 @@ layout: simple
 
 10. [Primary Decomposition](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/10_Primary_Decomposition)
 
-11. [Jordan Canonical Form]()
+11. [Jordan Canonical Form](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/11_Jordan_Canonical_Form)
 
-12. [Cyclic Decomposition and Rational Canonical Form]()
+12. [Cyclic Decomposition and Rational Canonical Form](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/12_Cyclic_Decomposition_and_Rational_Canonical_Form)
