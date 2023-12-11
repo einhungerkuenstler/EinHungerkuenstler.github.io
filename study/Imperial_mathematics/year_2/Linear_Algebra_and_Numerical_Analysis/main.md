@@ -22,3 +22,4 @@ layout: simple
 
 ### [Part I: Matrices](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_I/main)
 
+### [Part II: Geometry](/study/Imperial_mathematics/year_2/Linear_Algebra_and_Numerical_Analysis/Part_II/main)
