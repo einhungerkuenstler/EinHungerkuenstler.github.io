@@ -1,5 +1,5 @@
 ---
-title: Multivariable Calculus and Differential Equations
+title: Multivariable Calculus
 layout: simple
 ---
 >*Mathematics is a part of physics. Physics is an experimental science, a part of natural science. Mathematics is the part of physics where experiments are cheap.*
