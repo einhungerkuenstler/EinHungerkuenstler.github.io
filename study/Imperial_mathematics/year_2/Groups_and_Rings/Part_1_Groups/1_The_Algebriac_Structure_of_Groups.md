@@ -16,6 +16,7 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\ord#1{\operatorname{ord(#1)}}$$
 $$\gdef\sgn{\operatorname{sgn}}$$
+$$\gdef\mod#1{\operatorname{mod(#1)}}$$
 $$\gdef\bluetext#1{\blue{\textsf{#1}}}$$
 $$\gdef\bluemath#1{\blue{\mathsf{#1}}}$$
 $$\gdef\def{\blue{\textsf{def}}}$$
@@ -452,7 +453,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
     $$\def$$ $$\Z_n^{\times} := \{[a]_n \in \Z_n \mid \gcd(a, n) = 1, a\in \{1, \dots, n - 1\}\}$$ with $$[a]_n \cdot [b]_n = [a \cdot b]_n$$ as group operation is the **multiplicative group of integers modulo $$n$$**.
 
-    `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$\Z_n^*$$.
+    `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$\Z_n^{\times}$$.
 
 > - $$\Z_n^{\times}$$ is an abelian group. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
 
@@ -494,7 +495,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
 - $$n$$ $$\in$$ $$\N^+$$.
 
-    $$\def$$ $$\varphi(n) := \abs{\Z_n^{\times}} = \abs{\set{a \in \{1, \dots, n - 1\} \mid \gcd(a, n) = 1}}$$ as the **Euler totient function**.
+    $$\def$$ $$\varphi(n) := \abs{\Z_n^{\times}} = \abs{\{[a]_n \in \Z_n \mid \gcd(a, n) = 1, a\in \{1, \dots, n - 1\}\}}$$ as the **Euler totient function**.
 
 #### $$\bluetext{Theorem 1.3 Euler's Theorem}$$
 
