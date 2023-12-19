@@ -521,7 +521,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
 - $$a \in \Z$$ with $$\gcd(a, n) = 1$$.
 
-    $$\imply$$ $$a^{\varphi(n)} \equiv 1 \mod n$$.
+    $$\imply$$ $$a^{\varphi(n)} \equiv 1 \mod$$ $$n$$.
 
     `Proof:`
 
