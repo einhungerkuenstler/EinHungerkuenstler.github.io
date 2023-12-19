@@ -14,7 +14,7 @@ $$\gdef\ke{\operatorname{Ker}}$$
 $$\gdef\im{\operatorname{Im}}$$
 $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
-$$\gdef\ord{\operatorname{ord}}$$
+$$\gdef\ord#1{\operatorname{ord(#1)}}$$
 $$\gdef\sgn{\operatorname{sgn}}$$
 $$\gdef\bluetext#1{\blue{\textsf{#1}}}$$
 $$\gdef\bluemath#1{\blue{\mathsf{#1}}}$$
@@ -167,6 +167,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >  --- 
 >
 > `For every element in a left/right coset <=> generates the same left/right coset:`
+>   
 > - $$\forall a, b \in G$$, $$aH = bH$$ $$\ifif$$ $$a \in bH$$. --- 
 >
 >   -- `=>:` If $$ah \in aH$$ for some $$h \in H$$. Since $$aH = bH$$, $$ah \in bH$$, so $$ah = bh'$$ for some $$h' \in H$$, hence $$a = b(h'h^{-1}) \in bH$$.
@@ -284,7 +285,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
 #### $$\bluetext{Definition (Cyclic Group of Order n and Generator)}$$
 
-   - $$\def$$ $$C_n$$ is a **cyclic group of order $$n$$** $$\ifif$$ $$\exists g \in G, C_n = \langle g \rangle$$ and $$\abs{g} = n$$ for $$n \in \N \cup \{\infty\}$$.
+   - $$\def$$ $$C_n$$ is a **cyclic group of order $$n$$** $$\ifif$$ $$\exists g \in G, C_n = \langle g \rangle$$ and $$\ord{g} = n$$ for $$n \in \N \cup \{\infty\}$$.
 
    - $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$.
 
@@ -297,19 +298,19 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >
 > ---
 >
-> - $$C_n$$ is cyclic $$\ifif$$ $$\exists g \in G, \forall a \in G, \exists ! n \in \{0, \dots, \abs{g} - 1\}, a = g^n$$. 
+> - $$C_n$$ is cyclic $$\ifif$$ $$\exists g \in G, \forall a \in G, \exists ! n \in \{0, \dots, \ord{g} - 1\}, a = g^n$$. 
 > 
 >    -- `=>:` Let $$g$$ be a generator of $$G$$, then for any $$a \in G$$, 
 >      
->    --- `Existence:` $$\exists m \in \Z$$, s.t. $$a = g^m$$. Let $$i := m \mod \abs{g}$$, then $$a = g^i$$.
+>    --- `Existence:` $$\exists m \in \Z$$, s.t. $$a = g^m$$. Let $$i := m \mod \ord{g}$$, then $$a = g^i$$.
 >
->    --- `Uniqueness:` By contradiction. If $$\exists i, j \in \{0, \dots, \abs{g} - 1\}$$, s.t. $$a = g^i = g^j$$, then $$g^{i - j} = e$$, hence $$\abs{g} \mid i - j$$, but $$i - j \in \{0, \dots, \abs{g} - 1\}$$, so $$i - j = 0$$, which is a contradiction. It follows that $$i = j$$.
+>    --- `Uniqueness:` By contradiction. If $$\exists i, j \in \{0, \dots, \ord{g} - 1\}$$, s.t. $$a = g^i = g^j$$, then $$g^{i - j} = e$$, hence $$\ord{g} \mid i - j$$, but $$i - j \in \{0, \dots, \ord{g} - 1\}$$, so $$i - j = 0$$, which is a contradiction. It follows that $$i = j$$.
 >
 >    -- `<=:` By the definition of cyclic group.
 > 
 > ---
 > 
-> - $$C_n$$ is cyclic $$\imply$$ There is at most one $$a \in G$$ s.t. $$\abs{a} = 2$$. -- By contradiction. If $$\exists a, b \in G, a \neq b$$ with $$\abs{a} = \abs{b} = 2$$, then $$a^2 = b^2 = e$$. By cyclicity, we write $$a = g^i, b = g^j$$, where $$g$$ is a generator of $$C_n$$ and $$i ,j \in \{0, \dots, n - 1\}, n =\abs{g}$$. Then $$g^i \neq e, g^j \neq e$$ and $$g^{2i} = g^{2j} = e$$. Hence, $$n \mid 2i, n \mid 2j$$, but $$2i, 2j \in \{0, 2, \dots, 2n - 2\}$$, so $$2i = 2j = 0$$ or $$2i = 2j = n$$. It follows that $$i = j = 0$$ or $$i = j = \frac{n}{2}$$ if $$n$$ is even, which is a contradiction.
+> - $$C_n$$ is cyclic $$\imply$$ There is at most one $$a \in G$$ s.t. $$\abs{a} = 2$$. -- By contradiction. If $$\exists a, b \in G, a \neq b$$ with $$\abs{a} = \abs{b} = 2$$, then $$a^2 = b^2 = e$$. By cyclicity, we write $$a = g^i, b = g^j$$, where $$g$$ is a generator of $$C_n$$ and $$i ,j \in \{0, \dots, n - 1\}, n =\ord{g}$$. Then $$g^i \neq e, g^j \neq e$$ and $$g^{2i} = g^{2j} = e$$. Hence, $$n \mid 2i, n \mid 2j$$, but $$2i, 2j \in \{0, 2, \dots, 2n - 2\}$$, so $$2i = 2j = 0$$ or $$2i = 2j = n$$. It follows that $$i = j = 0$$ or $$i = j = \frac{n}{2}$$ if $$n$$ is even, which is a contradiction.
 
 
 ### $$\bluetext{1.3 Some Concrete Groups}$$
@@ -496,7 +497,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
     - $$\imply$$ $$\abs{H} \mid \abs{G}$$, $$\abs{G} = \abs{G : H} \cdot \abs{H}$$.
 
-    - $$\imply$$ $$\abs{g} \mid \abs{G}$$, $$\abs{g} = \abs{G : \langle g \rangle} \cdot \abs{\langle g \rangle}$$.
+    - $$\imply$$ $$\ord{g} \mid \abs{G}$$, $$\ord{g} = \abs{G : \langle g \rangle} \cdot \abs{\langle g \rangle}$$.
 
     `Proof:`
 
