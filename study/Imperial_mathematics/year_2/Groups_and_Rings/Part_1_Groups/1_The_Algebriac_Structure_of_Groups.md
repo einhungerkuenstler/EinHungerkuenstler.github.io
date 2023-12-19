@@ -16,7 +16,6 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\ord#1{\operatorname{ord(#1)}}$$
 $$\gdef\sgn{\operatorname{sgn}}$$
-$$\gdef\mod#1{\operatorname{mod(#1)}}$$
 $$\gdef\bluetext#1{\blue{\textsf{#1}}}$$
 $$\gdef\bluemath#1{\blue{\mathsf{#1}}}$$
 $$\gdef\def{\blue{\textsf{def}}}$$
@@ -503,7 +502,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
 - $$a \in \Z$$ with $$\gcd(a, n) = 1$$.
 
-    $$\imply$$ $$a^{\varphi(n)} \equiv 1 \mod$$ $$n$$.
+    $$\imply$$ $$a^{\varphi(n)} \equiv 1 \mod n$$.
 
     `Proof:`
 
