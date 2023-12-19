@@ -52,7 +52,7 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 > - `Inverse` $$\imply$$ the uniqueness of $$a^{-1}$$. -- By contradiction.
 
 
-#### $$\bluetext{Proposition 1.1 Cancellation Law}$$
+#### $$\bluetext{Theorem 1.1 Cancellation Law}$$
 
 - $$G$$ is a group.
 
@@ -71,7 +71,6 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the following additional axiom:
 
 - `Commutivity:` $$\forall a, b \in G, a b = b a$$.
-
 
 #### $$\bluetext{Definition (Order of a Group)}$$
 
@@ -136,7 +135,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     $$\def$$ the **right coset** of $$H$$ in $$G$$ by some $$g \in G$$ is $$H g := \set{h g \mid h \in H}$$.
 
->  `In same left/right cosets <=> substraction from left/right gives a element of subgroup:`
+>  - `In same left/right cosets <=> substraction from left/right gives a element of subgroup:`
 > 
 > - $$\forall a, b \in G$$, $$a$$ and $$b$$ are in some same left cosets of $$H$$ in $$G$$ $$\ifif$$ $$a^{-1} b \in H$$.  
 > 
@@ -150,7 +149,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >
 >  --- 
 >
-> `For every element in a left/right coset <=> generates the same left/right coset:`
+> - `For every element in a left/right coset <=> generates the same left/right coset:`
 >   
 > - $$\forall a, b \in G$$, $$aH = bH$$ $$\ifif$$ $$a \in bH$$. --- 
 >
@@ -164,12 +163,15 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >
 >  --- 
 >
-> `All left/right cosets form a partition of the whole group:`$$\forall a \in G$$, $$\exists! g \in G$$, s.t. $$a \in gH$$ and $$\exists! g \in G$$, s.t. $$a \in Hg$$.
+> - `All left/right cosets form a partition of the whole group:`$$\forall a \in G$$, $$\exists! g \in G$$, s.t. $$a \in gH$$ and $$\exists! g \in G$$, s.t. $$a \in Hg$$.
 >
 > ---
-> `All left/right cosets have the same cardinality:` 
+> - `All left/right cosets have the same cardinality:` 
 > 
 > - $$\forall a \in G$$, $$\abs{aH} = \abs{Ha} = \abs{H}$$. -- Check that the map $$h \mapsto ah(ha)$$ is a bijection from $$H$$ to $$aH(Ha)$$.
+
+
+> For the following statments about **"could be seen"**, actually it means that there is a **group isomorphism** between the two groups, which we will discuss later and the relation $=$ dose not mean that the equlity holds in the set theory sense. We just use $=$ to denote the **isomorphism**. (Since we have not define the isomorphism yet, we will not use $=$ to denote the isomorphism in the following.)
 
 ### $$\bluetext{1.2 Some Abstract Groups}$$
 
@@ -185,17 +187,15 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$G \times H$$.
 
-> `Trivial product group:` 
+> - `Trivial product group:` 
 > 
-> - $$\set{(g, e) \mid g \in G} \leq G \times H$$ and $$\set{(e, h) \mid h \in H} \leq G \times H$$. -- Check `identity`, `inverse` and `closure`.
-> 
-> - $$\set{(e, h) \mid h \in H} \leq G \times H$$ and $$\set{(g, e) \mid g \in G} \leq G \times H$$. -- Check `identity`, `inverse` and `closure`.
+>    $$\set{(g, e) \mid g \in G} \leq G \times H$$ and $$\set{(e, h) \mid h \in H} \leq G \times H$$. -- Check `identity`, `inverse` and `closure`.
 >
 > ---
 >
-> `The product group is abelian <=> the two groups are abelian:`
+> - `The product group is abelian <=> the two groups are abelian:`
 > 
-> - $$G \times H$$ is abelian $$\ifif$$ $$G$$ and $$H$$ are abelian. -- By the definition of product group.
+>    $$G \times H$$ is abelian $$\ifif$$ $$G$$ and $$H$$ are abelian. -- By the definition of product group.
 
 ### $$\bluetext{1.2.2 Symmetric Groups and Alternating Groups}$$
 
@@ -209,15 +209,21 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
 > For the followng examples, let $$X = \{1, 2, 3, 4, 5\}$$.
 >
-> - `Cycle notation:` The permutation $$f$$ could be written as **a product of cycle notation**, e.g. $$(1 2 3)(4 5)$$ means $$1 \to 2 \to 3 \to 1$$ and $$4 \to 5 \to 4$$, where each pair of parentheses represents a **cycle**.
+> - `Cycle notation:` 
+> 
+>   The permutation $$f$$ could be written as **a product of cycle notation**, e.g. $$(1 2 3)(4 5)$$ means $$1 \to 2 \to 3 \to 1$$ and $$4 \to 5 \to 4$$, where each pair of parentheses represents a **cycle**.
 >
 > ---
 >
-> - `Two-row notation:`The permutation $$f$$ could also be written in **two-row notation**,e.g. $$\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 2 & 3 & 1 & 5 & 4 \end{pmatrix}$$, where the first row represents the elements of $$X$$ and the second row represents the images of the elements of $$X$$.
+> - `Two-row notation:`
+> 
+>    The permutation $$f$$ could also be written in **two-row notation**,e.g. $$\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \\ 2 & 3 & 1 & 5 & 4 \end{pmatrix}$$, where the first row represents the elements of $$X$$ and the second row represents the images of the elements of $$X$$.
 > 
 > ---
 > 
-> - `Matrix notation:` The permutation $$f$$ could be written as a **matrix**, e.g. $$\begin{pmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 5 \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \\ 1 \\ 5 \\ 4 \end{pmatrix}$$, if we use vector to represent the elements of $$X$$ by the order of $$X$$. Note that we are not treating the set consists of "1, 2, 3, 4, 5" as a vector space (Since we have not verify it.), but we are using the matrix to represent the permutation $$f$$. Since a permutation could be seen as a linear transformation, we could use matrix to represent it.
+> - `Matrix notation:` 
+> 
+>    The permutation $$f$$ could be written as a **matrix**, e.g. $$\begin{pmatrix} 0 & 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ 2 \\ 3 \\ 4 \\ 5 \end{pmatrix} = \begin{pmatrix} 2 \\ 3 \\ 1 \\ 5 \\ 4 \end{pmatrix}$$, if we use vector to represent the elements of $$X$$ by the order of $$X$$. Note that we are not treating the set consists of "1, 2, 3, 4, 5" as a vector space (Since we have not verify it.), but we are using the matrix to represent the permutation $$f$$. Since a permutation could be seen as a linear transformation, we could use matrix to represent it.
 
 #### $$\bluetext{Definition (Symmetric Group)}$$
 
@@ -229,9 +235,9 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$S_n$$.
 
-> `Cardinality of symmetric group:`
+> - `Cardinality of symmetric group:`
 > 
-> $$\abs{S_n} = n!$$ -- To count the number of permutations of $$X$$, we can first choose the image of $$1$$ from $$n$$ elements, then choose the image of $$2$$ from $$n - 1$$ elements, and so on.
+>    $$\abs{S_n} = n!$$ -- To count the number of permutations of $$X$$, we can first choose the image of $$1$$ from $$n$$ elements, then choose the image of $$2$$ from $$n - 1$$ elements, and so on.
 
 #### $$\bluetext{Definition (Sign of a Permutation)}$$
 
@@ -274,11 +280,13 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
    - $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$.
 
 
-> - The generator of a cyclic group is not unique. -- For example, $$1$$ and $$-1$$ are both generators of $$(\Z, +) = \langle 1 \rangle = \langle -1 \rangle$$.
+> - `The generator of a cyclic group is not unique.` -- For example, $$1$$ and $$-1$$ are both generators of $$(\Z, +) = \langle 1 \rangle = \langle -1 \rangle$$.
 > 
 > ---
 >
-> - `Cyclic group is abelian:` $$C_n$$ is cyclic $$\imply$$ $$\forall g^i, g^j \in G, g^i g^j = g^j g^i$$ -- By the definition of cyclic group. But, the converse is not true. -- For example, $$(\Q, +)$$ is abelian but not cyclic.
+> - `Cyclic group is abelian:` 
+> 
+>    $$C_n$$ is cyclic $$\imply$$ $$\forall g^i, g^j \in G, g^i g^j = g^j g^i$$ -- By the definition of cyclic group. But, the converse is not true. -- For example, $$(\Q, +)$$ is abelian but not cyclic.
 >
 > ---
 >
@@ -313,17 +321,15 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$GL(n, \F)$$.
 
-> For the following statments about "could be seen", actually it means that there is a **group isomorphism** between the two groups, which we will discuss later.
-
->  `Symmetric group is a subgroup of general linear group:`
+>  - `Symmetric group is a subgroup of general linear group:`
 > 
-> - The symmetric group $$S_n$$ could be seen as a subgroup of $$GL(n, \F)$$ by identifying the permutation $$f$$ with the matrix $$A$$ whose $$i$$-th column is the $$f(i)$$-th standard basis vector. -- For example, $$f = (1 2 3) \in S_3$$ could be identified with $$A = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix} \in GL(3, \F)$$.
+>    The symmetric group $$S_n$$ could be seen as a subgroup of $$GL(n, \F)$$ by identifying the permutation $$f$$ with the matrix $$A$$ whose $$i$$-th column is the $$f(i)$$-th standard basis vector. -- For example, $$f = (1 2 3) \in S_3$$ could be identified with $$A = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix} \in GL(3, \F)$$.
 >
 > ---
 >
 > `Cyclic group is a subgroup of general linear group:`
 >
-> - $$C_n$$ could be seen as a subgroup of $$GL(1, \F)$$ by using the rotational matrix $$A = \begin{pmatrix} \cos \frac{2 \pi}{n} & -\sin \frac{2 \pi}{n} \\ \sin \frac{2 \pi}{n} & \cos \frac{2 \pi}{n} \end{pmatrix} \in GL(2, \F)$$ as the generator.
+>   $$C_n$$ could be seen as a subgroup of $$GL(1, \F)$$ by using the rotational matrix $$A = \begin{pmatrix} \cos \frac{2 \pi}{n} & -\sin \frac{2 \pi}{n} \\ \sin \frac{2 \pi}{n} & \cos \frac{2 \pi}{n} \end{pmatrix} \in GL(2, \F)$$ as the generator.
 
 
 #### $$\bluetext{Definition (Special Linear Group)}$$
@@ -365,8 +371,6 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
 ### $$\bluetext{1.3.2 Klein Four-group and Dihedral Group}$$
 
-
-
 #### $$\bluetext{Definition (Dihedral Group)}$$
 
 - $$n \in \N^+$$.
@@ -378,30 +382,6 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
   $$\def$$ $$D_{n} := \langle r, s \rangle = \set{r^i s^j \mid i \in \{0, \dots, n - 1\}, j \in \{0, 1\}}$$ as **dihedral group with the group operation $$r^i s^j \cdot r^k s^l = r^{i + k} s^{j + l}$$ for $$i, k \in \{0, \dots, n - 1\}, j, l \in \{0, 1\}$$.
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$D_{n}$$.
-
->  `Dihedral group is a subgroup of orthogonal group:` 
-> 
->  - $$D_{n} \leq O(2, \R)$$. -- By the definition of dihedral group. The dihedral is a subgroup that consists the Euclidean distance-preserving transformations of the plane, which includes rotations and reflections. 
->
->  ---
->
-> `Dihedral group is a subgroup of symmetric group:`
->
-> - $$D_{n} \leq S_n$$. -- Since rotation and reflection could be seen as a permutation of the vertices of a regular $$n$$-gon if we identify the vertices with the elements of $$X = \{1, \dots, n\}$$.
->
-> ---
->
-> `Cardinality of dihedral group:`
-> 
-> - $$\abs{D_{n}} = 2n$$. -- By the definition of dihedral group. 
->
-> ---
->
-> `Dihedral group is non-abelian if n >= 3:`
->
-> - $$D_{n}$$ is non-abelian if $$n \geq 3$$. -- When $$n = 1$$, $$D_{1} = \set{e, (1, 2)} = C_2$$, which is abelian. When $$n = 2$$, $$D_{2} = \set{e, r, s, rs} = K_4$$, which is abelian (Introduced in the following.).
-> ). When $$n \geq 3$$, $$D_{2n}$$ is non-abelian. -- A conterexample: when $$n = 3$$, $$rs = (1 2)$$ and $$sr = (1 3)$$, so $$rs \neq sr$$. 
-
 
 #### $$\bluetext{Definition: Klein Four-group}$$
 
@@ -422,6 +402,28 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 > - $$K_4$$ is the smallest non-cyclic group. -- By the definition of Klein four-group.
 >
 > - $$K_4 = D_4 \leq S_4$$. -- Write $$K_4$$ in permutation form, i.e. $$K_4 = \set{e, (1 2)(3 4), (1 3)(2 4), (1 4)(2 3)}$$.
+
+> - `Dihedral group is a subgroup of orthogonal group:` 
+> 
+>    $$D_{n} \leq O(2, \R)$$. -- By the definition of dihedral group. The dihedral is a subgroup that consists the Euclidean distance-preserving transformations of the plane, which includes rotations and reflections. 
+>
+>  ---
+>
+> - `Dihedral group is a subgroup of symmetric group:`
+>
+>   $$D_{n} \leq S_n$$. -- Since rotation and reflection could be seen as a permutation of the vertices of a regular $$n$$-gon if we identify the vertices with the elements of $$X = \{1, \dots, n\}$$.
+>
+> ---
+>
+> - `Cardinality of dihedral group:`
+> 
+>   $$\abs{D_{n}} = 2n$$. -- By the definition of dihedral group. 
+>
+> ---
+>
+> - `Dihedral group is non-abelian if n >= 3:`
+>
+>  $$D_{n}$$ is non-abelian if $$n \geq 3$$. -- When $$n = 1$$, $$D_{1} = \set{e, (1, 2)} = C_2$$, which is abelian. When $$n = 2$$, $$D_{2} = \set{e, r, s, rs} = K_4$$, which is abelian (Introduced in the following.) When $$n \geq 3$$, $$D_{n}$$ is non-abelian. -- A conterexample: when $$n = 3$$, $$rs = (1 2)$$ and $$sr = (1 3)$$, so $$rs \neq sr$$. 
 
 
 ### $$\bluetext{1.4 Groups Defined on Integers Mod n}$$
