@@ -10,13 +10,12 @@ $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
 $$\gdef\F{\mathcal{F}}$$
 $$\gdef\iso{\overset{\sim}{=}}$$
-$$\gdef\ke{\mathsf{Ker}}$$
-$$\gdef\im{\mathsf{Im}}$$
-$$\gdef\lcm{\mathsf{lcm}}$$
-$$\gdef\gcd{\mathsf{gcd}}$$
-$$\gdef\mod{\mathsf{mod}}$$
-$$\gdef\ord#1{\mathsf{ord(#1)}}$$
-$$\gdef\sgn{\mathsf{sgn}}$$
+$$\gdef\ke{\operatorname{Ker}}$$
+$$\gdef\im{\operatorname{Im}}$$
+$$\gdef\lcm{\operatorname{lcm}}$$
+$$\gdef\gcd{\operatorname{gcd}}$$
+$$\gdef\ord#1{\operatorname{ord(#1)}}$$
+$$\gdef\sgn{\operatorname{sgn}}$$
 $$\gdef\bluetext#1{\blue{\textsf{#1}}}$$
 $$\gdef\bluemath#1{\blue{\mathsf{#1}}}$$
 $$\gdef\def{\blue{\textsf{def}}}$$
@@ -44,6 +43,8 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 
   3. `Inverse:` $$\forall a \in G, \exists a^{-1} \in G, a \cdot a^{-1} = a^{-1} \cdot a = e$$.
 
+> For the following, we will not write the group operation explicitly, but we assume that it is clear from the context Instead, we use multiplicative notation for the group operation. We will also attreviate "$$G$$ with $$\cdot$$ is a group" to "$$G$$ is a group". Sometimes, to explicitly specify the group operation, we will write "$$G$$ with $$\cdot$$ is a group'' as $$(G, \cdot)$$.
+
 > `Uniqueness of the identity and the inverse:`
 >
 > - `Identity` $$\imply$$ the uniqueness of $$e$$. -- By contradiction.
@@ -51,37 +52,19 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 > - `Inverse` $$\imply$$ the uniqueness of $$a^{-1}$$. -- By contradiction.
 
 
-> For the following, we will not write the group operation explicitly, but we assume that it is clear from the context Instead, we use multiplicative notation for the group operation. We will also attreviate "$$G$$ with $$\cdot$$ is a group" to "$$G$$ is a group". Sometimes, to explicitly specify the group operation, we will write "$$G$$ with $$\cdot$$ is a group'' as $$(G, \cdot)$$.
-
 #### $$\bluetext{Proposition 1.1 Cancellation Law}$$
 
 - $$G$$ is a group.
 
-  - $$\imply$$ `Left and right cancel:` $$\forall a, b, c \in G, a  b = a c$$ or $$b a = c a$$ $$\Longrightarrow$$ $$b = c$$. 
+  - $$\imply$$ `Left/right cancel:` $$\forall a, b, c \in G, a  b = a c$$ or $$b a = c a$$ $$\Longrightarrow$$ $$b = c$$. 
 
   - $$\imply$$ `Identity cancel:` $$\forall a, b \in G, a b = b$$ or $$b a = b$$ $$\Longrightarrow$$ $$a = e$$ 
 
   `Proof:`
 
-    - `Left and right cancel:` Left multiply by $$a^{-1}$$ or right multiply by $$a^{-1}$$.
+    - `Left/right cancel:` Left multiply by $$a^{-1}$$ or right multiply by $$a^{-1}$$.
 
-    - `Identity cancel:` Right multiply by $$b^{-1}$$ or left multiply by $$b^{-1}$$.
-
-#### $$\bluetext{Properties of the identity in a group}$$
-
-- $$G$$ is a group.
-
-   - $$\imply$$ `Commutivity of identity:`$$\forall a \in G, a e = a$$ and $$e a = a$$. -- By definition of identity element
-  
-   - $$\imply$$ `Identity inverse:`$$\forall a \in G, a^{-1} = e$$ $$\Longleftrightarrow$$ $$a = e$$. -- Left multiply or right multiply by $$a^{-1}$$
-
-#### $$\bluetext{Properties of inverse of an element in a group}$$
-
-- $$G$$ is a group.
-
-    - $$\imply$$ `Inverse of the inverse:` $$\forall a \in G, (a^{-1})^{-1} = a$$. -- By uniqueness of the inverse.
-
-    - $$\imply$$ `Commutivity of inverse:`$$\forall a, b \in G, a b = e$$ or $$ba = e$$  $$\Longleftrightarrow$$ $$b = a^{-1}$$ and $$a = b^{-1}$$. -- Left multiply by $$a^{-1}$$ and right multiply by $$b^{-1}$$.
+    - `Identity cancel:` Right multiply by $$b^{-1}$$ or left multiply by $$b^{-1}$$. 
 
 #### $$\bluetext{Definition (Abelian Group)}$$
 
@@ -106,7 +89,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     $$\def$$ $$\ord{g} := \infty$$ $$\ifif$$ $$\forall n \in \N, a^n \neq e$$.
 
-> $$n \in \N, \abs{G} = n$$ $$\imply$$ $$\forall a \in G, \ord{a}\leq n$$. -- By **[Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle)**.
+> - $$n \in \N, \abs{G} = n$$ $$\imply$$ $$\forall a \in G, \ord{a}\leq n$$. -- By **[Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle)**.
 
 ### $$\bluetext{1.1.2 Subgroups and Cosets}$$
 
@@ -396,11 +379,9 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$D_{n}$$.
 
-> **Remark:**
-> 
 >  `Dihedral group is a subgroup of orthogonal group:` 
 > 
->  $$D_{n} \leq O(2, \R)$$. -- By the definition of dihedral group. The dihedral is a subgroup that consists the Euclidean distance-preserving transformations of the plane, which includes rotations and reflections. 
+>  - $$D_{n} \leq O(2, \R)$$. -- By the definition of dihedral group. The dihedral is a subgroup that consists the Euclidean distance-preserving transformations of the plane, which includes rotations and reflections. 
 >
 >  ---
 >
@@ -453,7 +434,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
     $$\def$$ $$\Z_n = \{[0]_n, [1]_n, \dots, [n - 1]_n\}$$ as the **set of equivalence classes of integers modulo $$n$$**.
 
-`Well-definedness:` Check the three conditions of equivalence relation for $$[a]_n$$: `reflexivity`, `symmetry` and `transitivity`.
+    `Well-definedness:` Check the three conditions of equivalence relation for $$[a]_n$$: `reflexivity`, `symmetry` and `transitivity`.
 
 #### $$\bluetext{Definition (Additive Group of Integers Mod n)}$$
 
@@ -473,7 +454,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$\Z_n^*$$.
 
-> $$\Z_n^{\times}$$ is an abelian group. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
+> - $$\Z_n^{\times}$$ is an abelian group. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
 
 
 ### $$\bluetext{1.5 Applications of Groups}$$
@@ -506,7 +487,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the fol
 
     - Let $$H = \langle g \rangle$$, which is a cyclic subgroup of $$G$$ generated by $$g$$. Then apply the first part.
 
-> `A group with prime order is cyclic:` $$G$$ is a group with $$\abs{G} = p$$ for some prime $$p$$ $$\imply$$ $$G$$ is cyclic. -- By Lagrange's theorem. Since $$\abs{G} = p$$, $$\abs{G : \langle g \rangle} = 1$$ or $$p$$, so $$\abs{G : \langle g \rangle} = 1$$, which means $$G = \langle g \rangle$$.
+> - `A group with prime order is cyclic:` $$G$$ is a group with $$\abs{G} = p$$ for some prime $$p$$ $$\imply$$ $$G$$ is cyclic. -- By Lagrange's theorem. Since $$\abs{G} = p$$, $$\abs{G : \langle g \rangle} = 1$$ or $$p$$, so $$\abs{G : \langle g \rangle} = 1$$, which means $$G = \langle g \rangle$$.
 
 
 #### $$\bluetext{Definition (Euler Totient Function)}$$
