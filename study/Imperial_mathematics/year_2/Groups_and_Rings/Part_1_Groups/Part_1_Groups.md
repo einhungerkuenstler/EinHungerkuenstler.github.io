@@ -14,9 +14,8 @@ $$\gdef\ke{\operatorname{Ker}}$$
 $$\gdef\im{\operatorname{Im}}$$
 $$\gdef\lcm{\operatorname{lcm}}$$
 
-#### *Based on the notes and lectures by [Professor Alexei Skorobogatov](https://www.ma.ic.ac.uk/~anskor/)*
 
-> For the following we assume that $$G$$ and $$H$$ are groups, $$f$$ is a function, $$f: G \rightarrow H$$ and $$e$$ is the unit element in a group.
+> For the following we assume that $$G$$ and $$H$$ are groups, $$f$$ is a function,i.e. $$f: G \rightarrow H$$ and $$e$$ is the unit element of a group.
 
 ## 1. Homomorphisms and normal subgroups
 
