@@ -14,16 +14,18 @@ $$\gdef\ke{\operatorname{Ker}}$$
 $$\gdef\im{\operatorname{Im}}$$
 $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
+$$\gdef\ord{\operatorname{ord}}$$
+$$\gdef\sgn{\operatorname{sgn}}$$
 $$\gdef\bluetext#1{\blue{\textsf{#1}}}$$
 $$\gdef\bluemath#1{\blue{\mathsf{#1}}}$$
-$$\gdef\def{\blue{\textsf{Define}}}$$
+$$\gdef\def{\blue{\textsf{def}}}$$
 $$\gdef\imply{\blue{\mathsf{\implies}}}$$
 $$\gdef\graytext#1{\gray{\textsf{#1}}}$$
 $$\gdef\graymath#1{\gray{\mathsf{#1}}}$$
 $$\gdef\ifif{\blue{\mathsf{\iff}}}$$
 $$\gdef\abs#1{\vert #1 \vert}$$
 
-## $$\bluetext{1.1 Groups, Subgroups and Cosets}$$
+### $$\bluetext{1.1 Groups, Subgroups and Cosets}$$
 
 ### $$\bluetext{1.1.1 Groups}$$
 
@@ -41,8 +43,6 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 
   3. `Inverse:` $$\forall a \in G, \exists a^{-1} \in G, a \cdot a^{-1} = a^{-1} \cdot a = e$$.
 
-> **Remark:**
->
 > `Uniqueness of the identity and the inverse:`
 >
 > - `Identity` $$\imply$$ the uniqueness of $$e$$. -- By contradiction.
@@ -80,7 +80,7 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 
     - $$\imply$$ `Inverse of the inverse:` $$\forall a \in G, (a^{-1})^{-1} = a$$. -- By uniqueness of the inverse.
 
-    - $$\imply$$ `Commutivity of inverse:`$$\forall a, b \in G, a b = e$$ or $$ba = e$$\Longleftrightarrow$$ $$b = a^{-1}$$ and $$a = b^{-1}$$. -- Left multiply by $$a^{-1}$$ and right multiply by $$b^{-1}$$.
+    - $$\imply$$ `Commutivity of inverse:`$$\forall a, b \in G, a b = e$$ or $$ba = e$$  $$\Longleftrightarrow$$ $$b = a^{-1}$$ and $$a = b^{-1}$$. -- Left multiply by $$a^{-1}$$ and right multiply by $$b^{-1}$$.
 
 #### $$\bluetext{Definition (Abelian Group)}$$
 
@@ -101,13 +101,11 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
 - $$g$$ $$\in$$ $$G$$.
 
-    $$\def$$ $$\abs{g} := \min\set{n \in \N \mid g^n = e}$$ as the **order of $$g$$**.
+    $$\def$$ $$\ord{g} := \min\set{n \in \N \mid g^n = e}$$ as the **order of $$g$$**.
 
-    $$\def$$ $$\abs{g} := \infty$$ $$\ifif$$ $$\forall n \in \N, a^n \neq e$$.
+    $$\def$$ $$\ord{g} := \infty$$ $$\ifif$$ $$\forall n \in \N, a^n \neq e$$.
 
-> **Remark:**
-> 
-> $$n \in \N, \abs{G} = n$$ $$\imply$$ $$\forall a \in G, \abs{a}\leq n$$. -- By **[Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle)**.
+> $$n \in \N, \abs{G} = n$$ $$\imply$$ $$\forall a \in G, \ord{a}\leq n$$. -- By **[Pigeonhole Principle](https://en.wikipedia.org/wiki/Pigeonhole_principle)**.
 
 ### $$\bluetext{1.1.2 Subgroups and Cosets}$$
 
@@ -125,8 +123,6 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     3. `Closure:` $$\forall a, b \in H, a b \in H$$.
 
-> **Remark:**
->
 > - `Subgroup is a group:` If $$H \leq G$$, then $$H$$ with $$\cdot$$ is a group.
 >
 > ---
@@ -149,14 +145,13 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 #### $$\bluetext{Definition (Cosets)}$$
 
 - $$G$$ is a group
+
 - $$H$$ $$\leq$$ $$G$$. 
   
     $$\def$$ the **left coset** of $$H$$ in $$G$$ by some $$g \in G$$ is $$g H := \set{g h \mid h \in H}$$.
 
     $$\def$$ the **right coset** of $$H$$ in $$G$$ by some $$g \in G$$ is $$H g := \set{h g \mid h \in H}$$.
 
-> **Remark:**
-> 
 >  `In same left/right cosets <=> substraction from left/right gives a element of subgroup:`
 > 
 > - $$\forall a, b \in G$$, $$a$$ and $$b$$ are in some same left cosets of $$H$$ in $$G$$ $$\ifif$$ $$a^{-1} b \in H$$.  
@@ -188,9 +183,10 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >
 > ---
 > `All left/right cosets have the same cardinality:` 
+> 
 > - $$\forall a \in G$$, $$\abs{aH} = \abs{Ha} = \abs{H}$$. -- Check that the map $$h \mapsto ah(ha)$$ is a bijection from $$H$$ to $$aH(Ha)$$.
 
-## $$\bluetext{1.2 Some Abstract Groups}$$
+### $$\bluetext{1.2 Some Abstract Groups}$$
 
 ### $$\bluetext{1.2.1 Product Groups}$$
 
@@ -204,15 +200,16 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$G \times H$$.
 
-> **Remark:**
-> 
 > `Trivial product group:` 
 > 
 > - $$\set{(g, e) \mid g \in G} \leq G \times H$$ and $$\set{(e, h) \mid h \in H} \leq G \times H$$. -- Check `identity`, `inverse` and `closure`.
 > 
 > - $$\set{(e, h) \mid h \in H} \leq G \times H$$ and $$\set{(g, e) \mid g \in G} \leq G \times H$$. -- Check `identity`, `inverse` and `closure`.
->  ---
+>
+> ---
+>
 > `The product group is abelian <=> the two groups are abelian:`
+> 
 > - $$G \times H$$ is abelian $$\ifif$$ $$G$$ and $$H$$ are abelian. -- By the definition of product group.
 
 ### $$\bluetext{1.2.2 Symmetric Groups and Alternating Groups}$$
@@ -225,8 +222,6 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     $$\def$$ $$f$$ is a **permutation** of $$X$$ $$\ifif$$ $$f$$ is a **bijection**.
 
-> **Remark:**
->
 > For the followng examples, let $$X = \{1, 2, 3, 4, 5\}$$.
 >
 > - `Cycle notation:` The permutation $$f$$ could be written as **a product of cycle notation**, e.g. $$(1 2 3)(4 5)$$ means $$1 \to 2 \to 3 \to 1$$ and $$4 \to 5 \to 4$$, where each pair of parentheses represents a **cycle**.
@@ -249,11 +244,9 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$S_n$$.
 
-> **Remark:**
->
 > `Cardinality of symmetric group:`
 > 
-> $$|S_n| = n!$$ -- To count the number of permutations of $$X$$, we can first choose the image of $$1$$ from $$n$$ elements, then choose the image of $$2$$ from $$n - 1$$ elements, and so on.
+> $$\abs{S_n} = n!$$ -- To count the number of permutations of $$X$$, we can first choose the image of $$1$$ from $$n$$ elements, then choose the image of $$2$$ from $$n - 1$$ elements, and so on.
 
 #### $$\bluetext{Definition (Sign of a Permutation)}$$
 
@@ -291,12 +284,11 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
 #### $$\bluetext{Definition (Cyclic Group of Order n and Generator)}$$
 
-$$\def$$ $$C_n$$ is a **cyclic group of order $$n$$** $$\ifif$$ $$\exists g \in G, C_n = \langle g \rangle$$ and $$\abs{g} = n$$ for $$n \in \N \cup \{\infty\}$$.
+   - $$\def$$ $$C_n$$ is a **cyclic group of order $$n$$** $$\ifif$$ $$\exists g \in G, C_n = \langle g \rangle$$ and $$\abs{g} = n$$ for $$n \in \N \cup \{\infty\}$$.
 
-$$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$.
+   - $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$.
 
-> **Remark:**
->
+
 > - The generator of a cyclic group is not unique. -- For example, $$1$$ and $$-1$$ are both generators of $$(\Z, +) = \langle 1 \rangle = \langle -1 \rangle$$.
 > 
 > ---
@@ -314,11 +306,13 @@ $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$
 >    --- `Uniqueness:` By contradiction. If $$\exists i, j \in \{0, \dots, \abs{g} - 1\}$$, s.t. $$a = g^i = g^j$$, then $$g^{i - j} = e$$, hence $$\abs{g} \mid i - j$$, but $$i - j \in \{0, \dots, \abs{g} - 1\}$$, so $$i - j = 0$$, which is a contradiction. It follows that $$i = j$$.
 >
 >    -- `<=:` By the definition of cyclic group.
+> 
 > ---
+> 
 > - $$C_n$$ is cyclic $$\imply$$ There is at most one $$a \in G$$ s.t. $$\abs{a} = 2$$. -- By contradiction. If $$\exists a, b \in G, a \neq b$$ with $$\abs{a} = \abs{b} = 2$$, then $$a^2 = b^2 = e$$. By cyclicity, we write $$a = g^i, b = g^j$$, where $$g$$ is a generator of $$C_n$$ and $$i ,j \in \{0, \dots, n - 1\}, n =\abs{g}$$. Then $$g^i \neq e, g^j \neq e$$ and $$g^{2i} = g^{2j} = e$$. Hence, $$n \mid 2i, n \mid 2j$$, but $$2i, 2j \in \{0, 2, \dots, 2n - 2\}$$, so $$2i = 2j = 0$$ or $$2i = 2j = n$$. It follows that $$i = j = 0$$ or $$i = j = \frac{n}{2}$$ if $$n$$ is even, which is a contradiction.
 
 
-## $$\bluetext{1.3 Some Concrete Groups}$$
+### $$\bluetext{1.3 Some Concrete Groups}$$
 
 ### $$\bluetext{1.3.1 Linear Groups}$$
 
@@ -336,8 +330,6 @@ $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$
 
 > For the following statments about "could been seen", actually it means that there is a **group isomorphism** between the two groups, which we will discuss later.
 
-> **Remark:**
->  
 >  `Symmetric group is a subgroup of general linear group:`
 > 
 > - The symmetric group $$S_n$$ could be seen as a subgroup of $$GL(n, \F)$$ by identifying the permutation $$f$$ with the matrix $$A$$ whose $$i$$-th column is the $$f(i)$$-th standard basis vector. -- For example, $$f = (1 2 3) \in S_3$$ could be identified with $$A = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix} \in GL(3, \F)$$.
@@ -430,19 +422,18 @@ $$\def$$ $$g$$ is a **generator** of $$C_n$$ $$\ifif$$ $$G = \langle g \rangle$$
 
 #### $$\bluetext{Definition: Klein Four-group}$$
 
-$$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation $$\cdot$$ defined by the following table:
+$$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation defined by the following table:
 
-| $$\cdot$$ | $$e$$  | $$a$$  | $$b$$  | $$c$$ |
-| ------- | ---- | ---- | ---- | ---- |
-| $$e$$     | $$e$$  | $$a$$  | $$b$$  | $$c$$  |
-| $$a$$     | $$a$$  | $$e$$  | $$c$$  | $$b$$  |
-| $$b$$     | $$b$$  | $$c$$  | $$e$$  | $$a$$  |
-| $$c$$     | $$c$$  | $$b$$  | $$a$$  | $$e$$  |
+| $$\cdot$$ | $$e$$ | $$a$$ | $$b$$ | $$c$$ |
+| --- | --- | --- | --- | --- |
+| $$e$$ | $$e$$ | $$a$$ | $$b$$ | $$c$$ |
+| $$a$$ | $$a$$ | $$e$$ | $$c$$ | $$b$$ |
+| $$b$$ | $$b$$ | $$c$$ | $$e$$ | $$a$$ |
+| $$c$$ | $$c$$ | $$b$$ | $$a$$ | $$e$$ |
+
 
 `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$K_4$$.
 
-> **Remark:**
->
 > - $$K_4$$ is abelian. -- By the definition of Klein four-group.
 >
 > - $$K_4$$ is the smallest non-cyclic group. -- By the definition of Klein four-group.
@@ -450,7 +441,7 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation $$\cdot$$ defined 
 > - $$K_4 = D_4 \leq S_4$$. -- Write $$K_4$$ in permutation form, i.e. $$K_4 = \set{e, (1 2)(3 4), (1 3)(2 4), (1 4)(2 3)}$$.
 
 
-## $$\bluetext{1.4 Groups Defined on Integers Mod n}$$
+### $$\bluetext{1.4 Groups Defined on Integers Mod n}$$
 
 #### $$\bluetext{Definition (The Set of Equivalence Classes of Integers Mod n)}$$
 
@@ -470,8 +461,6 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation $$\cdot$$ defined 
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$\Z_n$$.
 
-> **Remark:**
->
 > - $$\Z_n$$ is a cyclic abelian group with $$[1]_n$$ as the generator. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
 
 #### $$\bluetext{Definition (Multiplicative Group of Integers Mod n)}$$
@@ -482,12 +471,10 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation $$\cdot$$ defined 
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$\Z_n^*$$.
 
-> **Remark:**
->
-> - $$\Z_n^{\times}$$ is an abelian group. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
+> $$\Z_n^{\times}$$ is an abelian group. -- Check the abelian groups axioms `associativity`, `identity`, `inverse` and `commutivity`.
 
 
-## $$\bluetext{1.5 Applications of Groups}$$
+### $$\bluetext{1.5 Applications of Groups}$$
 
 ### $$\bluetext{1.5.1 Lagrange's Theorem and Euler's Theorem}$$
 
@@ -517,8 +504,6 @@ $$\def$$ $$K_4 := \set{e, a, b, c}$$ with the group operation $$\cdot$$ defined 
 
     - Let $$H = \langle g \rangle$$, which is a cyclic subgroup of $$G$$ generated by $$g$$. Then apply the first part.
 
-> **Remark:**
->
 > `A group with prime order is cyclic:` $$G$$ is a group with $$\abs{G} = p$$ for some prime $$p$$ $$\imply$$ $$G$$ is cyclic. -- By Lagrange's theorem. Since $$\abs{G} = p$$, $$\abs{G : \langle g \rangle} = 1$$ or $$p$$, so $$\abs{G : \langle g \rangle} = 1$$, which means $$G = \langle g \rangle$$.
 
 
