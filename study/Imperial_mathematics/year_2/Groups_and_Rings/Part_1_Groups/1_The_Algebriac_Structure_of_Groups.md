@@ -45,11 +45,11 @@ $$\gdef\abs#1{\vert #1 \vert}$$
 
 > For the following, we will not write the group operation explicitly, but we assume that it is clear from the context Instead, we use multiplicative notation for the group operation. We will also attreviate "$$G$$ with $$\cdot$$ is a group" to "$$G$$ is a group". Sometimes, to explicitly specify the group operation, we will write "$$G$$ with $$\cdot$$ is a group'' as $$(G, \cdot)$$.
 
-> `Uniqueness of the identity and the inverse:`
+> - `Uniqueness of the identity and the inverse:`
 >
-> - `Identity` $$\imply$$ the uniqueness of $$e$$. -- By contradiction.
+>    - `Identity` $$\imply$$ the uniqueness of $$e$$. -- By contradiction.
 >
-> - `Inverse` $$\imply$$ the uniqueness of $$a^{-1}$$. -- By contradiction.
+>    - `Inverse` $$\imply$$ the uniqueness of $$a^{-1}$$. -- By contradiction.
 
 
 #### $$\bluetext{Theorem 1.1 Cancellation Law}$$
@@ -163,13 +163,15 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 >
 >  --- 
 >
-> - `All left/right cosets form a partition of the whole group:`$$\forall a \in G$$, $$\exists! g \in G$$, s.t. $$a \in gH$$ and $$\exists! g \in G$$, s.t. $$a \in Hg$$.
+> - `All left/right cosets form a partition of the whole group:`
+> 
+>    $$\forall a \in G$$, $$\exists! g \in G$$, s.t. $$a \in gH$$ and $$\exists! g \in G$$, s.t. $$a \in Hg$$.
 >
 > ---
+> 
 > - `All left/right cosets have the same cardinality:` 
 > 
-> - $$\forall a \in G$$, $$\abs{aH} = \abs{Ha} = \abs{H}$$. -- Check that the map $$h \mapsto ah(ha)$$ is a bijection from $$H$$ to $$aH(Ha)$$.
-
+>   $$\forall a \in G$$, $$\abs{aH} = \abs{Ha} = \abs{H}$$. -- Check that the map $$h \mapsto ah(ha)$$ is a bijection from $$H$$ to $$aH(Ha)$$.
 
 > For the following statments about **"could be seen"**, actually it means that there is a **group isomorphism** between the two groups, which we will discuss later and the relation $=$ dose not mean that the equlity holds in the set theory sense. We just use $=$ to denote the **isomorphism**. (Since we have not define the isomorphism yet, we will not use $=$ to denote the isomorphism in the following.)
 
