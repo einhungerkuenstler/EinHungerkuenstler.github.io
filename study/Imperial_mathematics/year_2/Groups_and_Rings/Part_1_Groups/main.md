@@ -18,7 +18,7 @@ layout: simple
 
 #### *The notes also contains some contents from the [MATH40003: Linear Algebra and Groups](/study/Imperial_mathematics/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main) course at Imperial College London.*
 
-### *For the groups part of the notes, I also learn a lot from the notes written by my friend BrigeCat.
+#### *For the groups part of the notes, I also learn a lot from the notes written by my friend BrigeCat.*
 
 ### Contents
 
