@@ -330,7 +330,7 @@ $$\def$$ $$G$$ is an **abelian group** $$\ifif$$ $$G$$ is a group satisfying the
 
     `Well-definedness:` Check group axioms (`associativity`, `identity`, `inverse`) for $$GL(n, \F)$$.
 
-> For the following statments about "could been seen", actually it means that there is a **group isomorphism** between the two groups, which we will discuss later.
+> For the following statments about "could be seen", actually it means that there is a **group isomorphism** between the two groups, which we will discuss later.
 
 >  `Symmetric group is a subgroup of general linear group:`
 > 
