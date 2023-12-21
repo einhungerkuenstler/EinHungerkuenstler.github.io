@@ -23,3 +23,5 @@ layout: simple
 ### Contents
 
 - [1. The Algebriac Structure of Groups](/study/Imperial_mathematics/year_2/Groups_and_Rings/Part_1_Groups/1_The_Algebriac_Structure_of_Groups)
+
+- [2. The Relations of Groups and Subgroups](/study/Imperial_mathematics/year_2/Groups_and_Rings/Part_1_Groups/2_Relations_of_Groups_and_Subgroups)
