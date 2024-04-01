@@ -7,8 +7,9 @@ layout: simple
 >
 > <p align="right">-- Sophie Germain</p>
 >
-> Algebra is just written geometry;
-geometry is just figurative algebra.
+> ---
+>
+> Algebra is just written geometry; geometry is just figurative algebra.
 >
 > <p align="right">-- Sophie Germain</p>
 
