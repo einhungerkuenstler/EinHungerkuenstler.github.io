@@ -39,8 +39,8 @@ $$\gdef{\Z}{\mathbb{Z}}$$
 $$\gdef{\Q}{\mathbb{Q}}$$
 $$\gdef{\R}{\mathbb{R}}$$
 $$\gdef{\C}{\mathbb{C}}$$
-$$\gdef{\colortext}[1]{\textcolor{pink}{\textsf{{#1}}}}$$
-$$\gdef{\colormath}[1]{\textcolor{pink}{\mathsf{{#1}}}}$$
+$$\gdef{\colortext}#1{\textcolor{pink}{\textsf{{#1}}}}$$
+$$\gdef{\colormath}#1{\textcolor{pink}{\mathsf{{#1}}}}$$
 $$\gdef{\rank}{\mathrm{rank}}$$
 $$\gdef{\null}{\mathrm{null}}$$
 $$\gdef{\det}{\mathrm{det}}$$
