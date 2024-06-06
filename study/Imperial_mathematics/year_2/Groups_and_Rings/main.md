@@ -15,11 +15,11 @@ layout: simple
 
 #### Notations
 
-- The **set of all prime numbers** $\wras \P$ $\defas \{p \in \N \mid p \textsf{ is a prime number}\}$.
+- The **set of all prime numbers** $$\wras \P$$ $$\defas \{p \in \N \mid p \textsf{ is a prime number}\}$$.
 
-- $\N^{+} \textcolor{blue}{:=} \{1, 2, 3, 4 \ldots\}$.
+- $$\N^{+} \textcolor{blue}{:=} \{1, 2, 3, 4 \ldots\}$$.
 
-- The **quotient set defined an equivalence relation $\sim$** \textcolor{blue}{=:} $X / \sim$ $\defas$ $\left\{[x]_\sim \mid x \in X\right\}$ where $[x]_\sim$ is **the equivalence class of $x$** \textcolor{blue}{:=} $\{y\in X \mid y \sim x\}$.
+- The **quotient set defined an equivalence relation $$\sim$$** $$\textcolor{blue}{=:}$$ $$X / \sim$$ $$\defas$$ $$\left\{[x]_\sim \mid x \in X\right\}$$ where $$[x]_\sim$$ is **the equivalence class of $$x$$** \textcolor{blue}{:=} $$\{y\in X \mid y \sim x\}$$.
 
 #### [Part I. Group Theory](/study/Imperial_mathematics/year_2/Groups_and_Rings/Part_I_Group_Theory/main)
 
