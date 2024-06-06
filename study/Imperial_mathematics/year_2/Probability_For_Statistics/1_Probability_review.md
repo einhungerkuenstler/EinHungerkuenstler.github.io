@@ -3,19 +3,7 @@ title: 1. Probability Review
 layout: simple
 ---
 
-$$\definecolor{red}{RGB}{208,25,25}$$
-$$\definecolor{orange}{RGB}{242,113,28}$$
-$$\definecolor{yellow}{RGB}{251,189,8}$$
-$$\definecolor{olive}{RGB}{181,204,24}$$
-$$\definecolor{green}{RGB}{33,186,69}$$
-$$\definecolor{teal}{RGB}{0,181,173}$$
-$$\definecolor{blue}{RGB}{33,133,208}$$
-$$\definecolor{violet}{RGB}{100,53,201}$$
-$$\definecolor{purple}{RGB}{163,51,200}$$
-$$\definecolor{pink}{RGB}{224,57,151}$$
-$$\definecolor{brown}{RGB}{165,103,63}$$
-$$\definecolor{gray}{RGB}{118,118,118}$$
-$$\definecolor{black}{RGB}{27,28,29}$$
+
 $$\gdef{\imply}{\textcolor{blue}{\Rightarrow}}$$
 $$\gdef{\pro}{\textcolor{blue}{\mathcal{Proof:}}}$$
 $$\gdef{\solution}{\textcolor{blue}{\mathcal{Solutions:}}}$$
@@ -26,7 +14,6 @@ $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
 $$\gdef\set#1{\left\{ #1 \right\}}$$
 $$\gdef\bo{\mathcal{B}}$$
-$$\textcolor{blue}{\rule{600px}{1.0pt}}$$
 
 #### **based on notes and lectures by [Dr. Ciara Pike-Burke](https://www.ma.imperial.ac.uk/~cpikebur/).**
 
