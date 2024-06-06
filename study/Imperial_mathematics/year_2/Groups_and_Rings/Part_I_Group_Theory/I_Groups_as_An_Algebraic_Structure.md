@@ -41,11 +41,11 @@ $$\gdef{\R}{\mathbb{R}}$$
 $$\gdef{\C}{\mathbb{C}}$$
 $$\gdef{\colortext}[1]{\textcolor{pink}{\textsf{{#1}}}}$$
 $$\gdef{\colormath}[1]{\textcolor{pink}{\mathsf{{#1}}}}$$
-$$\DeclareMathOperator{\rank}{\mathrm{rank}}$$
-$$\DeclareMathOperator{\null}{\mathrm{null}}$$
-$$\DeclareMathOperator{\det}{\mathrm{det}}$$
-$$\DeclareMathOperator{\gcd}{\mathrm{gcd}}$$
-$$\DeclareMathOperator{\lcm}{\mathrm{lcm}}$$
+$$\gdef{\rank}{\mathrm{rank}}$$
+$$\gdef{\null}{\mathrm{null}}$$
+$$\gdef{\det}{\mathrm{det}}$$
+$$\gdef{\gcd}{\mathrm{gcd}}$$
+$$\gdef{\lcm}{\mathrm{lcm}}$$
 
 ### $$\colortext{1.1 Groups, Subgroups and Cosets}$$
 
