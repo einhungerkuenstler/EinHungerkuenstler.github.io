@@ -14,25 +14,25 @@ $$\gdef{\the}{\textcolor{pink}{\Rightarrow}}$$
 $$\gdef{\wrs}{\textcolor{pink}{=:}}$$
 $$\gdef{\typ}{\textcolor{pink}{:\in}}$$
 $$\gdef{\if}{\textcolor{pink}{\texttt{if}}}$$
-$$\gdef{\inner}[2]{\left\langle\strut#1,#2\right\rangle}$$
+$$\gdef{\inner}#1#2{\left\langle\strut#1,#2\right\rangle}$$
 $$\gdef{\hby}{\textcolor{pink}{- :}}$$
-$$\gdef{\norm}[1]{\left\Vert\strut#1\right\Vert}$$
-$$\gdef{\abs}[1]{\left\vert\strut#1\right\vert}$$
-$$\gdef{\op}[1]{\textcolor{pink}{\operatorname{#1}}}$$
-$$\gdef{\ke}[1]{\operatorname{Ker}(#1)}$$
-$$\gdef{\gen}[1]{\left \langle #1 \right \rangle}$$
-$$\gdef{\geni}[1]{\left( #1 \right)}$$
+$$\gdef{\norm}#1{\left\Vert\strut#1\right\Vert}$$
+$$\gdef{\abs}#1{\left\vert\strut#1\right\vert}$$
+$$\gdef{\op}#1{\textcolor{pink}{\operatorname{#1}}}$$
+$$\gdef{\ke}#1{\operatorname{Ker}(#1)}$$
+$$\gdef{\gen}#1{\left \langle #1 \right \rangle}$$
+$$\gdef{\geni}#1{\left( #1 \right)}$$
 $$\gdef{\contra}{\textcolor{pink}{\texttt{Opq!}}}$$
-$$\gdef{\im}[1]{\operatorname{Im}(#1)}$$
-$$\gdef{\ord}[1]{\operatorname{ord}(#1)}$$
+$$\gdef{\im}#1{\operatorname{Im}(#1)}$$
+$$\gdef{\ord}#1{\operatorname{ord}(#1)}$$
 $$\gdef{\sgn}{\operatorname{sgn}}$$
-$$\gdef{\Aut}[1]{\operatorname{Aut}(#1)}$$
+$$\gdef{\Aut}#1{\operatorname{Aut}(#1)}$$
 $$\gdef{\mod}{\operatorname{mod}}$$
 $$\gdef{\ideal}{\triangleleft}$$
 $$\gdef{\P}{\mathbb{P}}$$
 $$\gdef{\iso}{\cong}$$
 $$\gdef{\norsub}{\trianglelefteq}$$
-$$\gdef{\card}[1]{\operatorname{card}(#1)}$$
+$$\gdef{\card}#1{\operatorname{card}(#1)}$$
 $$\gdef{\mul}{\cdot}$$
 $$\gdef{\N}{\mathbb{N}}$$
 $$\gdef{\Z}{\mathbb{Z}}$$
