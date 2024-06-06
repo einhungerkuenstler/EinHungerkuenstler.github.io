@@ -13,14 +13,6 @@ layout: simple
 >
 >  <p align="right"> ——— Pierre de la Harpe, Topics in Geometric Group Theory </p>
 
-#### Notations
-
-- The **set of all prime numbers** $$\wras \P$$ $$\textcolor{\blue}{:=} \{p \in \N \mid p$$ is a prime number $$\}$$
-
-- $$\N^{+} \textcolor{\blue}{:=} \{1, 2, 3, 4 \ldots\}$$.
-
-- The **quotient set defined an equivalence relation $$\sim$$** $$\textcolor{\blue}{=:}$$ $$X / \sim$$ $$\textcolor{\blue}{:=} $$ $$\left\{[x]_\sim \mid x \in X\right\}$$ where $$[x]_\sim$$ is **the equivalence class of $$x$$** \textcolor{blue}{:=} $$\{y\in X \mid y \sim x\}$$.
-
 #### [Part I. Group Theory](/study/Imperial_mathematics/year_2/Groups_and_Rings/Part_I_Group_Theory/main)
 
 #### [Part II. Ring Theory]()
