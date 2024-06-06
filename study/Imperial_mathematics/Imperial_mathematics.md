@@ -36,5 +36,15 @@ title: Surviving the mathematics major at Imperial College London
   
 - [Probability for Statistics](/study/Imperial_mathematics/year_2/Probability_For_Statistics/main)
 
+- [Complex Analysis]()
+
+- [Numerical Analysis]()
+
+- [Differential Equations]()
+
+- [Lebesgue Measure and Integration]()
+
+- [Partial Differential Equations in Action]()
+
 ### Year 3
 
