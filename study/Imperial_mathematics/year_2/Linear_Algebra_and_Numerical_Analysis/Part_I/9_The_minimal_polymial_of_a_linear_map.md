@@ -19,8 +19,8 @@ $$\gdef\vc{\mathbf{c}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\di{\operatorname{dim}}$$
-$$\newcommand{\iimply}{\textcolor{gray}{\Leftarrow}}$$
-$$\newcommand{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
+$$\gdef{\iimply}{\textcolor{gray}{\Leftarrow}}$$
+$$\gdef{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
 
 > For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in \F[x]$$.
 

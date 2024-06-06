@@ -16,11 +16,11 @@ $$\definecolor{pink}{RGB}{224,57,151}$$
 $$\definecolor{brown}{RGB}{165,103,63}$$
 $$\definecolor{gray}{RGB}{118,118,118}$$
 $$\definecolor{black}{RGB}{27,28,29}$$
-$$\newcommand{\imply}{\textcolor{blue}{\Rightarrow}}$$
-$$\newcommand{\pro}{\textcolor{blue}{\mathcal{Proof:}}}$$
-$$\newcommand{\solution}{\textcolor{blue}{\mathcal{Solutions:}}}$$
-$$\newcommand{\problem}{\textcolor{blue}{\mathcal{Problem}}}$$
-$$\newcommand{\ass}{\textcolor{blue}{\mathbf{Assume}}}$$
+$$\gdef{\imply}{\textcolor{blue}{\Rightarrow}}$$
+$$\gdef{\pro}{\textcolor{blue}{\mathcal{Proof:}}}$$
+$$\gdef{\solution}{\textcolor{blue}{\mathcal{Solutions:}}}$$
+$$\gdef{\problem}{\textcolor{blue}{\mathcal{Problem}}}$$
+$$\gdef{\ass}{\textcolor{blue}{\mathbf{Assume}}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$

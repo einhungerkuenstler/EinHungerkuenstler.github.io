@@ -3,44 +3,44 @@ title: I. Groups as an Algebraic Structure
 layout: simple
 ---
 
-$$\newcommand{\def}{\textcolor{pink}{\operatorname{def}}}$$
-$$\newcommand{\dfs}{\textcolor{pink}{:=}}$$
-$$\newcommand{\ifif}{\textcolor{pink}{\iff}}$$
-$$\newcommand{\imp}{\textcolor{pink}{\implies}}$$
-$$\newcommand{\diff}{\textcolor{pink}{:\longleftrightarrow}}$$
-$$\newcommand{\limp}{\textcolor{pink}{\Longleftarrow}}$$
-$$\newcommand{\st}{\textcolor{pink}{\texttt{s.t.}}}$$
-$$\newcommand{\the}{\textcolor{pink}{\Rightarrow}}$$
-$$\newcommand{\wrs}{\textcolor{pink}{=:}}$$
-$$\newcommand{\typ}{\textcolor{pink}{:\in}}$$
-$$\newcommand{\if}{\textcolor{pink}{\texttt{if}}}$$
-$$\newcommand{\inner}[2]{\left\langle\strut#1,#2\right\rangle}$$
-$$\newcommand{\hby}{\textcolor{pink}{- :}}$$
-$$\newcommand{\norm}[1]{\left\Vert\strut#1\right\Vert}$$
-$$\newcommand{\abs}[1]{\left\vert\strut#1\right\vert}$$
-$$\newcommand{\op}[1]{\textcolor{pink}{\operatorname{#1}}}$$
-$$\newcommand{\ke}[1]{\operatorname{Ker}(#1)}$$
-$$\newcommand{\gen}[1]{\left \langle #1 \right \rangle}$$
-$$\newcommand{\geni}[1]{\left( #1 \right)}$$
-$$\newcommand{\contra}{\textcolor{pink}{\texttt{Opq!}}}$$
-$$\newcommand{\im}[1]{\operatorname{Im}(#1)}$$
-$$\newcommand{\ord}[1]{\operatorname{ord}(#1)}$$
-$$\newcommand{\sgn}{\operatorname{sgn}}$$
-$$\newcommand{\Aut}[1]{\operatorname{Aut}(#1)}$$
-$$\newcommand{\mod}{\operatorname{mod}}$$
-$$\newcommand{\ideal}{\triangleleft}$$
-$$\newcommand{\P}{\mathbb{P}}$$
-$$\newcommand{\iso}{\cong}$$
-$$\newcommand{\norsub}{\trianglelefteq}$$
-$$\newcommand{\card}[1]{\operatorname{card}(#1)}$$
-$$\newcommand{\mul}{\cdot}$$
-$$\newcommand{\N}{\mathbb{N}}$$
-$$\newcommand{\Z}{\mathbb{Z}}$$
-$$\newcommand{\Q}{\mathbb{Q}}$$
-$$\newcommand{\R}{\mathbb{R}}$$
-$$\newcommand{\C}{\mathbb{C}}$$
-$$\newcommand{\colortext}[1]{\textcolor{pink}{\textsf{{#1}}}}$$
-$$\newcommand{\colormath}[1]{\textcolor{pink}{\mathsf{{#1}}}}$$
+$$\gdef{\def}{\textcolor{pink}{\operatorname{def}}}$$
+$$\gdef{\dfs}{\textcolor{pink}{:=}}$$
+$$\gdef{\ifif}{\textcolor{pink}{\iff}}$$
+$$\gdef{\imp}{\textcolor{pink}{\implies}}$$
+$$\gdef{\diff}{\textcolor{pink}{:\longleftrightarrow}}$$
+$$\gdef{\limp}{\textcolor{pink}{\Longleftarrow}}$$
+$$\gdef{\st}{\textcolor{pink}{\texttt{s.t.}}}$$
+$$\gdef{\the}{\textcolor{pink}{\Rightarrow}}$$
+$$\gdef{\wrs}{\textcolor{pink}{=:}}$$
+$$\gdef{\typ}{\textcolor{pink}{:\in}}$$
+$$\gdef{\if}{\textcolor{pink}{\texttt{if}}}$$
+$$\gdef{\inner}[2]{\left\langle\strut#1,#2\right\rangle}$$
+$$\gdef{\hby}{\textcolor{pink}{- :}}$$
+$$\gdef{\norm}[1]{\left\Vert\strut#1\right\Vert}$$
+$$\gdef{\abs}[1]{\left\vert\strut#1\right\vert}$$
+$$\gdef{\op}[1]{\textcolor{pink}{\operatorname{#1}}}$$
+$$\gdef{\ke}[1]{\operatorname{Ker}(#1)}$$
+$$\gdef{\gen}[1]{\left \langle #1 \right \rangle}$$
+$$\gdef{\geni}[1]{\left( #1 \right)}$$
+$$\gdef{\contra}{\textcolor{pink}{\texttt{Opq!}}}$$
+$$\gdef{\im}[1]{\operatorname{Im}(#1)}$$
+$$\gdef{\ord}[1]{\operatorname{ord}(#1)}$$
+$$\gdef{\sgn}{\operatorname{sgn}}$$
+$$\gdef{\Aut}[1]{\operatorname{Aut}(#1)}$$
+$$\gdef{\mod}{\operatorname{mod}}$$
+$$\gdef{\ideal}{\triangleleft}$$
+$$\gdef{\P}{\mathbb{P}}$$
+$$\gdef{\iso}{\cong}$$
+$$\gdef{\norsub}{\trianglelefteq}$$
+$$\gdef{\card}[1]{\operatorname{card}(#1)}$$
+$$\gdef{\mul}{\cdot}$$
+$$\gdef{\N}{\mathbb{N}}$$
+$$\gdef{\Z}{\mathbb{Z}}$$
+$$\gdef{\Q}{\mathbb{Q}}$$
+$$\gdef{\R}{\mathbb{R}}$$
+$$\gdef{\C}{\mathbb{C}}$$
+$$\gdef{\colortext}[1]{\textcolor{pink}{\textsf{{#1}}}}$$
+$$\gdef{\colormath}[1]{\textcolor{pink}{\mathsf{{#1}}}}$$
 $$\DeclareMathOperator{\rank}{\mathrm{rank}}$$
 $$\DeclareMathOperator{\null}{\mathrm{null}}$$
 $$\DeclareMathOperator{\det}{\mathrm{det}}$$
