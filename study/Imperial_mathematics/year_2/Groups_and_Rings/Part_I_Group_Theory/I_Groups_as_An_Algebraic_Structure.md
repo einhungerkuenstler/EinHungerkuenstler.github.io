@@ -3,26 +3,26 @@ title: I. Groups as an Algebraic Structure
 layout: simple
 ---
 
-$$\gdef{\def}{\textcolor{pink}{\operatorname{def}}}$$
-$$\gdef{\dfs}{\textcolor{pink}{:=}}$$
-$$\gdef{\ifif}{\textcolor{pink}{\iff}}$$
-$$\gdef{\imp}{\textcolor{pink}{\implies}}$$
-$$\gdef{\diff}{\textcolor{pink}{:\longleftrightarrow}}$$
-$$\gdef{\limp}{\textcolor{pink}{\Longleftarrow}}$$
-$$\gdef{\st}{\textcolor{pink}{\texttt{s.t.}}}$$
-$$\gdef{\the}{\textcolor{pink}{\Rightarrow}}$$
-$$\gdef{\wrs}{\textcolor{pink}{=:}}$$
-$$\gdef{\typ}{\textcolor{pink}{:\in}}$$
-$$\gdef{\if}{\textcolor{pink}{\texttt{if}}}$$
+$$\gdef{\def}{\pink{\operatorname{def}}}$$
+$$\gdef{\dfs}{\pink{:=}}$$
+$$\gdef{\ifif}{\pink{\iff}}$$
+$$\gdef{\imp}{\pink{\implies}}$$
+$$\gdef{\diff}{\pink{:\longleftrightarrow}}$$
+$$\gdef{\limp}{\pink{\Longleftarrow}}$$
+$$\gdef{\st}{\pink{\texttt{s.t.}}}$$
+$$\gdef{\the}{\pink{\Rightarrow}}$$
+$$\gdef{\wrs}{\pink{=:}}$$
+$$\gdef{\typ}{\pink{:\in}}$$
+$$\gdef{\if}{\pink{\texttt{if}}}$$
 $$\gdef{\inner}#1#2{\left\langle\strut#1,#2\right\rangle}$$
-$$\gdef{\hby}{\textcolor{pink}{- :}}$$
+$$\gdef{\hby}{\pink{- :}}$$
 $$\gdef{\norm}#1{\left\Vert\strut#1\right\Vert}$$
 $$\gdef{\abs}#1{\left\vert\strut#1\right\vert}$$
-$$\gdef{\op}#1{\textcolor{pink}{\operatorname{#1}}}$$
+$$\gdef{\op}#1{\pink{\operatorname{#1}}}$$
 $$\gdef{\ke}#1{\operatorname{Ker}(#1)}$$
 $$\gdef{\gen}#1{\left \langle #1 \right \rangle}$$
 $$\gdef{\geni}#1{\left( #1 \right)}$$
-$$\gdef{\contra}{\textcolor{pink}{\texttt{Opq!}}}$$
+$$\gdef{\contra}{\pink{\texttt{Opq!}}}$$
 $$\gdef{\im}#1{\operatorname{Im}(#1)}$$
 $$\gdef{\ord}#1{\operatorname{ord}(#1)}$$
 $$\gdef{\sgn}{\operatorname{sgn}}$$
@@ -39,8 +39,8 @@ $$\gdef{\Z}{\mathbb{Z}}$$
 $$\gdef{\Q}{\mathbb{Q}}$$
 $$\gdef{\R}{\mathbb{R}}$$
 $$\gdef{\C}{\mathbb{C}}$$
-$$\gdef{\colortext}#1{\textcolor{pink}{\textsf{{#1}}}}$$
-$$\gdef{\colormath}#1{\textcolor{pink}{\mathsf{{#1}}}}$$
+$$\gdef{\colortext}#1{\pink{\textsf{{#1}}}}$$
+$$\gdef{\colormath}#1{\pink{\mathsf{{#1}}}}$$
 $$\gdef{\rank}{\mathrm{rank}}$$
 $$\gdef{\null}{\mathrm{null}}$$
 $$\gdef{\det}{\mathrm{det}}$$
