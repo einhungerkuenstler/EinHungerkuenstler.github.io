@@ -8,13 +8,13 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\dime{\operatorname{dim}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
 
-> Now, we assume that $$V$$ is a vector space over a field $$\F$$.
+> Now, we assume that $$V$$ is a vector space over a field $$F$$.
 
 #### Definition (Sum of subspaces)
 

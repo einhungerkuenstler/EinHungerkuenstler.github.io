@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -24,7 +24,7 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\max{\operatorname{max}}$$
 $$\gdef\span{\operatorname{Span}}$$
 
-> For the following definitions, we use $$\phi: V \to \F$$ to denote a linear functional on $$V$$.
+> For the following definitions, we use $$\phi: V \to F$$ to denote a linear functional on $$V$$.
 
 
 ### Dual spaces
@@ -32,15 +32,15 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Definiton (Linear functional)
 
-- $$V$$ is a vector space over a field $$\F$$
+- $$V$$ is a vector space over a field $$F$$
 
     A **linear functional** on $$V$$ is a linear map 
     
     $$
-    \phi: V \to \F
+    \phi: V \to F
     $$
     
-    where $$\F$$ is a field, such that 
+    where $$F$$ is a field, such that 
 
     $$
     \phi\left(\alpha v_{1}+\beta v_{2}\right)=\alpha \phi\left(v_{1}\right)+\beta \phi\left(v_{2}\right) \quad \forall v_{i} \in V, \alpha, \beta \in F
@@ -48,7 +48,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Definition (Dual set)
 
-- $$V$$ is a vector space over a field $$\F$$
+- $$V$$ is a vector space over a field $$F$$
 
     The **dual set** of $$V$$ is defined as follows:
     
@@ -59,9 +59,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Theorem (Dual set is a vector space)
 
-- $$V$$ is a vector space over a field $$\F$$
+- $$V$$ is a vector space over a field $$F$$
 
-- The dual set $$V^*$$ is a vector space over $$\F$$ with the following operations:
+- The dual set $$V^*$$ is a vector space over $$F$$ with the following operations:
     
     $$
     \begin{aligned}
@@ -70,9 +70,9 @@ $$\gdef\span{\operatorname{Span}}$$
     \end{aligned}
     $$
 
-    for some $$\lambda \in \F$$ and $$\phi, \phi_{1}, \phi_{2} \in V^{*}$$ and $$v \in V$$.
+    for some $$\lambda \in F$$ and $$\phi, \phi_{1}, \phi_{2} \in V^{*}$$ and $$v \in V$$.
 
-    Then, $$V^*$$ is a vector space over $$\F$$.
+    Then, $$V^*$$ is a vector space over $$F$$.
 
 > For the following definitions, we use $$V^*$$ to denote the dual space of $$V$$.
 
@@ -89,13 +89,13 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Proposition
 
-- $$V$$ is a vector space over a field $$\F$$.
+- $$V$$ is a vector space over a field $$F$$.
 
 - $$\dim V = n$$.
 
 - $$B = \set{v_1, \dots, v_n}$$ is a basis of $$V$$.
 
-   For each $$i = 1, \dots, n$$, define $$\phi_i: V^* \to \F$$ as follows:
+   For each $$i = 1, \dots, n$$, define $$\phi_i: V^* \to F$$ as follows:
 
     $$
     \phi_{i}\left(v_{j}\right)=\delta_{i j} \quad \text{ for } 1 \leq  j \leq n
@@ -111,7 +111,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 ### Annihilators
 
-> For the following, we use $$V$$ is a finite-dimensional vector space over a field $$\F$$, and $$V^*$$ is the dual space of $$V$$.
+> For the following, we use $$V$$ is a finite-dimensional vector space over a field $$F$$, and $$V^*$$ is the dual space of $$V$$.
 
 #### Definition (Annihilator)
 

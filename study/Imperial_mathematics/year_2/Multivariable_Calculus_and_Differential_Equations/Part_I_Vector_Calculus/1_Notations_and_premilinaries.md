@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
 $$\gdef\pap#1{\frac{\partial \phi }{\partial #1}}$$
 $$\gdef\va{\mathbf{a}}$$

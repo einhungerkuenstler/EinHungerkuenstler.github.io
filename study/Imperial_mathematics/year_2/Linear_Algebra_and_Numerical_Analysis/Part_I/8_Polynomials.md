@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -20,15 +20,15 @@ $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 $$\gdef\di{\operatorname{dim}}$$
 
-> For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in \F[x]$$.
+> For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in F[x]$$.
 
 ### Polynomials
 
 #### Proposition 8.1 `(Euclidean algorithm)`
 
-- $$f, g \in \F[x]$$ with $$\deg(g) \leq 1$$.
+- $$f, g \in F[x]$$ with $$\deg(g) \leq 1$$.
 
-    Then, there exists $$q, r \in \F[x]$$ such that
+    Then, there exists $$q, r \in F[x]$$ such that
 
     $$
     f = qg + r
@@ -71,7 +71,7 @@ $$\gdef\di{\operatorname{dim}}$$
         f_1 = f - \frac{a_n}{b_m} x^{n - m} g
         $$
 
-        Then, $$\deg(f_1) < \deg(f) = n$$. Therefore, by the inductive hypothesis, there exists $$q_1, r_1 \in \F[x]$$ such that
+        Then, $$\deg(f_1) < \deg(f) = n$$. Therefore, by the inductive hypothesis, there exists $$q_1, r_1 \in F[x]$$ such that
 
         $$
         f_1 = q_1 g + r_1
@@ -97,28 +97,28 @@ $$\gdef\di{\operatorname{dim}}$$
         \deg(r) = \deg(r_1) < \deg(g)
         $$
 
-        Therefore, the proposition holds for all $$f, g \in \F[x]$$ with $$\deg(g) \leq 1$$. $$\square$$
+        Therefore, the proposition holds for all $$f, g \in F[x]$$ with $$\deg(g) \leq 1$$. $$\square$$
     
 
 #### Definition `(Greatest common divisor)`
 
-- $$f, g \in \F[x]$$.
+- $$f, g \in F[x]$$.
 
-    Then, $$d \in \F[x]$$ is a **greatest common divisor** of $$f$$ and $$g$$ if the following two conditions hold:
+    Then, $$d \in F[x]$$ is a **greatest common divisor** of $$f$$ and $$g$$ if the following two conditions hold:
 
     1. `Common divisor`: $$d \mid f$$ and $$d \mid g$$.
 
-    2. `Greatest`: If $$e \in \F[x]$$ and $$e \mid f$$ and $$e \mid g$$, then $$e \mid d$$.
+    2. `Greatest`: If $$e \in F[x]$$ and $$e \mid f$$ and $$e \mid g$$, then $$e \mid d$$.
 
 > **Remark**:
 >
-> - If $$d$$ is the greatest common divisor of $$f$$ and $$g$$, then $$\lambda d \in \F[x]$$ is also the greatest common divisor of $$f$$ and $$g$$ for any $$\lambda \in \F \setminus \set{0}$$.
+> - If $$d$$ is the greatest common divisor of $$f$$ and $$g$$, then $$\lambda d \in F[x]$$ is also the greatest common divisor of $$f$$ and $$g$$ for any $$\lambda \in F \setminus \set{0}$$.
 
 
 
 #### Proposition 8.2 `(The existence of greatest common divisor and its uniqueness up to a scalar multiplication)`
 
-- $$f, g \in \F[x] \setminus \set{0}$$.
+- $$f, g \in F[x] \setminus \set{0}$$.
 
     Then, 
     
@@ -158,7 +158,7 @@ Therefore, $$\gcd(f, g)$$ exists and is unique up to scalar multiplication. $$\s
 
 #### Definition `(Coprime)`
 
-- $$f, g \in \F[x]$$.
+- $$f, g \in F[x]$$.
 
 - $$\gcd(f, g) = 1$$.
 
@@ -166,11 +166,11 @@ Therefore, $$\gcd(f, g)$$ exists and is unique up to scalar multiplication. $$\s
 
 #### Proposition 8.3 `(The greatest common divisor could be expressed as a linear combination of two polynomials)`
 
-- $$f, g \in \F[x]$$.
+- $$f, g \in F[x]$$.
 
 - $$d = \gcd(f, g)$$.
 
-    Then, there exists $$r, s \in \F[x]$$ such that
+    Then, there exists $$r, s \in F[x]$$ such that
 
     $$
     d = rf + sg
@@ -205,23 +205,23 @@ $$
 
 #### Definition `(Monic polynomial)`
 
-- $$f(x) \in \F[x]$$.
+- $$f(x) \in F[x]$$.
 
     Then, $$f(x)$$ is **monic** if the **leading coefficient** of $$f(x)$$ is $$1$$.
 
 #### Definition `(Irreducible polynomial)`
 
-- $$p(x) \in \F[x]$$.
+- $$p(x) \in F[x]$$.
 
     Then, we say $$p(x)$$ is **irreducible** if
 
     1. $$\deg(p) \geq 1$$.
 
-    2. $$p(x)$$ cannot be expressed as a product of two polynomials in $$\F[x]$$ with degree less than $$\deg(p)$$.
+    2. $$p(x)$$ cannot be expressed as a product of two polynomials in $$F[x]$$ with degree less than $$\deg(p)$$.
 
 > **Remark**:
 >
-> - The irreduciblity of a polynomial depends on the field $$\F$$. For example $$x^2 + 1 \in \R[x]$$ is irreducible but $$x^2 + 1 \in \C[x]$$ is reducible.
+> - The irreduciblity of a polynomial depends on the field $$F$$. For example $$x^2 + 1 \in \R[x]$$ is irreducible but $$x^2 + 1 \in \C[x]$$ is reducible.
 >
 > - Every polynomial in $$\C[x]$$ of degree at least $$1$$ has a root in $$\C$$ by the Fundamental Theorem of Algebra. Therefore, the only irreducible polynomials in $$\C[x]$$ are the linear polynomials: $$ax + b$$ where $$a, b \in \C$$.
 
@@ -245,9 +245,9 @@ $$
 
 #### Proposition 8.5 `(If an irreducible polynomials divides a polynomial then it could divide at least one of the factors of the polynomial)`
 
-- $$p \in \F[x]$$ is an **irreducible polynomial**.
+- $$p \in F[x]$$ is an **irreducible polynomial**.
 
-- $$a, b \in \F[x]$$.
+- $$a, b \in F[x]$$.
 
 - $$p \mid a b$$.
 
@@ -259,7 +259,7 @@ $$
 
 `Proof`:
 
-Suppose $$p \mid a b$$ but $$p \nmid a$$. Since $$p$$ is irreducible, we have $$\gcd(p, a) = 1$$. Therefore, by the [Proposition 8.2](#proposition-82-the-existence-of-greatest-common-divisor-and-its-uniqueness-up-to-a-scalar-multiplication), there exists $$r, s \in \F[x]$$ such that
+Suppose $$p \mid a b$$ but $$p \nmid a$$. Since $$p$$ is irreducible, we have $$\gcd(p, a) = 1$$. Therefore, by the [Proposition 8.2](#proposition-82-the-existence-of-greatest-common-divisor-and-its-uniqueness-up-to-a-scalar-multiplication), there exists $$r, s \in F[x]$$ such that
 
 $$
 \tag{Fish}
@@ -277,9 +277,9 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
 
 #### Corollary 8.6 `(Extension of the proposition 8.5)`
 
-- $$p \in \F[x]$$ is an **irreducible polynomial**.
+- $$p \in F[x]$$ is an **irreducible polynomial**.
 
-- $$g_1, \dots, g_r \in \F[x]$$.
+- $$g_1, \dots, g_r \in F[x]$$.
 
 - $$p \mid g_1 \cdots g_r$$.
 
@@ -293,7 +293,7 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
 
 #### Theorem 8.7 `(Unique Factorization Theorem)`
 
-- $$f(x) \in \F[x]$$ with $$\deg(f) \geq 1$$.
+- $$f(x) \in F[x]$$ with $$\deg(f) \geq 1$$.
 
     Then,
 
@@ -303,7 +303,7 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
         f(x) = p_1(x) \cdots p_r(x)
         $$
 
-        where each $$p_i \in \F[x]$$ is **irreducible**.
+        where each $$p_i \in F[x]$$ is **irreducible**.
 
     2. `Uniqueness`: The factorization is **unique** apart from multiplying factors by scalars.
    
@@ -324,7 +324,7 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
 
         - `Case 2`: $$f$$ is reducible.
 
-            Then, there exists $$a, b \in \F[x]$$ such that
+            Then, there exists $$a, b \in F[x]$$ such that
 
             $$
             f = ab
@@ -362,7 +362,7 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
         q_1 = b q_1
         $$
 
-        for some $$b \in \F[x]$$. Since $$q_1$$ is irreducible, then $$b$$ is just a scalar. If we replace $$q_1$$ by $$b^{-1} q_1$$ and $$q_2$$ by $$b q_2$$, then we have
+        for some $$b \in F[x]$$. Since $$q_1$$ is irreducible, then $$b$$ is just a scalar. If we replace $$q_1$$ by $$b^{-1} q_1$$ and $$q_2$$ by $$b q_2$$, then we have
 
         $$
         \tag{Fox}
@@ -385,9 +385,9 @@ Since $$p \mid ab$$, then it could divide $$rpb$$ and $$sab$$. Therefore, it cou
 
 #### Definition `(Least common multiple)`
 
-- $$f, g \in \F[x]$$.
+- $$f, g \in F[x]$$.
 
-    Then, we say $$h \in \F[x]$$ is a **least common multiple** of $$f$$ and $$g$$ if the following two conditions hold:
+    Then, we say $$h \in F[x]$$ is a **least common multiple** of $$f$$ and $$g$$ if the following two conditions hold:
 
     1. `Common multiple`: $$f \mid h$$ and $$g \mid h$$.
 

@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -26,22 +26,22 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Definition `(Inner product)`
 
-- $$\F = \R$$ or $$\C$$
+- $$F = \R$$ or $$\C$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
    An **inner product** on $$V$$ is a map
 
    $$
-   V \times V \rightarrow \F
+   V \times V \rightarrow F
    $$
 
-   denoted by $$(u, v) \in \F$$ for any $$u, v \in V$$, such that
+   denoted by $$(u, v) \in F$$ for any $$u, v \in V$$, such that
 
     1. `Linearity in the first argument`
 
        $$
-       (\lambda_1 v_1 + \lambda_2 v_2, w) = \lambda_1 (v_1, w) + \lambda_2 (v_2, w) \quad \forall v_i, w \in V, \lambda_i \in \F
+       (\lambda_1 v_1 + \lambda_2 v_2, w) = \lambda_1 (v_1, w) + \lambda_2 (v_2, w) \quad \forall v_i, w \in V, \lambda_i \in F
        $$
 
     2. `Conjugate symmetry`
@@ -78,13 +78,13 @@ $$\gdef\span{\operatorname{Span}}$$
 #### Definition `(Positive-definite matrix)`
 
 - $$A$$ is a Hermitian matrix.
-- $$\F = \R$$ or $$\C$$.
+- $$F = \R$$ or $$\C$$.
 
-    Then, $$A$$ is called **positive-definite** if $$x^T  A \overline{x}^T > 0$$ for all $$x \in \F^n$$ with $$x \neq 0$$.
+    Then, $$A$$ is called **positive-definite** if $$x^T  A \overline{x}^T > 0$$ for all $$x \in F^n$$ with $$x \neq 0$$.
 
 ### Geometry of inner product spaces
 
-> For the following, we assume $$V$$ is a inner product space over $$\F$$, where $$\F = \R$$ or $$\C$$. For $$u, v \in V$$, we define:
+> For the following, we assume $$V$$ is a inner product space over $$F$$, where $$F = \R$$ or $$\C$$. For $$u, v \in V$$, we define:
 >
 > - `The length:` $$\norm{u} = \sqrt{(u, u)}$$
 >
@@ -135,7 +135,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Theorem
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$. 
+- $$V$$ is a finite-dimensional inner product space over $$F$$. 
 
    Then, the following statements are true:
 
@@ -157,7 +157,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Proposition `(The inner product is the direct sum of a subspace and its orthogonal complement)`
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$W \subseteq V$$ is a subspace of $$V$$.
 
@@ -173,7 +173,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### Proposition `(Fourier coefficients)`
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$\set{u_1, \dots, u_n}$$ is an orthonormal basis of $$V$$.
 
@@ -199,7 +199,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### Definition `(Orthogonal projection mapping)`
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$W \subseteq V$$ is a subspace of $$V$$.
 
@@ -217,7 +217,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### Proposition `(Orthogonal projection mapping)`
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$W \subseteq V$$ is a subspace of $$V$$.
 
@@ -249,7 +249,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### 3. `Dual space`
 
-> For the following, we assume $$V$$ is a finite-dimensional inner product space over $$\F$$, where $$\F = \R$$ or $$\C$$. Let $$f_v: V \to \F$$ defined by 
+> For the following, we assume $$V$$ is a finite-dimensional inner product space over $$F$$, where $$F = \R$$ or $$\C$$. Let $$f_v: V \to F$$ defined by 
 > 
 > $$
   f_v(w) = (w, v)
@@ -260,7 +260,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### Proposition `(Dual space is the set of every linear functional constructed by the inner product)
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$f_v$$ is defined as above.
 
@@ -282,7 +282,7 @@ If we have an orthonormal basis $$\set{v_1, \dots, v_n}$$ of $$V$$, then the Fou
 
 #### Proposition `(Change of orthonormal basis)`
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$E = \set{e_1, \dots, e_n}$$ and $$F = \set{f_1, \dots, f_n}$$ are orthonormal bases of $$V$$.
 

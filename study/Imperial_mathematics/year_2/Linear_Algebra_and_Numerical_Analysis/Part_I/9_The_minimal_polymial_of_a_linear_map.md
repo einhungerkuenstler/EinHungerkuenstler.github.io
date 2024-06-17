@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -22,13 +22,13 @@ $$\gdef\di{\operatorname{dim}}$$
 $$\gdef{\iimply}{\textcolor{gray}{\Leftarrow}}$$
 $$\gdef{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
 
-> For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in \F[x]$$.
+> For the following, we often use $$f, g$$ to denote $$f(x), g(x) \in F[x]$$.
 
 #### $$\blue{\textsf{Definition (Minimal polynomial)}}$$
 
 - $$T: V \to V$$ is a linear map.
   
-- $$m(x) \in \F[x]$$ is a polynomial.
+- $$m(x) \in F[x]$$ is a polynomial.
 
     If the three following conditions holds:
 
@@ -55,7 +55,7 @@ $$\gdef{\pro}{\textcolor{orange}{\mathcal{Proof:}}}$$
    
   2. `Uniquness`: The minimal polynomial of $$T$$ is unique, denoted by $$m_T(x)$$. i.e. if $$p(x)$$ is another minimal polynomial of $$T$$, then $$p(x) = m_T(x)$$.
   
-  3. `Divisibility`: For $$p(x) \in \F[x]$$, 
+  3. `Divisibility`: For $$p(x) \in F[x]$$, 
        
       $$
       p(T) = 0 \iif m_T(x) \mid p(x)
@@ -81,7 +81,7 @@ $$\textcolor{orange}{\mathcal{Proof:}}$$
 
 3. `Divisibility`: 
      
-    - $$\implies$$: Assume $$p(x) \in \F[x]$$ and $$p(T) = 0$$, by the [Eucilidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), there exists $$q(x), r(x) \in \F[x]$$ such that 
+    - $$\implies$$: Assume $$p(x) \in F[x]$$ and $$p(T) = 0$$, by the [Eucilidean Algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm), there exists $$q(x), r(x) \in F[x]$$ such that 
 
       $$
       p(x) = q(x) m_T(x) + r(x)
@@ -99,10 +99,10 @@ $$\textcolor{orange}{\mathcal{Proof:}}$$
       r(x) = 0 \implies p(x) = q(x) m_T(x) \implies m_T(x) \mid p(x)
       $$
 
-      - $$\iimply$$: Assume $$m_T(x) \mid p(x)$$, then for $$p(x) \in \F[x]$$, we have
+      - $$\iimply$$: Assume $$m_T(x) \mid p(x)$$, then for $$p(x) \in F[x]$$, we have
 
       $$
-      m_T(x) \mid p(x) \implies p(x) = m_T(x) q(x) \text{ for some } q(x) \in \F[x]
+      m_T(x) \mid p(x) \implies p(x) = m_T(x) q(x) \text{ for some } q(x) \in F[x]
       $$
         
       Then, by the conditions of the [minimal polynomial](#definition-the-minimal-polynomial), we have
@@ -124,7 +124,7 @@ $$\textcolor{orange}{\mathcal{Proof:}}$$
 
   1. `Minimal polynomial divides characteristic polynomial`: $$m_T(x) \mid c_T(x)$$.
   
-  2. `Minimal polynomial and characteristic polynomials share the same roots`: If $$\lambda \in \F$$ and $$c_T(\lambda) = 0$$, then $$m_T(\lambda) = 0$$.
+  2. `Minimal polynomial and characteristic polynomials share the same roots`: If $$\lambda \in F$$ and $$c_T(\lambda) = 0$$, then $$m_T(\lambda) = 0$$.
 
 $$\textcolor{orange}{\mathcal{Proof:}}$$
 
@@ -174,7 +174,7 @@ $$
 
 - $$T_W: W \to W$$, with the restriction of $$T$$ to $$W$$.
 
-- $$\overline{T}: V / \F[w] \to V / \F[w]$$ is the quotient map of $$T$$ with respect to $$w \in V$$.
+- $$\overline{T}: V / F[w] \to V / F[w]$$ is the quotient map of $$T$$ with respect to $$w \in V$$.
 
 
   Then,
@@ -222,13 +222,13 @@ $$\textcolor{orange}{\mathcal{Proof:}}$$
 
 - $$T: V \to V$$ is a linear map.
 
-- $$p(x) \in \F[x]$$ is an [irreducible factor](https://en.wikipedia.org/wiki/Irreducible_polynomial) of $$c_T(x)$$.
+- $$p(x) \in F[x]$$ is an [irreducible factor](https://en.wikipedia.org/wiki/Irreducible_polynomial) of $$c_T(x)$$.
 
   Then, $$p(x) \mid m_T(x)$$.
 
 $$\textcolor{orange}{\mathcal{Proof:}}$$ (Prove by $$\red{\textbf{induction}}$$ on $$\dim V$$ and the approach is similar to the proof of [the Cayley-Hamilton Theorem](.../7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem/7_Characteristic_Polynomials_and_the_Cayley-Hamilton_Theorem.md#theorem-7.1))
 
-Assume there is a linear map $$T: V \to V$$ and $$p(x) \in \F[x]$$ is an irreducible factor of $$c_T(x)$$.
+Assume there is a linear map $$T: V \to V$$ and $$p(x) \in F[x]$$ is an irreducible factor of $$c_T(x)$$.
 
 - `Base case`: $$\dim V = 1$$.
 

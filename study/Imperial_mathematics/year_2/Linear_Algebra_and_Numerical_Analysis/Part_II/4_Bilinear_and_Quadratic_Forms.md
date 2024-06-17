@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -24,19 +24,19 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 $$\gdef\max{\operatorname{max}}$$
 $$\gdef\span{\operatorname{Span}}$$
 
-> In this chapter, we shall define and study some analogues of inner products over any field $$\F$$. Since the positive of the inner product is not always make sense for any field, we will drop this condition.
-> For the following, the $$\F$$ is any field.
+> In this chapter, we shall define and study some analogues of inner products over any field $$F$$. Since the positive of the inner product is not always make sense for any field, we will drop this condition.
+> For the following, the $$F$$ is any field.
 
 
 ### $$\blue{\textsf{Bilinear forms}}$$
 
 #### $$\blue{\textsf{Definition (Bilinear form)}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$(\;,\;): V \times V \to \F$$ is a function.
+- $$(\;,\;): V \times V \to F$$ is a function.
 
-    Then, $$(,)$$ is called a **bilinear form** if for all $$v_1, w, w_1, w_2 \in V$$ and $$\alpha, \beta \in \F$$,
+    Then, $$(,)$$ is called a **bilinear form** if for all $$v_1, w, w_1, w_2 \in V$$ and $$\alpha, \beta \in F$$,
 
     1. `Left linearity`: $$(\alpha v_1 + \beta v_2, w) = \alpha (v_1, w) + \beta (v_2, w)$$.
 
@@ -44,9 +44,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Definition (Symmetric and skew-symmetric)}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$(\;,\;): V \times V \to \F$$ is a bilinear form.
+- $$(\;,\;): V \times V \to F$$ is a bilinear form.
 
     Then,
 
@@ -57,9 +57,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Theorem 4.1}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$(\;,\;): V \times V \to \F$$ is a bilinear form.
+- $$(\;,\;): V \times V \to F$$ is a bilinear form.
 
    Then, for all $$v, w \in V$$,
 
@@ -71,9 +71,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Definition (Non-degenerate bilinear form)}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$(\;,\;): V \times V \to \F$$ is a bilinear form.
+- $$(\;,\;): V \times V \to F$$ is a bilinear form.
 
     Then, $$(\;,\;)$$ is called **non-degenerate** if 
 
@@ -91,9 +91,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Proposition 4.2}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$(,): V \times V \to \F$$ is a **non-degenerate bilinear form**.
+- $$(,): V \times V \to F$$ is a **non-degenerate bilinear form**.
 
 - $$W$$ is a subspace of $$V$$.
 
@@ -107,9 +107,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{4.3 Matrix of a bilinear form}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
   
-- $$f = (\;,\;) : V \times V \to \F$$ is a bilinear form on $$V$$.
+- $$f = (\;,\;) : V \times V \to F$$ is a bilinear form on $$V$$.
 
 - $$B = \set{v_1, \dots, v_n}$$ is a basis of $$V$$.
 
@@ -127,9 +127,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Proposition 4.4}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$f = (\;,\;) : V \times V \to \F$$ is a bilinear form on $$V$$.
+- $$f = (\;,\;) : V \times V \to F$$ is a bilinear form on $$V$$.
 
 - $$B_1, B_2$$ are two bases of $$V$$.
 
@@ -145,7 +145,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Definition (Congruent)}}$$
 
-- $$A, B$$ are two $$n \times n$$ matrices over $$\F$$.
+- $$A, B$$ are two $$n \times n$$ matrices over $$F$$.
 
     Then, $$A$$ and $$B$$ are called **congruent** if there exists an invertible matrix $$P$$ such that 
     
@@ -163,11 +163,11 @@ $$\gdef\span{\operatorname{Span}}$$
 
     Then, $$f_1$$ and $$f_2$$ are **equivalent**.
 
-#### $$\blue{\mathsf{Definition\;(Characteristic\;of\;a\;field \F)}}$$
+#### $$\blue{\mathsf{Definition\;(Characteristic\;of\;a\;field F)}}$$
 
-- $$\F$$ is a field.
+- $$F$$ is a field.
 
-    Then, the **characteristic of $$\F$$** is the **smallest positive integer $$n$$** such that $$n = 0$$ in $$\F$$ if such $$n$$ exists. Otherwise, the characteristic of $$\F$$ is $$0$$. We denote the characteristic of $$\F$$ by $$\operatorname{char}(\F)$$.
+    Then, the **characteristic of $$F$$** is the **smallest positive integer $$n$$** such that $$n = 0$$ in $$F$$ if such $$n$$ exists. Otherwise, the characteristic of $$F$$ is $$0$$. We denote the characteristic of $$F$$ by $$\operatorname{char}(F)$$.
 
 > **Remark:**
 >
@@ -180,11 +180,11 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Theorem 4.5}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
-- $$\operatorname{char}(\F) \neq 2$$.
+- $$\operatorname{char}(F) \neq 2$$.
 
-- $$f = (\;,\;) : V \times V \to \F$$ is a non-degenerate skew-symmetric bilinear form on $$V$$.
+- $$f = (\;,\;) : V \times V \to F$$ is a non-degenerate skew-symmetric bilinear form on $$V$$.
 
     Then, 
 
@@ -218,9 +218,9 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Corollary 4.6}}$$
 
-- $$A$$ is an invertible skew-symmetric $$n \times n$$ matrix over $$\F$$.
+- $$A$$ is an invertible skew-symmetric $$n \times n$$ matrix over $$F$$.
 
-- $$\operatorname{char}(\F) \neq 2$$.
+- $$\operatorname{char}(F) \neq 2$$.
 
    Then,
 
@@ -242,7 +242,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 > **Remark:**
 >
-> There is another version of Corollary 4.6 which is **for any non-degenerate skew-symmetric bilinear form $$f$$ on $$\F^n$$ is euqivalent to the form 
+> There is another version of Corollary 4.6 which is **for any non-degenerate skew-symmetric bilinear form $$f$$ on $$F^n$$ is euqivalent to the form 
 >
 > $$
  (x, y) = x^T J_m y = (x_1y_1 - x_2y_2) + \dots + (x_{m-1}y_{m-1} - x_{m}y_{m})
@@ -250,11 +250,11 @@ $$
 
 #### $$\blue{\textsf{Theorem 4.7}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
-- $$\operatorname{char}(\F) \neq 2$$.
+- $$\operatorname{char}(F) \neq 2$$.
 
-- $$f = (\;,\;) : V \times V \to \F$$ is a non-degenerate symmetric bilinear form on $$V$$.
+- $$f = (\;,\;) : V \times V \to F$$ is a non-degenerate symmetric bilinear form on $$V$$.
 
     Then, 
 
@@ -286,9 +286,9 @@ $$
 
 #### $$\blue{\textsf{Corollary 4.8}}$$
 
-- $$A$$ is an invertible symmetric $$n \times n$$ matrix over $$\F$$.
+- $$A$$ is an invertible symmetric $$n \times n$$ matrix over $$F$$.
 
-- $$\operatorname{char}(\F) \neq 2$$.
+- $$\operatorname{char}(F) \neq 2$$.
 
    Then, A is **congruent** to some diagonal matrix.
 
@@ -298,9 +298,9 @@ $$
 
 #### $$\blue{\textsf{Definition (Quadratic form)}}$$
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
-- $$Q: V \mapsto \F$$ is a function.
+- $$Q: V \mapsto F$$ is a function.
 
     Then, The **quadric form** $$Q$$ is defined by
 
@@ -312,13 +312,13 @@ $$
 
 #### $$\blue{\textsf{Definition (Equivalence of quadratic forms)}}$$
 
-- The vector space $$V = \F^n$$ over $$\F$$.
+- The vector space $$V = F^n$$ over $$F$$.
 
-- $$Q, Q': V \mapsto \F$$ are two quadratic forms on $$V$$.
+- $$Q, Q': V \mapsto F$$ are two quadratic forms on $$V$$.
 
-- $$Q(x) = x^TA x$$, where $$A = A^T$$ is an symmetric $$n \times n$$ matrix over $$\F$$. 
+- $$Q(x) = x^TA x$$, where $$A = A^T$$ is an symmetric $$n \times n$$ matrix over $$F$$. 
 
-- $$y = (y_1, \dots, y_n)^T$$ is a vector in $$\F^n$$, where $$x = Py$$ for some $$n \times n$$ matrix. Then,
+- $$y = (y_1, \dots, y_n)^T$$ is a vector in $$F^n$$, where $$x = Py$$ for some $$n \times n$$ matrix. Then,
 
     If
 
@@ -326,7 +326,7 @@ $$
     Q(x) = (Py)^T A (Py) = y^T (P^T A P) y = y^T B y = Q'(y)
     $$
 
-    where $$B = P^T A P$$ is an symmetric $$n \times n$$ matrix over $$\F$$.
+    where $$B = P^T A P$$ is an symmetric $$n \times n$$ matrix over $$F$$.
 
     Then, $$Q$$ and $$Q'$$ are called **equivalent**.
 
@@ -337,31 +337,31 @@ $$
 
 #### $$\blue{\textsf{Proposition 4.9}}$$
 
-- $$V = \F^n$$ is a vector space over $$\F$$.
+- $$V = F^n$$ is a vector space over $$F$$.
 
-- $$Q: V \mapsto \F$$ is any quadratic form on $$V$$.
+- $$Q: V \mapsto F$$ is any quadratic form on $$V$$.
 
    Then, $$Q$$ is equivalent to a quadratic form $$Q_D(x)$$ of the form
 
    $$
-   Q_D(x) = \lambda_1 x_1^2 + \dots + \lambda_n x_n^2 \quad (\lambda_i \in \F)
+   Q_D(x) = \lambda_1 x_1^2 + \dots + \lambda_n x_n^2 \quad (\lambda_i \in F)
    $$
 
 #### $$\blue{\textsf{Theorem 4.10}}$$
 
-- $$V = \F^n$$ is a vector space over $$\F$$.
+- $$V = F^n$$ is a vector space over $$F$$.
 
-- $$Q: V \mapsto \F$$ is a **non-degenerate quadratic form** on $$V$$.
+- $$Q: V \mapsto F$$ is a **non-degenerate quadratic form** on $$V$$.
 
    Then, 
 
-    1. `F = C:`If $$\F = \C$$, then $$Q$$ is equivalent to the quadratic form $$Q_0(x)$$ of the form
+    1. `F = C:`If $$F = \C$$, then $$Q$$ is equivalent to the quadratic form $$Q_0(x)$$ of the form
 
         $$
         Q_0(x) = x_1^2 + \dots + x_n^2 = x^T I_n x
         $$
 
-    2. `F = R:` If $$\F = \R$$, then there exists **unique** $$p, q \in \Z^+$$ such that 
+    2. `F = R:` If $$F = \R$$, then there exists **unique** $$p, q \in \Z^+$$ such that 
 
         $$
         p + q = n
@@ -378,7 +378,7 @@ $$
         0 & -I_q
         \end{pmatrix}$$.
 
-     3. `F = Q:` If $$\F = \Q$$, then there exists **infinitely many inequivalent non-degenerate quadratic forms** on $$V$$.
+     3. `F = Q:` If $$F = \Q$$, then there exists **infinitely many inequivalent non-degenerate quadratic forms** on $$V$$.
 
 `Proof:`
 

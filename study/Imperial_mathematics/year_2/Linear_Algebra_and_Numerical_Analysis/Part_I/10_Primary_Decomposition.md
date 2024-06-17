@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -28,7 +28,7 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 
 #### $$\blue{\mathsf{Definition\;(Generalized \;\lambda_i-eigenspace)}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
 - $$T: V \to V$$ is a linear map.
 
@@ -44,11 +44,11 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 
 #### $$\blue{\textsf{Proposition 10.1 (V is could be decomposed into the direct sum of generalized eigenspaces)}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
 - $$T: V \to V$$ is a linear map.
 
-- $$g_1(x), g_2(x) \in \F[x]$$ are coprime polynomials such that $$g_1(T)g_2(T) = 0$$.
+- $$g_1(x), g_2(x) \in F[x]$$ are coprime polynomials such that $$g_1(T)g_2(T) = 0$$.
 
 - $$V_i = \ker(g_i(T))$$ for $$i \in \set{1,2}$$.
 
@@ -81,7 +81,7 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 
     - `V is the sum of the kernels`:
     
-       Then, by the [Proposition 8.3](../Linear_Algebra_and_Numerical_Analysis/8_Polynomials.md#proposition-83-the-greatest-common-divisor-could-be-expressed-as-a-linear-combination-of-two-polynomials), there exists $$s_1(x), s_2(x) \in \F[x]$$ such that
+       Then, by the [Proposition 8.3](../Linear_Algebra_and_Numerical_Analysis/8_Polynomials.md#proposition-83-the-greatest-common-divisor-could-be-expressed-as-a-linear-combination-of-two-polynomials), there exists $$s_1(x), s_2(x) \in F[x]$$ such that
 
        $$
        g_1(x)s_1(x) + g_2(x)s_2(x) = 1
@@ -123,17 +123,17 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 
 #### $$\blue{\textsf{Theorem 10.2 (Primary decomposition theorem)}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
 - $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x)$$.
   
-- The factorization of $$m_T(x)$$ into [irreducible polynomials](https://en.wikipedia.org/wiki/Irreducible_polynomial) in $$\F[x]$$ is
+- The factorization of $$m_T(x)$$ into [irreducible polynomials](https://en.wikipedia.org/wiki/Irreducible_polynomial) in $$F[x]$$ is
 
     $$
     m_{T}(x)=\prod_{i=1}^{k} f_{i}(x)^{n_{i}}
     $$
 
-    where $$f_i(x)\; i \in \set{1, \dots, k}$$ are distinct irreducible polynomials in $$\F[x]$$ and $$n_i \in \N$$.
+    where $$f_i(x)\; i \in \set{1, \dots, k}$$ are distinct irreducible polynomials in $$F[x]$$ and $$n_i \in \N$$.
 
 - For $$i \in \set{1, \dots, k}$$, we define
 
@@ -151,7 +151,7 @@ $$\gdef\lcm{\operatorname{lcm}}$$
 
 `Proof`: (Prove by **induction** on $$k$$)
 
-Assume $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x) = \prod_{i=1}^{k} f_{i}(x)^{n_{i}}$$ where $$f_i(x)\; i \in \set{1, \dots, k}$$ are distinct irreducible polynomials in $$\F[x]$$ and $$n_i \in \N$$.
+Assume $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x) = \prod_{i=1}^{k} f_{i}(x)^{n_{i}}$$ where $$f_i(x)\; i \in \set{1, \dots, k}$$ are distinct irreducible polynomials in $$F[x]$$ and $$n_i \in \N$$.
 
 - `Base case`: $$k = 1$$
  
@@ -210,7 +210,7 @@ Assume $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x) = \prod_{
 
 #### $$\blue{\mathsf{Corollary \;10.3 \;(T \;is \;diagnalizable \leftrightarrow m_T(x) \; is \; a \; product \; of \; distinct \; linear \; factors)}}$$
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$.
+- $$V$$ is a finite-dimensional vector space over $$F$$.
 
 - $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x)$$.
 
@@ -220,7 +220,7 @@ Assume $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x) = \prod_{
     T \text{ is diagonalizable } \iff m_{T}(x)=\prod_{i=1}^{k}\left(x-\lambda_{i}\right)
     $$
 
-    where $$\lambda_i \in \F$$ are distinct eigenvalues of $$T$$.
+    where $$\lambda_i \in F$$ are distinct eigenvalues of $$T$$.
 
 `Proof`:
 
@@ -250,7 +250,7 @@ Assume $$T: V \to V$$ is a linear map with minimal polynomial $$m_T(x) = \prod_{
 
 - `<=`:
 
-    Assume $$m_T(x) = \prod_{i=1}^{k}\left(x-\lambda_{i}\right)$$ where $$\lambda_i \in \F$$ are distinct eigenvalues of $$T$$.
+    Assume $$m_T(x) = \prod_{i=1}^{k}\left(x-\lambda_{i}\right)$$ where $$\lambda_i \in F$$ are distinct eigenvalues of $$T$$.
 
     Then, by the [Theorem 10.2](#3), we have
 

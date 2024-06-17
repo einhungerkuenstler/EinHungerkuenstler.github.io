@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -44,14 +44,14 @@ $$\gdef\di{\operatorname{dim}}$$
 
 #### Theorem (Triangularisation Theorem)
 
-- $$V$$ is an n-dimensional vector space over a field $$\F$$.
+- $$V$$ is an n-dimensional vector space over a field $$F$$.
   
 - $$T: V \rightarrow V$$ is a linear map
   
 - The characteristic polynomial $$c(x)$$ of $$T$$ could be factorized as a product of linear factors, i.e. 
   
   $$
-  c(x)=\prod_{1}^{n}\left(x-\lambda_{i}\right)\text{ with all }\lambda_{i} \in \F
+  c(x)=\prod_{1}^{n}\left(x-\lambda_{i}\right)\text{ with all }\lambda_{i} \in F
   $$
   
 Then, **there is a basis $$B$$ of $$V$$ such that the matrix $$[T]_{B}$$ is upper triangular.**
@@ -66,7 +66,7 @@ Then, **there is a basis $$B$$ of $$V$$ such that the matrix $$[T]_{B}$$ is uppe
   c(x) = \prod_{i=1}^n (x - \lambda_i)
   $$
 
-  could be factorized as a product of linear factors. Then $$c(x)$$ has a root $$\lambda \in \F$$. For each root, there is at least one corresponding eigenvector $$w_1 \in V$$ such that $$T(w_1) = \lambda w_1$$. Let $$W = \operatorname{Span}(w_1)$$, then $$W$$ is a $$T$$-invariant subspace of $$V$$.
+  could be factorized as a product of linear factors. Then $$c(x)$$ has a root $$\lambda \in F$$. For each root, there is at least one corresponding eigenvector $$w_1 \in V$$ such that $$T(w_1) = \lambda w_1$$. Let $$W = \operatorname{Span}(w_1)$$, then $$W$$ is a $$T$$-invariant subspace of $$V$$.
 
   Now, we are in the situation that we disscussed before:
 
@@ -106,19 +106,19 @@ where $$B = \set{w_1, v_2, v_3, \cdots, v_n}$$ is a basis of $$V$$ and $$*$$ is 
 
 #### Corollary (A matirx with factorizable characteristic polynomial is triangularisable)
 
-- $$A$$ is an $$n \times n$$ matrix over a field $$\F$$
+- $$A$$ is an $$n \times n$$ matrix over a field $$F$$
   
 - The characteristic polynomial of $$A$$ could be factorized as a product of linear factors. i.e 
   
   $$
-  c(x)=\prod_{1}^{n}\left(x-\lambda_{i}\right)\text{ with all }\lambda_{i} \in \F
+  c(x)=\prod_{1}^{n}\left(x-\lambda_{i}\right)\text{ with all }\lambda_{i} \in F
   $$
   
 Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 
 `Proof`:
 
-- $$V = \F^n$$ is an $$n$$-dimensional vector space over $$\F$$.
+- $$V = F^n$$ is an $$n$$-dimensional vector space over $$F$$.
 
 - Apply Triangularisation Theorem to the linear map $$T: V \to V$$ defined by $$T(v) = Av$$.
 
@@ -128,9 +128,9 @@ Then, **$$A$$ is similar to an upper triangular matrix over $$F$$.**
 
 > **Remark**:
 >
-> - If $$\F = \C$$, by the Fundamental Theorem of Algebra, the characteristic polynomial of $$A$$ could always be factorized as a product of linear factors. Therefore, **every matrix is triangularisable in $$\C$$.**
+> - If $$F = \C$$, by the Fundamental Theorem of Algebra, the characteristic polynomial of $$A$$ could always be factorized as a product of linear factors. Therefore, **every matrix is triangularisable in $$\C$$.**
 >
-> - If $$\F = \R$$, some matrices could not be triangularisable. For example, the rotation matrices of $$\R^{2n} n \in \N$$ could not be triangularisable in $$\R$$.
+> - If $$F = \R$$, some matrices could not be triangularisable. For example, the rotation matrices of $$\R^{2n} n \in \N$$ could not be triangularisable in $$\R$$.
 >
 > $$
 \begin{pmatrix}

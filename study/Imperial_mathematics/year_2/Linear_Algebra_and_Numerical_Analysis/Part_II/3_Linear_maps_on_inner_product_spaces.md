@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -26,11 +26,11 @@ $$\gdef\span{\operatorname{Span}}$$
 
 > This chapter is to try to prove the **Spectral Theorem** for linear maps on inner product spaces. 
 >
-> For the following, the $$\F$$ is either $$\R$$ or $$\C$$.
+> For the following, the $$F$$ is either $$\R$$ or $$\C$$.
 
 #### $$\blue{\textsf{Definition (Adjoint map and self-adjoint)}}$$
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$T: V \to V$$ is a linear map.
 
@@ -51,7 +51,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Proposition 3.1 (The existence and uniqueness of adjoint map)}}$$
 
-- $$V$$ be a finite-dimensional inner product space over $$\F$$.
+- $$V$$ be a finite-dimensional inner product space over $$F$$.
 
 - $$T: V \to V$$ is a linear map.
 
@@ -65,7 +65,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\mathsf{Proposition 3.2}}$$
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$E = \set{v_1, \dots, v_n}$$ is an orthonormal basis of $$V$$.
 
@@ -111,7 +111,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\mathsf{Lemma 3.4}}$$
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$TR: V \to V$$ is a a self-adjoint linear map.
 
@@ -140,7 +140,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{Theorem 3.5 (Spectral Theorem)}}$$
 
-- $$V$$ is a finite-dimensional inner product space over $$\F$$.
+- $$V$$ is a finite-dimensional inner product space over $$F$$.
 
 - $$T: V \to V$$ is a self-adjoint linear map.
 
@@ -151,7 +151,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### $$\blue{\textsf{3.6 Algorithm to compute an orthonormal basis of eigenvectors}}$$
 
-- $$V$$ is a $$n$$-dimensional inner product space over $$\F$$.
+- $$V$$ is a $$n$$-dimensional inner product space over $$F$$.
 
 - $$T: V \to V$$ is a self-adjoint linear map.
 

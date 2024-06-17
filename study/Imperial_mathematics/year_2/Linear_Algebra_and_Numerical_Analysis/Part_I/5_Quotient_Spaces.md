@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -24,7 +24,7 @@ $$\gdef\di{\operatorname{dim}}$$
 
 #### Definition (Quotient set)
 
-- $$V$$ is a vector space over $$\F$$
+- $$V$$ is a vector space over $$F$$
   
 - $$W$$ is a subspace of $$V$$
   
@@ -46,7 +46,7 @@ We define addition and scalar multiplication on $$V / W$$ by
 
 - `Scalar Multiplication`: $$\lambda(W + v) = W + \lambda v$$
 
-for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
+for all $$v_1, v_2 , v\in V$$ and $$\lambda \in F$$.
 
 >Check Well defined:
 >
@@ -80,7 +80,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
   
 - Define addtion and scalar multiplication as above
   
-  Then, $$V / W$$ is a vector space over $$\F$$.
+  Then, $$V / W$$ is a vector space over $$F$$.
 
 `Proof`:
 
@@ -100,7 +100,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
 
 #### Proposition (The dimension of $$V / W$$ is $$\di V - \di W$$)
 
-- $$V$$ is a finite-dimensional vector space over $$\F$$
+- $$V$$ is a finite-dimensional vector space over $$F$$
   
 - $$W$$ is a subspace of $$V$$
 
@@ -138,7 +138,7 @@ for all $$v_1, v_2 , v\in V$$ and $$\lambda \in \F$$.
     \sum_{i=1}^{s} \lambda_{i} v_{i} \in W
     $$
 
-    Hence, there exists scalars $$\mu_j \in \F$$ such that
+    Hence, there exists scalars $$\mu_j \in F$$ such that
 
     $$
     \sum_{i = 1}^s \lambda_i v_i = \sum_{j = 1}^r \mu_j w_j

@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -29,9 +29,9 @@ $$\gdef\ker{\operatorname{ker}}$$
 
 #### Definition `(Jordan block)`
 
-- $$\F$$ is a field.
+- $$F$$ is a field.
 
-- $$\lambda \in \F$$.
+- $$\lambda \in F$$.
 
 - $$n \in \N$$.
   
@@ -180,7 +180,7 @@ $$\gdef\ker{\operatorname{ker}}$$
 
     4. `The polynomial of could be decomposed into the product of the polynomials of the blocks`:
 
-    For any $$q(x) \in \F[x]$$,
+    For any $$q(x) \in F[x]$$,
 
     $$
     q(A)=q\left(A_{1}\right) \oplus \cdots \oplus q\left(A_{k}\right)
@@ -188,15 +188,15 @@ $$\gdef\ker{\operatorname{ker}}$$
 
 #### Theorem 11.3 `(Jordan Canonical Form)`  
 
-- $$A$$ is a $$n \times n$$ matrix over $$\F$$.
+- $$A$$ is a $$n \times n$$ matrix over $$F$$.
 
-- The characteristic polynomial of $$A$$ is a product of linear factors in $$\F[x]$$:
+- The characteristic polynomial of $$A$$ is a product of linear factors in $$F[x]$$:
 
    $$
    c_A(x) = \prod_{i = 1}^k (x - \lambda_i)^{n_i}
    $$
 
-   where $$\lambda_i \in \F$$ are distinct eigenvalues of $$A$$ and $$n_i \in \N$$.
+   where $$\lambda_i \in F$$ are distinct eigenvalues of $$A$$ and $$n_i \in \N$$.
 
    Then, the following statements are true:
 
@@ -222,7 +222,7 @@ The block-diagonal matrix $$J$$ in (1) is called the **Jordan Canonical Form (JC
 
 #### Proposition 11.4 `(The relation of Algebraic multiplicity and Geometric multiplicity)`
 
-- $$A$$ is a $$n \times n$$ matrix over $$\F$$.
+- $$A$$ is a $$n \times n$$ matrix over $$F$$.
 
 - $$J$$ is the Jordan Canonical Form of $$A$$ with $$\lambda$$ as the corresponding eigenvalue of $$J$$.
 
@@ -256,7 +256,7 @@ The block-diagonal matrix $$J$$ in (1) is called the **Jordan Canonical Form (JC
 
 #### Theorem 11.5 `(Uniqueness of the Jordan Canonical Form)`
 
-- $$A$$ is a $$n \times n$$ matrix over $$\F$$.
+- $$A$$ is a $$n \times n$$ matrix over $$F$$.
 
 - $$A$$ is similar to a Jordan Canonical Form $$J = J_{n_1}(\lambda_1) \oplus \cdots \oplus J_{n_k}(\lambda_k)$$.
 
@@ -270,7 +270,7 @@ The block-diagonal matrix $$J$$ in (1) is called the **Jordan Canonical Form (JC
 
 - $$T: V \to V$$ is a linear map.
 
-- $$c_T(x)$$ is the product of linear factors in $$\F[x]$$.
+- $$c_T(x)$$ is the product of linear factors in $$F[x]$$.
 
     Then, there exists a basis $$B$$ of $$V$$ such that $$[T]_B$$ is a Jordan Canonical Form.
 
@@ -337,7 +337,7 @@ The block-diagonal matrix $$J$$ in (1) is called the **Jordan Canonical Form (JC
 
 #### Definition `(A basis of a vector space mod subspace)`
 
-- $$V$$ is a vector space over $$\F$$.
+- $$V$$ is a vector space over $$F$$.
 
 - $$U$$ is a subspace of $$V$$.
 

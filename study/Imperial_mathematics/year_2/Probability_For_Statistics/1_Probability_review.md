@@ -39,7 +39,7 @@ An **experiment** is any fixed procedure with a variable outcome.
 
 #### Definition $$\blue{\textit{(Algebra)}}$$
 
-- $$\F$$ is a set of subsets of $$\Omega$$, which means that $$\F$$ is a set of events that satisfies the following axioms:
+- $$F$$ is a set of subsets of $$\Omega$$, which means that $$F$$ is a set of events that satisfies the following axioms:
 
    1. $$\varnothing \in \mathcal{F}$$
 
@@ -47,7 +47,7 @@ An **experiment** is any fixed procedure with a variable outcome.
 
    3. If $$A, B \in \mathcal{F}$$, then $$A \cup B \in \mathcal{F}$$.
 
-   By induction, 3 implies that $$\F$$ is closed under finite unions, i.e.
+   By induction, 3 implies that $$F$$ is closed under finite unions, i.e.
 
    $$
    \text { If } A_{1}, A_{2}, \ldots, A_{n} \in \mathcal{F} \text {, then } \bigcup_{i=1}^{n} A_{i} \in \mathcal{F} \text {. }
@@ -55,16 +55,16 @@ An **experiment** is any fixed procedure with a variable outcome.
 
 #### Definition $$\blue{\mathit{(\sigma-algebra)}}$$
 
-1. $$\F$$ is a algebra.
+1. $$F$$ is a algebra.
 
-2. $$\F$$ is closed under countable unions, i.e.
+2. $$F$$ is closed under countable unions, i.e.
 
 
    $$
    \text { if } A_{1}, A_{2}, \cdots \in \mathcal{F} \text {, then } \bigcup_{i=1}^{\infty} A_{i} \in \mathcal{F} \text {. }
    $$
 
-   then $$\F$$ is said to be a $$\sigma$$-algebra. An element of a $$\sigma$$-algebra $$\F$$ is said to be an **event**.
+   then $$F$$ is said to be a $$\sigma$$-algebra. An element of a $$\sigma$$-algebra $$F$$ is said to be an **event**.
 
 #### Example 
 
@@ -78,7 +78,7 @@ For any set $$\Omega$$, the power set of $$\Omega$$ is a $$\sigma$$-algebra, cal
 
 #### Exercise 1.10 
 
-Suppose $$\Omega = \N = \{1, 2, 3, \ldots\}$$ and $$\F = \{A \subset \N \mid A \text { is finite or } A^{c} \text { is finite }\}$$.
+Suppose $$\Omega = \N = \{1, 2, 3, \ldots\}$$ and $$F = \{A \subset \N \mid A \text { is finite or } A^{c} \text { is finite }\}$$.
 
 1. Identify a subset of $$\Omega$$ that lies in $$\mathcal{F}$$, and a subset that is not in $$\mathcal{F}$$.
 
@@ -108,7 +108,7 @@ Hence $$\cap_{i \in I} \mathcal{F}_{i}$$ is a sigma algebra.
 
 #### Definition 1.13. $$\blue{\mathit{(Borel\; \sigma-algebra)}}$$
 
-Let $$\F_i,i \in I$$ be a collection of all sigma algebras that contain all open intervals of $$\R$$. This collection is clearly non-empty, because the power set of $$\R$$ is such a sigma algebra. By Proposition 1.12, the intersection $$\F=\cap_{i \in I} \F_i$$ is a sigma algebra. The **Borel $$\sigma$$-algebra** is defined as
+Let $$F_i,i \in I$$ be a collection of all sigma algebras that contain all open intervals of $$\R$$. This collection is clearly non-empty, because the power set of $$\R$$ is such a sigma algebra. By Proposition 1.12, the intersection $$F=\cap_{i \in I} F_i$$ is a sigma algebra. The **Borel $$\sigma$$-algebra** is defined as
 
 $$
 \mathcal{B}=\bigcap_{i \in I} \mathcal{F}_{i}
@@ -119,7 +119,7 @@ $$
 >
 > - $$\bo$$ contains all open intervals along with their complements, contable union and intersection.
 >
-> - If $$\F$$ is any sigma algebra containing all open interval, then $$\bo \subset \F$$. It follows that $$\bo$$ is the smallest sigma algebra containing all open intervals.
+> - If $$F$$ is any sigma algebra containing all open interval, then $$\bo \subset F$$. It follows that $$\bo$$ is the smallest sigma algebra containing all open intervals.
 > 
 > - Sets in $$\bo$$ are called **Borel sets**.
 >

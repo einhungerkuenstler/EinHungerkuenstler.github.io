@@ -8,11 +8,11 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\deg{\operatorname{deg}}$$
 $$\gdef\gcd{\operatorname{gcd}}$$
 
-> For the following, we assume $$V$$ and $$W$$ is a finite-dimensional vector space over $$\F$$.
+> For the following, we assume $$V$$ and $$W$$ is a finite-dimensional vector space over $$F$$.
 
 ### Basis
 
@@ -30,7 +30,7 @@ T\left(v_{n}\right) & =a_{1 n} v_{1}+\ldots+a_{n n} v_{n}
 \end{aligned}
 $$
 
-where all the coefficients $$a_{ij} \in \F$$. Then the **matrix of $$T$$ with respect to $$B$$** is the $$n \times n$$ matrix
+where all the coefficients $$a_{ij} \in F$$. Then the **matrix of $$T$$ with respect to $$B$$** is the $$n \times n$$ matrix
 
 $$
 [T]_B = (a_{ij}) =
@@ -58,7 +58,7 @@ where $$S T$$ is the composition of $$S$$ and $$T$$.
 
 > **Remark**
 >
->The propostion above gives us a lot nice properties of matrices. For example, if $$[T]_B = A$$ then $$[T^{k}]_B = A^{k}$$ for any positive integer $$k$$. More generally, if we are give such a polynomial $$q(x) = a_0 + a_1x + \dots + a_kx^k (a_i \in \F)$$, and define
+>The propostion above gives us a lot nice properties of matrices. For example, if $$[T]_B = A$$ then $$[T^{k}]_B = A^{k}$$ for any positive integer $$k$$. More generally, if we are give such a polynomial $$q(x) = a_0 + a_1x + \dots + a_kx^k (a_i \in F)$$, and define
 >
 > $$
   q(A) = a_0I + a_1A + \dots + a_kA^k
@@ -153,7 +153,7 @@ We call $$E_{\lambda}$$ the **$$\lambda$$-eigenspace** of $$T$$. Note that $$E_{
 
 > **Remark**
 > 
-> It is not always true for any field $$\F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
+> It is not always true for any field $$F$$. For example, the linear transformation $$T: \R^2 \rightarrow \R^2$$ defined by
 >
 >$$
 T\left(\left(\begin{array}{l}
@@ -202,7 +202,7 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
     \end{aligned}
     $$
 
-    For $$k+1$$, suppose $$v_{k+1}$$ is an eigenvector of $$T$$ corresponding to an eigenvalue $$\lambda_{k+1}$$. Assume $$\exists a_{k+1} \in \F$$ such that
+    For $$k+1$$, suppose $$v_{k+1}$$ is an eigenvector of $$T$$ corresponding to an eigenvalue $$\lambda_{k+1}$$. Assume $$\exists a_{k+1} \in F$$ such that
 
     $$
     \tag{1}
@@ -238,7 +238,7 @@ A linear map $$T: V \rightarrow V$$ is **diagonalizable** if there exists a basi
 
 #### Corollary (The number of distinct roots of the characteristic polynomial equals the dimension of the the vector space means the linear map is diagonalisable)
 
-- $$V$$ be $$n$$-dimensional over $$\F$$,
+- $$V$$ be $$n$$-dimensional over $$F$$,
   
 - $$T: V \rightarrow V$$ a linear map. 
 

@@ -8,7 +8,7 @@ $$\gdef\C{\mathbb{C}}$$
 $$\gdef\Z{\mathbb{Z}}$$ 
 $$\gdef\N{\mathbb{N}}$$
 $$\gdef\Q{\mathbb{Q}}$$
-$$\gdef\F{\mathcal{F}}$$
+$$\gdefF{\mathcal{F}}$$
 $$\gdef\inner#1#2{\langle #1, #2 \rangle}$$
 $$\gdef\norm#1{\left\| #1 \right\|}$$
 $$\gdef\abs#1{\left| #1 \right|}$$
@@ -23,7 +23,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Definition (Companion matrix)
 
-- $$p(x)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0} \in \F[x]$$. 
+- $$p(x)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0} \in F[x]$$. 
   
   Then, the companion matrix of $$p(x)$$ is the $$n \times n$$ matrix $$C$$ defined by
 
@@ -39,7 +39,7 @@ $$\gdef\span{\operatorname{Span}}$$
 
 #### Theorem `(The Cayley-Hamilton Theorem)`
 
-- $$V$$ is finite-dimensional vector space over a field $$\F$$
+- $$V$$ is finite-dimensional vector space over a field $$F$$
 
 - $$T: V \rightarrow V$$ be a linear map with characteristic polynomial $$c(x)$$. 
   
@@ -203,7 +203,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
         T^n(v) = -a_0 v - a_1 T(v) - \cdots - a_{n-1} T^{n-1}(v)
         $$
 
-        where $$a_i \in \F$$ for all $$i \in \set{0, \dots, n-1}$$.
+        where $$a_i \in F$$ for all $$i \in \set{0, \dots, n-1}$$.
 
         Then, we could write the matrix of $$T$$ with respect to $$B$$ as
 
@@ -217,7 +217,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
         \end{pmatrix}
         $$
 
-        where $$a_i \in \F$$ for all $$i \in \set{0, \dots, n-1}$$.
+        where $$a_i \in F$$ for all $$i \in \set{0, \dots, n-1}$$.
 
       - `Construct a characteristic polynomial of linear map`:
 
@@ -227,7 +227,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
         c(x) = c_T(x) = \det(xI - A) = x^n + a_{n-1} x^{n-1} + \cdots + a_0
         $$
 
-        where $$a_i \in \F$$ for all $$i \in \set{0, \dots, n-1}$$. Hence by $$(\text{Star})$$, we have
+        where $$a_i \in F$$ for all $$i \in \set{0, \dots, n-1}$$. Hence by $$(\text{Star})$$, we have
 
         $$
         c(T)(v) = T^n(v) + a_{n-1} T^{n-1}(v) + \cdots + a_0 v = 0
@@ -238,7 +238,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
 
 #### Corollary `(The matrix version of the Cayley-Hamilton Theorem)`
 
-- $$A$$ is an matrix over a field $$\F$$ with the characteristic polynomial $$c(x)$$,
+- $$A$$ is an matrix over a field $$F$$ with the characteristic polynomial $$c(x)$$,
  
   Then, 
   
@@ -250,7 +250,7 @@ Assume $$T: V \rightarrow V$$ is a linear map with characteristic polynomial $$c
 
 `Proof`:
 
-Since $$A$$ is a matrix, we could view $$A$$ as a linear map $$T: \F^n \rightarrow \F^n$$.
+Since $$A$$ is a matrix, we could view $$A$$ as a linear map $$T: F^n \rightarrow F^n$$.
 
 Then, by the Cayley-Hamilton Theorem, we have
 
