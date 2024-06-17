@@ -8,6 +8,7 @@ $$\gdef\dfs{\blue{:=}}$$
 $$\gdef\ifif{\blue{\iff}}$$
 $$\gdef\imp{\blue{\implies}}$$
 $$\gdef\diff{\blue{:\longleftrightarrow}}$$
+$$\gdef\op#1{\blue{\operatorname{#1}}}$$
 $$\gdef\limp{\blue{\Longleftarrow}}$$
 $$\gdef\st{\blue{\texttt{s.t.}}}$$
 $$\gdef\the{\blue{\Rightarrow}}$$
